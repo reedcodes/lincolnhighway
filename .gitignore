@@ -1,8 +1,2 @@
-# Compiled
-build
-
-# Dependency directories
-node_modules
-
-# Optional npm cache directory
-.npm
+# Deployment directory
+.push-it

@@ -1,0 +1,2 @@
+Redirect /.push-it /
+ErrorDocument 404 /
