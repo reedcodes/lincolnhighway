@@ -1,2 +1,9 @@
-# Deployment directory
+# macOS-specific.
+.DS_Store
+
+# Deployment directory.
 .push-it
+
+# Development files.
+.npm
+node_modules
