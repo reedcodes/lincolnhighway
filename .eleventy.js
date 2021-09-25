@@ -1,4 +1,8 @@
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy( {
+    "./node_modules/@fortawesome/fontawesome-free/webfonts/": "assets/webfonts/"
+  } );
+
   return {
     dir: {
       input: "source",
