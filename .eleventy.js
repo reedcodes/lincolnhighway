@@ -3,11 +3,13 @@ module.exports = function (eleventyConfig) {
     "./node_modules/@fortawesome/fontawesome-free/webfonts/": "assets/webfonts/"
   } );
 
-  eleventyConfig.addShortcode( 'fa', ( icon ) => {
-    return `<span class="fas fa-${icon}" aria-hidden="true"></span>`;
+  eleventyConfig.addShortcode( 'icon', ( value ) => {
+    const style = value.style ? value.style : "fas";
+    return `<span class="${style} fa-${value.name}" aria-hidden="true"></span>`;
   } );
 
   return {
+    markdownTemplateEngine: "njk",
     dir: {
       input: "source",
       data: "_data",
