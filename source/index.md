@@ -4,4 +4,6 @@ title: Home Page
 home: true
 ---
 
+# {% fa 'road' %} Road Trip
+
 All things permitting, I plan to road trip along the Lincoln Highway, the "Main Street across America", sometime near the end of 2022. I've been wanting to do this since I was in college nearly 25 years ago. The website will document that journey.

@@ -3,6 +3,10 @@ module.exports = function (eleventyConfig) {
     "./node_modules/@fortawesome/fontawesome-free/webfonts/": "assets/webfonts/"
   } );
 
+  eleventyConfig.addShortcode( 'fa', ( icon ) => {
+    return `<span class="fas fa-${icon}" aria-hidden="true"></span>`;
+  } );
+
   return {
     dir: {
       input: "source",

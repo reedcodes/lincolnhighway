@@ -1,5 +1,5 @@
 // Font Awesome webfonts directory relative to root.
-$fa-font-path: './assets/webfonts';
+$fa-font-path: '/assets/webfonts';
 
 // Pass the font path to the Font Awesome sass files.
 @use 'fontawesome' with ( $fa-font-path: $fa-font-path );
