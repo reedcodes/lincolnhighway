@@ -1,0 +1,10 @@
+@use 'type';
+
+// placeholder for blog post information
+.meta {
+  font-size: 1rem;
+  line-height: 2;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-color: lightgray;
+}

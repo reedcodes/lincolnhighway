@@ -1,10 +1,2 @@
 @use 'global';
-
-body {
-  background: white;
-  color: black;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-family: global.$font-body;
-}
+@use 'blog';

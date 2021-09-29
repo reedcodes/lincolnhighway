@@ -1,0 +1,21 @@
+@use 'type';
+
+// placeholder for the blog post title
+h1 span {
+  display: block;
+  font-weight: 400;
+  font-size: 3.25rem;
+  line-height: 1;
+  font-family: type.$title;
+  text-align: center;
+}
+
+.city {
+  transform: scaleY( 70% );
+  margin-top: -0.125em;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 0.75;
+  font-family: type.$highlight;
+  text-transform: uppercase;
+}
