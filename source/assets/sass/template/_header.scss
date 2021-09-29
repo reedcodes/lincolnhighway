@@ -1,0 +1,29 @@
+// placeholder for header site title
+.header {
+  &-title {
+    line-height: 1;
+
+    &-journal {
+      display: grid;
+      gap: 0.125em;
+      grid-template-columns: repeat( auto-fill, minmax( 1em, 1fr) );
+      font-size: 3rem;
+
+      span {
+        display: inline-block;
+        padding: 0.5em 0.25em;
+        border: 0.05em solid black;
+      }
+
+      .letter {
+        &-j { background-color: red; }
+        &-o { background-color: orange; }
+        &-u { background-color: yellow; }
+        &-r { background-color: green; }
+        &-n { background-color: blue; }
+        &-a { background-color: indigo; }
+        &-l { background-color: purple; }
+      }
+    }
+  }
+}
