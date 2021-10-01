@@ -1,3 +1,5 @@
 {
-  "layout": "default.njk"
+  "layout": "default.njk",
+  "tags": "maps",
+  "permalink": "/maps/{{ page.fileSlug }}/"
 }

@@ -1,3 +1,4 @@
 ---
 title: Planning
+permalink: "/planning/"
 ---
