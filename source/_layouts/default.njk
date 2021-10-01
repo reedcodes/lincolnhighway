@@ -6,22 +6,16 @@
 </head>
 <body>
 
-  <header class="header">
-    <p class="header-title"><span class="header-title-lh">Lincoln Highway</span> <span class="header-title-journal">
-      {%- for i in "Journal" | string | list -%}
-        <span class="letter-{{ i | lower }}">{{- i -}}</span>
-      {%- endfor -%}
-    </span></p>
-    <p class="header-subtitle">a planner and travelogue of one kid's ride along the Main Street across America</p>
-  </header>
+  {%- include "header.njk" -%}
 
   <main class="main">
     {%- if not home -%}
       <h1>{{- title -}}</h1>
     {%- endif -%}
 
-    {{ content | safe }}
-
+    {%- block main_content -%}
+      {{ content | safe }}
+    {%- endblock main_content -%}
   </main>
 
 </body>
