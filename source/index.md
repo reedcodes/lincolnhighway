@@ -5,7 +5,7 @@ home: true
 hero:
   eyebrow: a drive along the
   heading: Main Street across America
-  teaser: I've been wanting to drive the entirety of the Lincoln Highway for nearly 25 years ago. Join me as document this journey, sometime near the end of 2022.
+  teaser: I've been wanting to drive the entirety of the Lincoln Highway for nearly 25 years ago. Join me as I document this journey, sometime near the end of 2022.
   button:
     text: From the Road
     link: "/from-the-road/"

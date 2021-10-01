@@ -1,8 +1,11 @@
 @use 'type';
 
 body {
-  background: white;
-  color: black;
+  --body-background: var(--color-lace);
+  --body-text: var(--color-onyx);
+
+  background: var(--body-background);
+  color: var(--body-text);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.5;

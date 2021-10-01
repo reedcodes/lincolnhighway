@@ -1,0 +1,49 @@
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in source/_data/colors.js
+ */
+
+$color-onyx: #454545 !default;
+$color-on-onyx: #B2B2B2 !default;
+$color-lace: #FFF8EB !default;
+$color-on-lace: #7C715D !default;
+$color-cream: #ffe9c0 !default;
+$color-on-cream: #7E673D !default;
+$color-fireengine: #CE0329 !default;
+$color-on-fireengine: #FFDCE3 !default;
+$color-honey: #fdb833 !default;
+$color-on-honey: #724900 !default;
+$color-nightsky: #002979 !default;
+$color-on-nightsky: #7997D2 !default;
+
+$base-color-tokens: ("onyx", "lace", "cream", "fireengine", "honey", "nightsky");
+
+$color-tokens: (
+  "color-onyx": $color-onyx,
+  "color-on-onyx": $color-on-onyx,
+  "color-lace": $color-lace,
+  "color-on-lace": $color-on-lace,
+  "color-cream": $color-cream,
+  "color-on-cream": $color-on-cream,
+  "color-fireengine": $color-fireengine,
+  "color-on-fireengine": $color-on-fireengine,
+  "color-honey": $color-honey,
+  "color-on-honey": $color-on-honey,
+  "color-nightsky": $color-nightsky,
+  "color-on-nightsky": $color-on-nightsky
+) !default;
+
+@mixin color-tokens() {
+  --color-onyx: #{$color-onyx};
+  --color-on-onyx: #{$color-on-onyx};
+  --color-lace: #{$color-lace};
+  --color-on-lace: #{$color-on-lace};
+  --color-cream: #{$color-cream};
+  --color-on-cream: #{$color-on-cream};
+  --color-fireengine: #{$color-fireengine};
+  --color-on-fireengine: #{$color-on-fireengine};
+  --color-honey: #{$color-honey};
+  --color-on-honey: #{$color-on-honey};
+  --color-nightsky: #{$color-nightsky};
+  --color-on-nightsky: #{$color-on-nightsky};
+}
