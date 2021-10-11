@@ -1,26 +1,30 @@
 module.exports = [
   {
-    name: "onyx",
-    color: "#454545"
+    name: "white",
+    color: "#efe0c0"
   },
   {
-    name: "lace",
-    color: "#FFF8EB"
+    name: "yellow",
+    color: "#fdb017"
   },
   {
-    name: "cream",
-    color: "#ffe9c0",
+    name: "orange",
+    color: "#b94311"
   },
   {
-    name: "fireengine",
-    color: "#CE0329"
+    name: "blue",
+    color: "#043553"
   },
   {
-    name: "honey",
-    color: "#fdb833"
+    name: "teal",
+    color: "#24676f"
   },
   {
-    name: "nightsky",
-    color: "#002979"
+    name: "purple",
+    color: "#803377",
+  },
+  {
+    name: "gray",
+    color: "#262623"
   }
 ];

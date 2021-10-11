@@ -3,47 +3,53 @@
   Modify colors in source/_data/colors.js
  */
 
-$color-onyx: #454545 !default;
-$color-on-onyx: #B2B2B2 !default;
-$color-lace: #FFF8EB !default;
-$color-on-lace: #7C715D !default;
-$color-cream: #ffe9c0 !default;
-$color-on-cream: #7E673D !default;
-$color-fireengine: #CE0329 !default;
-$color-on-fireengine: #FFDCE3 !default;
-$color-honey: #fdb833 !default;
-$color-on-honey: #724900 !default;
-$color-nightsky: #002979 !default;
-$color-on-nightsky: #7997D2 !default;
+$color-white: #efe0c0 !default;
+$color-on-white: #716346 !default;
+$color-yellow: #fdb017 !default;
+$color-on-yellow: #714400 !default;
+$color-orange: #b94311 !default;
+$color-on-orange: #FDE6DC !default;
+$color-blue: #043553 !default;
+$color-on-blue: #6EA0BE !default;
+$color-teal: #24676f !default;
+$color-on-teal: #C3DCDF !default;
+$color-purple: #803377 !default;
+$color-on-purple: #DEB8D9 !default;
+$color-gray: #262623 !default;
+$color-on-gray: #8D8D89 !default;
 
-$base-color-tokens: ("onyx", "lace", "cream", "fireengine", "honey", "nightsky");
+$base-color-tokens: ("white", "yellow", "orange", "blue", "teal", "purple", "gray");
 
 $color-tokens: (
-  "color-onyx": $color-onyx,
-  "color-on-onyx": $color-on-onyx,
-  "color-lace": $color-lace,
-  "color-on-lace": $color-on-lace,
-  "color-cream": $color-cream,
-  "color-on-cream": $color-on-cream,
-  "color-fireengine": $color-fireengine,
-  "color-on-fireengine": $color-on-fireengine,
-  "color-honey": $color-honey,
-  "color-on-honey": $color-on-honey,
-  "color-nightsky": $color-nightsky,
-  "color-on-nightsky": $color-on-nightsky
+  "color-white": $color-white,
+  "color-on-white": $color-on-white,
+  "color-yellow": $color-yellow,
+  "color-on-yellow": $color-on-yellow,
+  "color-orange": $color-orange,
+  "color-on-orange": $color-on-orange,
+  "color-blue": $color-blue,
+  "color-on-blue": $color-on-blue,
+  "color-teal": $color-teal,
+  "color-on-teal": $color-on-teal,
+  "color-purple": $color-purple,
+  "color-on-purple": $color-on-purple,
+  "color-gray": $color-gray,
+  "color-on-gray": $color-on-gray
 ) !default;
 
 @mixin color-tokens() {
-  --color-onyx: #{$color-onyx};
-  --color-on-onyx: #{$color-on-onyx};
-  --color-lace: #{$color-lace};
-  --color-on-lace: #{$color-on-lace};
-  --color-cream: #{$color-cream};
-  --color-on-cream: #{$color-on-cream};
-  --color-fireengine: #{$color-fireengine};
-  --color-on-fireengine: #{$color-on-fireengine};
-  --color-honey: #{$color-honey};
-  --color-on-honey: #{$color-on-honey};
-  --color-nightsky: #{$color-nightsky};
-  --color-on-nightsky: #{$color-on-nightsky};
+  --color-white: #{$color-white};
+  --color-on-white: #{$color-on-white};
+  --color-yellow: #{$color-yellow};
+  --color-on-yellow: #{$color-on-yellow};
+  --color-orange: #{$color-orange};
+  --color-on-orange: #{$color-on-orange};
+  --color-blue: #{$color-blue};
+  --color-on-blue: #{$color-on-blue};
+  --color-teal: #{$color-teal};
+  --color-on-teal: #{$color-on-teal};
+  --color-purple: #{$color-purple};
+  --color-on-purple: #{$color-on-purple};
+  --color-gray: #{$color-gray};
+  --color-on-gray: #{$color-on-gray};
 }

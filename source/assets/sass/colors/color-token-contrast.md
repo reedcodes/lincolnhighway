@@ -4,68 +4,86 @@ title: Color Token Contrast
 
 > The following are contrast safe combinations as calculated for _normal_ text based on WCAG AA 4.5
 
-## color-onyx
-  - `color-on-onyx`
-  - `color-lace`
-  - `color-cream`
-  - `color-on-fireengine`
-  - `color-honey`
+## color-white
+  - `color-on-white`
+  - `color-on-yellow`
+  - `color-blue`
+  - `color-teal`
+  - `color-purple`
+  - `color-gray`
 
-## color-on-onyx
-  - `color-onyx`
-  - `color-nightsky`
+## color-on-white
+  - `color-white`
+  - `color-on-orange`
 
-## color-lace
-  - `color-onyx`
-  - `color-on-lace`
-  - `color-on-cream`
-  - `color-fireengine`
-  - `color-on-honey`
-  - `color-nightsky`
+## color-yellow
+  - `color-on-yellow`
+  - `color-blue`
+  - `color-gray`
 
-## color-on-lace
-  - `color-lace`
+## color-on-yellow
+  - `color-white`
+  - `color-yellow`
+  - `color-on-orange`
+  - `color-on-teal`
+  - `color-on-purple`
 
-## color-cream
-  - `color-onyx`
-  - `color-on-cream`
-  - `color-fireengine`
-  - `color-on-honey`
-  - `color-nightsky`
+## color-orange
+  - `color-on-orange`
 
-## color-on-cream
-  - `color-lace`
-  - `color-cream`
+## color-on-orange
+  - `color-on-white`
+  - `color-on-yellow`
+  - `color-orange`
+  - `color-blue`
+  - `color-teal`
+  - `color-purple`
+  - `color-gray`
 
-## color-fireengine
-  - `color-lace`
-  - `color-cream`
-  - `color-on-fireengine`
+## color-blue
+  - `color-white`
+  - `color-yellow`
+  - `color-on-orange`
+  - `color-on-blue`
+  - `color-on-teal`
+  - `color-on-purple`
 
-## color-on-fireengine
-  - `color-onyx`
-  - `color-fireengine`
-  - `color-on-honey`
-  - `color-nightsky`
+## color-on-blue
+  - `color-blue`
+  - `color-gray`
 
-## color-honey
-  - `color-onyx`
-  - `color-on-honey`
-  - `color-nightsky`
+## color-teal
+  - `color-white`
+  - `color-on-orange`
+  - `color-on-teal`
 
-## color-on-honey
-  - `color-lace`
-  - `color-cream`
-  - `color-on-fireengine`
-  - `color-honey`
+## color-on-teal
+  - `color-on-yellow`
+  - `color-blue`
+  - `color-teal`
+  - `color-purple`
+  - `color-gray`
 
-## color-nightsky
-  - `color-on-onyx`
-  - `color-lace`
-  - `color-cream`
-  - `color-on-fireengine`
-  - `color-honey`
-  - `color-on-nightsky`
+## color-purple
+  - `color-white`
+  - `color-on-orange`
+  - `color-on-teal`
+  - `color-on-purple`
 
-## color-on-nightsky
-  - `color-nightsky`
+## color-on-purple
+  - `color-on-yellow`
+  - `color-blue`
+  - `color-purple`
+  - `color-gray`
+
+## color-gray
+  - `color-white`
+  - `color-yellow`
+  - `color-on-orange`
+  - `color-on-blue`
+  - `color-on-teal`
+  - `color-on-purple`
+  - `color-on-gray`
+
+## color-on-gray
+  - `color-gray`

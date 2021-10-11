@@ -1,8 +1,8 @@
 @use 'type';
 
 body {
-  --body-background: var(--color-lace);
-  --body-text: var(--color-onyx);
+  --body-background: var(--color-white);
+  --body-text: var(--color-gray);
 
   background: var(--body-background);
   color: var(--body-text);
