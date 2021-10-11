@@ -9,9 +9,11 @@
   {%- include "partials/header.njk" -%}
 
   <main class="main">
-    {%- if not home -%}
-      <h1>{{- title -}}</h1>
-    {%- endif -%}
+    {%- block title_content -%}
+      {%- if not home -%}
+        <h1>{{- title -}}</h1>
+      {%- endif -%}
+    {%- endblock title_content -%}
 
     {%- block main_content -%}
       {{ content | safe }}
