@@ -1,4 +1,0 @@
----
-title: Planning
-permalink: "/planning/"
----
