@@ -31,6 +31,10 @@
     "name": "flag",
     "style": "far"
   },
+  "flickr": {
+    "name": "flickr",
+    "style": "fab"
+  },
   "hastag": {
     "name": "hashtag"
   },
@@ -49,6 +53,10 @@
   },
   "info": {
     "name": "info-circle"
+  },
+  "instagram":  {
+    "name": "instagram-square",
+    "style": "fab"
   },
   "location": {
     "name": "location-arrow"
@@ -102,7 +110,7 @@
     "name": "tree"
   },
   "twitter": {
-    "name": "twitter",
+    "name": "twitter-square",
     "style": "fab"
   },
   "utensils": {

@@ -1,0 +1,10 @@
+<div class="social">
+  <h2 class="social-title">
+    social title
+  </h2>
+  <ul class="social-links">
+    {%- for item, link in social -%}
+      <li><a href="{{ link.url | url }}">{{ link.text }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>
