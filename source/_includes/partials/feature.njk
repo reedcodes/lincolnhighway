@@ -1,0 +1,11 @@
+<section class="feature band band-secondary">
+  <div class="container">
+    {%- for blog in collections.blog -%}
+      {%- if loop.index0 < 1 -%}
+        {%- include "partials/blog-latest.njk" -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- include "partials/social.njk" -%}
+  </div>
+</section>
