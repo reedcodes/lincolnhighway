@@ -8,6 +8,8 @@
 
   {%- include "partials/header.njk" -%}
 
+  {%- include "partials/navigation.njk" -%}
+
   <main class="main">
     {%- block title_content -%}
       {%- if not home -%}
@@ -19,6 +21,8 @@
       {{ content | safe }}
     {%- endblock main_content -%}
   </main>
+
+  {%- include "partials/footer.njk" -%}
 
 <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </body>

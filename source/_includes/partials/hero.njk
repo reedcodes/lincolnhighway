@@ -1,16 +1,15 @@
 <section class="hero">
+  {%- if hero.heading -%}
+    <h1 class="hero-heading">{{ hero.heading }}</h1>
+  {%- endif -%}
 
-  <header class="hero-header">
-    <figure class="hero-photo">
-      <img src="{{ hero.photo.source }}" width="{{ hero.photo.width }}" height="{{ hero.photo.height }}" />
-      <figcaption class="hero-photo-caption">Photo credit: <a href="{{ hero.photo.link }}">"{{ hero.photo.name }}"</a>, by {{ hero.photo.credit }}</figcaption>
-    </figure>
-    <h2 class="hero-heading">
-      <span class="hero-eyebrow">{{ hero.eyebrow }}</span>
-      <span class="hero-heading">{{ hero.heading }}</span>
-    </h2>
+  {%- if hero.teaser -%}
     <p class="hero-teaser">
       {{ hero.teaser }}
     </p>
-    <a class="hero-cta" href="{{ hero.cta.text }}">{{ hero.cta.link }}</a>
+  {%- endif -%}
+
+  {%- if hero.cta.link -%}
+    <a class="hero-cta" href="{{ hero.cta.link }}">{{ hero.cta.text }}</a>
+  {%- endif -%}
 </section>
