@@ -4,86 +4,68 @@ title: Color Token Contrast
 
 > The following are contrast safe combinations as calculated for _normal_ text based on WCAG AA 4.5
 
-## color-white
-  - `color-on-white`
-  - `color-on-yellow`
-  - `color-blue`
-  - `color-teal`
-  - `color-purple`
-  - `color-gray`
+## color-light
+  - `color-on-light`
+  - `color-on-highlight`
+  - `color-secondary`
+  - `color-accent`
+  - `color-dark`
 
-## color-on-white
-  - `color-white`
-  - `color-on-orange`
+## color-on-light
+  - `color-light`
+  - `color-on-primary`
 
-## color-yellow
-  - `color-on-yellow`
-  - `color-blue`
-  - `color-gray`
+## color-highlight
+  - `color-on-highlight`
+  - `color-dark`
 
-## color-on-yellow
-  - `color-white`
-  - `color-yellow`
-  - `color-on-orange`
-  - `color-on-teal`
-  - `color-on-purple`
+## color-on-highlight
+  - `color-light`
+  - `color-highlight`
+  - `color-on-primary`
+  - `color-on-secondary`
+  - `color-on-accent`
 
-## color-orange
-  - `color-on-orange`
+## color-primary
+  - `color-on-primary`
 
-## color-on-orange
-  - `color-on-white`
-  - `color-on-yellow`
-  - `color-orange`
-  - `color-blue`
-  - `color-teal`
-  - `color-purple`
-  - `color-gray`
+## color-on-primary
+  - `color-on-light`
+  - `color-on-highlight`
+  - `color-primary`
+  - `color-secondary`
+  - `color-accent`
+  - `color-dark`
 
-## color-blue
-  - `color-white`
-  - `color-yellow`
-  - `color-on-orange`
-  - `color-on-blue`
-  - `color-on-teal`
-  - `color-on-purple`
+## color-secondary
+  - `color-light`
+  - `color-on-primary`
+  - `color-on-secondary`
 
-## color-on-blue
-  - `color-blue`
-  - `color-gray`
+## color-on-secondary
+  - `color-on-highlight`
+  - `color-secondary`
+  - `color-accent`
+  - `color-dark`
 
-## color-teal
-  - `color-white`
-  - `color-on-orange`
-  - `color-on-teal`
+## color-accent
+  - `color-light`
+  - `color-on-primary`
+  - `color-on-secondary`
+  - `color-on-accent`
 
-## color-on-teal
-  - `color-on-yellow`
-  - `color-blue`
-  - `color-teal`
-  - `color-purple`
-  - `color-gray`
+## color-on-accent
+  - `color-on-highlight`
+  - `color-accent`
+  - `color-dark`
 
-## color-purple
-  - `color-white`
-  - `color-on-orange`
-  - `color-on-teal`
-  - `color-on-purple`
+## color-dark
+  - `color-light`
+  - `color-highlight`
+  - `color-on-primary`
+  - `color-on-secondary`
+  - `color-on-accent`
+  - `color-on-dark`
 
-## color-on-purple
-  - `color-on-yellow`
-  - `color-blue`
-  - `color-purple`
-  - `color-gray`
-
-## color-gray
-  - `color-white`
-  - `color-yellow`
-  - `color-on-orange`
-  - `color-on-blue`
-  - `color-on-teal`
-  - `color-on-purple`
-  - `color-on-gray`
-
-## color-on-gray
-  - `color-gray`
+## color-on-dark
+  - `color-dark`

@@ -1,30 +1,32 @@
 module.exports = [
   {
-    name: "white",
+    // lace
+    name: "light",
     color: "#efe0c0"
   },
   {
-    name: "yellow",
+    // honey
+    name: "highlight",
     color: "#fdb017"
   },
   {
-    name: "orange",
+    // rust
+    name: "primary",
     color: "#b94311"
   },
   {
-    name: "blue",
-    color: "#043553"
-  },
-  {
-    name: "teal",
+    // teal
+    name: "secondary",
     color: "#24676f"
   },
   {
-    name: "purple",
+    // purple
+    name: "accent",
     color: "#803377",
   },
   {
-    name: "gray",
+    // gray
+    name: "dark",
     color: "#262623"
   }
 ];

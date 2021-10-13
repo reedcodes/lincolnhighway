@@ -1,0 +1,58 @@
+// Reed's CSS Reset.
+// Based on and inspired by resets from
+// Andy Bell and Stephanie Eckles.
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+:first-child { margin-top: 0; }
+:last-child { margin-bottom: 0; }
+
+[id] { scroll-margin-top: 2rem; }
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+table,
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}

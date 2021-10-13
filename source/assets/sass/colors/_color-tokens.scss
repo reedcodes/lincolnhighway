@@ -3,53 +3,47 @@
   Modify colors in source/_data/colors.js
  */
 
-$color-white: #efe0c0 !default;
-$color-on-white: #716346 !default;
-$color-yellow: #fdb017 !default;
-$color-on-yellow: #714400 !default;
-$color-orange: #b94311 !default;
-$color-on-orange: #FDE6DC !default;
-$color-blue: #043553 !default;
-$color-on-blue: #6EA0BE !default;
-$color-teal: #24676f !default;
-$color-on-teal: #C3DCDF !default;
-$color-purple: #803377 !default;
-$color-on-purple: #DEB8D9 !default;
-$color-gray: #262623 !default;
-$color-on-gray: #8D8D89 !default;
+$color-light: #efe0c0 !default;
+$color-on-light: #716346 !default;
+$color-highlight: #fdb017 !default;
+$color-on-highlight: #714400 !default;
+$color-primary: #b94311 !default;
+$color-on-primary: #FDE6DC !default;
+$color-secondary: #24676f !default;
+$color-on-secondary: #C3DCDF !default;
+$color-accent: #803377 !default;
+$color-on-accent: #DEB8D9 !default;
+$color-dark: #262623 !default;
+$color-on-dark: #8D8D89 !default;
 
-$base-color-tokens: ("white", "yellow", "orange", "blue", "teal", "purple", "gray");
+$base-color-tokens: ("light", "highlight", "primary", "secondary", "accent", "dark");
 
 $color-tokens: (
-  "color-white": $color-white,
-  "color-on-white": $color-on-white,
-  "color-yellow": $color-yellow,
-  "color-on-yellow": $color-on-yellow,
-  "color-orange": $color-orange,
-  "color-on-orange": $color-on-orange,
-  "color-blue": $color-blue,
-  "color-on-blue": $color-on-blue,
-  "color-teal": $color-teal,
-  "color-on-teal": $color-on-teal,
-  "color-purple": $color-purple,
-  "color-on-purple": $color-on-purple,
-  "color-gray": $color-gray,
-  "color-on-gray": $color-on-gray
+  "color-light": $color-light,
+  "color-on-light": $color-on-light,
+  "color-highlight": $color-highlight,
+  "color-on-highlight": $color-on-highlight,
+  "color-primary": $color-primary,
+  "color-on-primary": $color-on-primary,
+  "color-secondary": $color-secondary,
+  "color-on-secondary": $color-on-secondary,
+  "color-accent": $color-accent,
+  "color-on-accent": $color-on-accent,
+  "color-dark": $color-dark,
+  "color-on-dark": $color-on-dark
 ) !default;
 
 @mixin color-tokens() {
-  --color-white: #{$color-white};
-  --color-on-white: #{$color-on-white};
-  --color-yellow: #{$color-yellow};
-  --color-on-yellow: #{$color-on-yellow};
-  --color-orange: #{$color-orange};
-  --color-on-orange: #{$color-on-orange};
-  --color-blue: #{$color-blue};
-  --color-on-blue: #{$color-on-blue};
-  --color-teal: #{$color-teal};
-  --color-on-teal: #{$color-on-teal};
-  --color-purple: #{$color-purple};
-  --color-on-purple: #{$color-on-purple};
-  --color-gray: #{$color-gray};
-  --color-on-gray: #{$color-on-gray};
+  --color-light: #{$color-light};
+  --color-on-light: #{$color-on-light};
+  --color-highlight: #{$color-highlight};
+  --color-on-highlight: #{$color-on-highlight};
+  --color-primary: #{$color-primary};
+  --color-on-primary: #{$color-on-primary};
+  --color-secondary: #{$color-secondary};
+  --color-on-secondary: #{$color-on-secondary};
+  --color-accent: #{$color-accent};
+  --color-on-accent: #{$color-on-accent};
+  --color-dark: #{$color-dark};
+  --color-on-dark: #{$color-on-dark};
 }

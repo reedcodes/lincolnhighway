@@ -1,8 +1,8 @@
 @use 'type';
 
 body {
-  --body-background: var(--color-white);
-  --body-text: var(--color-gray);
+  --body-background: var(--color-light);
+  --body-text: var(--color-dark);
 
   background: var(--body-background);
   color: var(--body-text);
@@ -10,9 +10,4 @@ body {
   font-size: 1.5rem;
   line-height: 1.5;
   font-family: type.$body;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
