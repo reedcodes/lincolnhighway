@@ -1,8 +1,12 @@
+const eleventyNavigationPlugin = require( '@11ty/eleventy-navigation' );
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy( {
     "./node_modules/@fortawesome/fontawesome-free/webfonts/": "assets/webfonts/"
   } );
   eleventyConfig.addPassthroughCopy( "./source/assets/images/" );
+
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addPairedShortcode( 'flickrgrid', ( content ) => {
     return `<div class="flickr-grid">${content}</div>`;

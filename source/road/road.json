@@ -1,5 +1,8 @@
 {
   "layout": "layouts/road.njk",
   "tags": ["blog", "road"],
-  "permalink": "/blog/{{ page.fileSlug }}/"
+  "permalink": "/blog/{{ page.fileSlug }}/",
+  "eleventyNavigation": {
+    "parent": "Blog"
+  }
 }

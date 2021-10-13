@@ -8,6 +8,7 @@
   "keywords": [],
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "a11y-color-tokens": "^0.5.0",
     "gulp": "^4.0.2",

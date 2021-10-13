@@ -1,9 +1,9 @@
 <nav class="nav" aria-label="global site">
   <ul>
-    {% for page in collections.all %}
+    {% for page in collections.all | eleventyNavigation("Home") %}
       <li>
-        <a href="{{ page.url }}">
-          {{ page.data.title }}
+        <a href="{{ page.url | url }}">
+          {{ page.title }}
         </a>
       </li>
     {% endfor %}

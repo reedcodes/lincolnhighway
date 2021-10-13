@@ -1,4 +1,0 @@
----
-title: Maps
-permalink: "/maps/"
----

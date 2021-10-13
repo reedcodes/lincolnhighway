@@ -1,5 +1,8 @@
 {
   "layout": "layouts/default.njk",
   "tags": "maps",
-  "permalink": "/maps/{{ page.fileSlug }}/"
+  "permalink": "/maps/{{ page.fileSlug }}/",
+  "eleventyNavigation": {
+    "parent": "Maps"
+  }
 }
