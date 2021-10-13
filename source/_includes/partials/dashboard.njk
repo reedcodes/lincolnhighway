@@ -1,0 +1,16 @@
+<section class="dashboard band">
+  <div class="container">
+    <h2 class="dashboard-title">
+      As of {{ page.date | readDate }}
+    </h2>
+
+    {%- for item, stat in dashboard -%}
+
+      <div class="dashboard-card">
+        <span class="dashboard-stat">{{ stat }}</span>
+        <span class="dashboard-item">{{ title }}</span>
+      </div>
+
+    {%- endfor -%}
+  </div>
+</section>
