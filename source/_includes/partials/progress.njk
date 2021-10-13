@@ -6,7 +6,7 @@
         Trip Progress
       </h2>
       <p class="progress-bar">
-        {{ progress }}%
+        {{ ( progress / 3400 ) * 100 | round( 0, "floor" ) }}%
       </p>
     </div>
   </section>

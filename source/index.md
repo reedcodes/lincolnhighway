@@ -11,4 +11,5 @@ hero:
   cta:
     text: Read along on the blog
     link: "/blog/"
+progress: 260
 ---
