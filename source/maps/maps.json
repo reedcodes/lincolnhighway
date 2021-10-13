@@ -2,6 +2,7 @@
   "layout": "layouts/default.njk",
   "tags": "maps",
   "permalink": "/maps/{{ page.fileSlug }}/",
+  "date": "Last Modified",
   "eleventyNavigation": {
     "parent": "Maps"
   }

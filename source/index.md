@@ -2,6 +2,7 @@
 layout: layouts/home.njk
 title: Home Page
 home: true
+date: Last Modified
 eleventyNavigation:
   key: Home
 hero:

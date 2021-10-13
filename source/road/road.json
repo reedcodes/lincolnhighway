@@ -2,6 +2,7 @@
   "layout": "layouts/road.njk",
   "tags": ["blog", "road"],
   "permalink": "/blog/{{ page.fileSlug }}/",
+  "date": "Last Modified",
   "eleventyNavigation": {
     "parent": "Blog"
   }
