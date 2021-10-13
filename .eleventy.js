@@ -1,17 +1,32 @@
+// import 11ty nav plugin
 const eleventyNavigationPlugin = require( '@11ty/eleventy-navigation' );
 
-module.exports = function (eleventyConfig) {
+// import date methods
+const { DateTime } = require( 'luxon' );
+
+module.exports = function( eleventyConfig ) {
+  // Send assets from source to site.
   eleventyConfig.addPassthroughCopy( {
     "./node_modules/@fortawesome/fontawesome-free/webfonts/": "assets/webfonts/"
   } );
   eleventyConfig.addPassthroughCopy( "./source/assets/images/" );
 
+  // Add the 11ty nav plugin.
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+  // Add date filter.
+  eleventyConfig.addFilter( 'readDate', ( dateObj ) => {
+    return DateTime
+      .fromJSDate( dateObj, { setZone: 'America/New_York' } )
+      .toFormat( 'EEEE d MMMM yyyy' );
+  });
+
+  // Flickr grid (wrapper) shortcode.
   eleventyConfig.addPairedShortcode( 'flickrgrid', ( content ) => {
     return `<div class="flickr-grid">${content}</div>`;
   } );
 
+  // Flickr item shortcode.
   eleventyConfig.addShortcode( 'flickr', ( user, id, source, width, height, title, caption ) => {
     return `<figure class="flickr-item">
       <a data-flickr-embed="true" href="https://www.flickr.com/photos/${user}/${id}/">
@@ -24,11 +39,13 @@ module.exports = function (eleventyConfig) {
     </figure>`;
   } );
 
+  // FontAwesome icon shortcode.
   eleventyConfig.addShortcode( 'icon', ( value ) => {
     const style = value.style ? value.style : "fas";
     return `<span class="${style} fa-${value.name}" aria-hidden="true"></span>`;
   } );
 
+  // 11ty config options.
   return {
     markdownTemplateEngine: "njk",
     dir: {
