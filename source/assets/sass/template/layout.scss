@@ -1,0 +1,21 @@
+// Preliminary layout. This will change.
+
+body {
+  display: grid;
+  grid-template-columns:
+    [body-start]
+      minmax( 0, 1fr )
+      [page-start]
+        min( min( 100%, 100vw ), 1140px )
+      [page-end]
+      minmax( 0, 1fr )
+    [body-end];
+  min-height: 100vh;
+}
+
+header,
+nav,
+main,
+footer {
+  grid-column: page;
+}

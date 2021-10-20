@@ -1,4 +1,4 @@
-body{--body-font: Neuton, serif;font-weight:500;font-size:1.5rem;line-height:1.5;font-family:var(--body-font)}:is(h1,h2,h3,h4,h5,h6){--heading-font: Raleway, sans-serif;margin-top:1em;margin-bottom:.5em;font-weight:400;font-family:var(--heading-font);line-height:1.2}h5{font-size:1.875rem;font-size:clamp(
+body{--body-font: Neuton, serif;font-weight:500;font-size:1.5rem;line-height:1.5;font-family:var(--body-font)}:is(h1,h2,h3,h4,h5,h6){--heading-font: Raleway, sans-serif;margin-top:1em;margin-bottom:.5em;font-weight:500;font-family:var(--heading-font);line-height:1.2}h5{font-size:1.875rem;font-size:clamp(
       1.25625rem,
       4.61875vw + 1rem,
       1.875rem
