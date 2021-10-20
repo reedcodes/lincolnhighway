@@ -1,0 +1,27 @@
+{%- extends "layouts/default.njk" -%}
+
+{%- block main_content -%}
+  {%- if eleventyNavigation.parent == "Home" -%}
+
+    <p>review landing</p>
+    <ul>
+      {%- for review in collections[reviews] -%}
+        <li><a href="{{ review.url | url }}">{{ review.data.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+
+  {%- else -%}
+
+    <p>review content</p>
+    {%- if links -%}
+      <ul>
+        {%- for item, link in links -%}
+          <li><a href="{{ link }}">{{ item }}</a></p>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+  {%- endif -%}
+
+  {{ content | safe }}
+{%- endblock main_content -%}

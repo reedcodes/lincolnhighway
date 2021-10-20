@@ -50,6 +50,7 @@ title: Color Token Contrast
 
 ## color-accent
   - `color-on-accent`
+  - `color-dark`
 
 ## color-on-accent
   - `color-light`
@@ -57,15 +58,14 @@ title: Color Token Contrast
   - `color-on-primary`
   - `color-secondary`
   - `color-accent`
-  - `color-on-dark`
 
 ## color-dark
   - `color-light`
   - `color-highlight`
   - `color-on-primary`
   - `color-secondary`
+  - `color-accent`
   - `color-on-dark`
 
 ## color-on-dark
-  - `color-on-accent`
   - `color-dark`
