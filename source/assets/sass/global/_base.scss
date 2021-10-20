@@ -1,13 +1,7 @@
-@use 'type';
-
 body {
   --body-background: var(--color-light);
   --body-text: var(--color-dark);
 
   background: var(--body-background);
   color: var(--body-text);
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-family: type.$body;
 }

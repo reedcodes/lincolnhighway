@@ -1,0 +1,65 @@
+@use 'sass:math';
+@use 'fonts' as *;
+
+/* ***
+ * Body.
+ */
+
+body {
+  --body-font: #{ $body };
+
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: var(--body-font);
+}
+
+/* ***
+ * Headings.
+ * Set the fluid heading sizes
+ */
+
+:is( h1, h2, h3, h4, h5, h6 ) {
+  --heading-font: #{ $highlight };
+
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-family: var(--heading-font);
+  line-height: 1.2;
+}
+
+// Major third ratio.
+$type-scale: 1.25;
+
+// Base size ~20px, assuming 16px default browser size.
+$base-size: 1.5rem;
+
+// Heading levels.
+$headings: 5, 4, 3, 2, 1;
+$heading-size: $base-size;
+
+@each $heading in $headings {
+  // Apply the heading size for this level based on ratio.
+  $heading-size: $heading-size * $type-scale;
+
+  h#{ $heading } {
+    // Have the heading size as the default, backup.
+    font-size: $heading-size;
+
+    // First, remove the unit to get just a number.
+    $heading-unitless: math.div( $heading-size, ( $heading-size * 0 + 1 ) );
+
+    // Calculate the minimum font size allowed.
+    $heading-min: $heading-unitless - ( 0.33 * $heading-unitless );
+
+    // Calculate the responsive font size.
+    $heading-responsive: ( $heading-unitless - $heading-min ) + 4vw;
+
+    font-size: clamp(
+      #{ $heading-min }rem,
+      #{ $heading-responsive } + 1rem,
+      #{ $heading-size }
+    );
+  }
+}
