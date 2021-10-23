@@ -1,9 +1,0 @@
-{
-  "layout": "layouts/review.njk",
-  "tags": [ "blog", "sleep" ],
-  "permalink": "/sleep/{{ page.fileSlug }}/",
-  "date": "Last Modified",
-  "eleventyNavigation": {
-    "parent": "Sleep"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "layout": "layouts/review.njk",
-  "tags": [ "blog", "eat" ],
-  "permalink": "/eat/{{ page.fileSlug }}/",
-  "date": "Last Modified",
-  "eleventyNavigation": {
-    "parent": "Eat"
-  }
-}

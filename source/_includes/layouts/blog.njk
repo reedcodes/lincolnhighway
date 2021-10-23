@@ -1,7 +1,23 @@
 {%- extends "layouts/default.njk" -%}
 
 {%- block main_content -%}
-  <p>blog content</p>
 
-  {{ content | safe }}
+  {%- if eleventyNavigation.parent == "Home" -%}
+
+    <p>blog landing</p>
+    {%- include "partials/blog-latest.njk" -%}
+
+    <ul>
+      {%- for blog in collections.blog -%}
+        <li><a href="{{ blog.url | url }}">{{ blog.date | readDate }}: {{ blog.data.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+
+  {%- else -%}
+
+    <p>blog content</p>
+
+    {{ content | safe }}
+
+  {%- endif -%}
 {%- endblock main_content -%}

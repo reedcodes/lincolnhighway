@@ -1,0 +1,9 @@
+{
+  "layout": "layouts/review.njk",
+  "tags": [ "blog", "lodging" ],
+  "permalink": "/lodging/{{ page.fileSlug }}/",
+  "date": "Last Modified",
+  "eleventyNavigation": {
+    "parent": "Lodging"
+  }
+}

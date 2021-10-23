@@ -1,11 +1,17 @@
-<div class="blog-latest">
-  <h2 class="blog-latest-title">
-    {{ blog.data.title }}
-  </h2>
-  <p class="blog-latest-date">
-    {{ blog.date | readDate }}
-  </p>
-  <a class="blog-latest-link" href="{{ blog.url | url }}">
-    Read the latest post
-  </a>
-</div>
+{%- for blog in collections.blog -%}
+  {%- if loop.index0 < 1 -%}
+
+    <div class="blog-latest">
+      <h2 class="blog-latest-title">
+        {{ blog.data.title }}
+      </h2>
+      <p class="blog-latest-date">
+        {{ blog.date | readDate }}
+      </p>
+      <a class="blog-latest-link" href="{{ blog.url | url }}">
+        Read the latest post
+      </a>
+    </div>
+
+  {%- endif -%}
+{%- endfor -%}

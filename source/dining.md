@@ -1,10 +1,10 @@
 ---
 layout: layouts/review.njk
-title: Sleep
-permalink: "/sleep/"
+title: Dining
+permalink: "/dining/"
 date: Last Modified
 eleventyNavigation:
-  key: Sleep
+  key: Dining
   parent: Home
-reviews: sleep
+reviews: dining
 ---

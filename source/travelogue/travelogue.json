@@ -1,0 +1,9 @@
+{
+  "layout": "layouts/travelogue.njk",
+  "tags": ["blog", "travelogue"],
+  "permalink": "/travelogue/{{ page.fileSlug }}/",
+  "date": "Last Modified",
+  "eleventyNavigation": {
+    "parent": "Travelogue"
+  }
+}
