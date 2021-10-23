@@ -3,8 +3,10 @@
   Modify colors in source/_data/colors.js
  */
 
-$color-light: #f4f4e1 !default;
-$color-on-light: #707059 !default;
+$color-main: #f4f4e1 !default;
+$color-on-main: #707059 !default;
+$color-contrast: #173c39 !default;
+$color-on-contrast: #7EA6A2 !default;
 $color-highlight: #ccce7a !default;
 $color-on-highlight: #565725 !default;
 $color-primary: #c43121 !default;
@@ -13,14 +15,26 @@ $color-secondary: #95caba !default;
 $color-on-secondary: #35544B !default;
 $color-accent: #bea467 !default;
 $color-on-accent: #4A3B19 !default;
-$color-dark: #173c39 !default;
-$color-on-dark: #7EA6A2 !default;
+$color-dark-main: #0d1c1b !default;
+$color-on-dark-main: #6F8684 !default;
+$color-dark-contrast: #d7b784 !default;
+$color-on-dark-contrast: #5C492B !default;
+$color-dark-highlight: #76712d !default;
+$color-on-dark-highlight: #F3F3E8 !default;
+$color-dark-primary: #621711 !default;
+$color-on-dark-primary: #C58C87 !default;
+$color-dark-secondary: #40705f !default;
+$color-on-dark-secondary: #DBE8E3 !default;
+$color-dark-accent: #66502c !default;
+$color-on-dark-accent: #D1C6B4 !default;
 
-$base-color-tokens: ("light", "highlight", "primary", "secondary", "accent", "dark");
+$base-color-tokens: ("main", "contrast", "highlight", "primary", "secondary", "accent", "dark-main", "dark-contrast", "dark-highlight", "dark-primary", "dark-secondary", "dark-accent");
 
 $color-tokens: (
-  "color-light": $color-light,
-  "color-on-light": $color-on-light,
+  "color-main": $color-main,
+  "color-on-main": $color-on-main,
+  "color-contrast": $color-contrast,
+  "color-on-contrast": $color-on-contrast,
   "color-highlight": $color-highlight,
   "color-on-highlight": $color-on-highlight,
   "color-primary": $color-primary,
@@ -29,13 +43,25 @@ $color-tokens: (
   "color-on-secondary": $color-on-secondary,
   "color-accent": $color-accent,
   "color-on-accent": $color-on-accent,
-  "color-dark": $color-dark,
-  "color-on-dark": $color-on-dark
+  "color-dark-main": $color-dark-main,
+  "color-on-dark-main": $color-on-dark-main,
+  "color-dark-contrast": $color-dark-contrast,
+  "color-on-dark-contrast": $color-on-dark-contrast,
+  "color-dark-highlight": $color-dark-highlight,
+  "color-on-dark-highlight": $color-on-dark-highlight,
+  "color-dark-primary": $color-dark-primary,
+  "color-on-dark-primary": $color-on-dark-primary,
+  "color-dark-secondary": $color-dark-secondary,
+  "color-on-dark-secondary": $color-on-dark-secondary,
+  "color-dark-accent": $color-dark-accent,
+  "color-on-dark-accent": $color-on-dark-accent
 ) !default;
 
 @mixin color-tokens() {
-  --color-light: #{$color-light};
-  --color-on-light: #{$color-on-light};
+  --color-main: #{$color-main};
+  --color-on-main: #{$color-on-main};
+  --color-contrast: #{$color-contrast};
+  --color-on-contrast: #{$color-on-contrast};
   --color-highlight: #{$color-highlight};
   --color-on-highlight: #{$color-on-highlight};
   --color-primary: #{$color-primary};
@@ -44,6 +70,16 @@ $color-tokens: (
   --color-on-secondary: #{$color-on-secondary};
   --color-accent: #{$color-accent};
   --color-on-accent: #{$color-on-accent};
-  --color-dark: #{$color-dark};
-  --color-on-dark: #{$color-on-dark};
+  --color-dark-main: #{$color-dark-main};
+  --color-on-dark-main: #{$color-on-dark-main};
+  --color-dark-contrast: #{$color-dark-contrast};
+  --color-on-dark-contrast: #{$color-on-dark-contrast};
+  --color-dark-highlight: #{$color-dark-highlight};
+  --color-on-dark-highlight: #{$color-on-dark-highlight};
+  --color-dark-primary: #{$color-dark-primary};
+  --color-on-dark-primary: #{$color-on-dark-primary};
+  --color-dark-secondary: #{$color-dark-secondary};
+  --color-on-dark-secondary: #{$color-on-dark-secondary};
+  --color-dark-accent: #{$color-dark-accent};
+  --color-on-dark-accent: #{$color-on-dark-accent};
 }

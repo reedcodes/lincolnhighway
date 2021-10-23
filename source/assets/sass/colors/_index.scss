@@ -1,5 +1,2 @@
-@use 'color-tokens' as *;
-
-:root {
-  @include color-tokens();
-}
+@forward 'tokens';
+@forward 'dark';

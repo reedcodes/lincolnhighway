@@ -1,0 +1,21 @@
+@media (prefers-color-scheme: dark) {
+
+  // This generally changes the colors for a dark theme.
+  // If changes are needed on a spot-basis, they are changed
+  // at the source.
+  :root {
+    --color-main: var(--color-dark-main);
+    --color-on-main: var(--color-on-dark-main);
+    --color-contrast: var(--color-dark-contrast);
+    --color-on-contrast: var(--color-on-dark-contrast);
+    --color-highlight: var(--color-dark-highlight);
+    --color-on-highlight: var(--color-on-dark-highlight);
+    --color-primary: var(--color-dark-primary);
+    --color-on-primary: var(--color-on-dark-primary);
+    --color-secondary: var(--color-dark-secondary);
+    --color-on-secondary: var(--color-on-dark-secondary);
+    --color-accent: var(--color-dark-accent);
+    --color-on-accent: var(--color-on-dark-accent);
+  }
+
+}

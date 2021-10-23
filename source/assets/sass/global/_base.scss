@@ -1,6 +1,11 @@
 body {
-  --body-background: var(--color-light);
-  --body-text: var(--color-dark);
+  --body-background: var(--color-main);
+  --body-text: var(--color-contrast);
+
+  @media (prefers-color-scheme: dark) {
+    --body-background: var(--color-main);
+    --body-text: var(--color-on-main);
+  }
 
   background: var(--body-background);
   color: var(--body-text);
