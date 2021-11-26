@@ -1,15 +1,15 @@
-// import 11ty nav plugin
-const eleventyNavigationPlugin = require( '@11ty/eleventy-navigation' );
-
-// import date methods
-const { DateTime } = require( 'luxon' );
-
 module.exports = function( eleventyConfig ) {
+  // import 11ty nav plugin
+  const eleventyNavigationPlugin = require( '@11ty/eleventy-navigation' );
+
+  // import date methods
+  const { DateTime } = require( 'luxon' );
+
   // Send assets from source to site.
   eleventyConfig.addPassthroughCopy( {
-    "./node_modules/@fortawesome/fontawesome-free/webfonts/": "assets/webfonts/"
+    "./node_modules/@fortawesome/fontawesome-free/webfonts/": "assets/webfonts/",
+    "./source/assets/images/": "assets/images/"
   } );
-  eleventyConfig.addPassthroughCopy( "./source/assets/images/" );
 
   // Add the 11ty nav plugin.
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
