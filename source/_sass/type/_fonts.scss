@@ -3,5 +3,11 @@ $montez: 'Montez', cursive;
 $raleway: 'Raleway', sans-serif;
 
 $title: $montez;
-$highlight: $raleway;
-$body: $neuton;
+$highlight: $neuton;
+$body: $raleway;
+
+:root {
+  --font-body: #{$body};
+  --font-highlight: #{$highlight};
+  --font-title: #{$title};
+}

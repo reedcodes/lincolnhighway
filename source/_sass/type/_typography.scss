@@ -1,33 +1,67 @@
 @use 'sass:math';
-@use 'fonts' as *;
 
-/* ***
+$spacer: 1em;
+
+
+
+:root {
+  --spacer: #{$spacer};
+  // Calculate a relative line height.
+  // Jesús Ricarte
+  // https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/
+  --line-height: calc(2.5px + 2.5ex + 2.5px);
+}
+
+
+
+/*
  * Body.
  */
 
 body {
-  --body-font: #{ $body };
-
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-family: var(--body-font);
+  font-size: clamp(1rem, (1rem + 2vw), 1.5rem);
+  line-height: var(--line-height);
 }
 
-/* ***
- * Headings.
- * Set the fluid heading sizes
+/*
+ * Main content text.
  */
 
-:is( h1, h2, h3, h4, h5, h6 ) {
-  --heading-font: #{ $highlight };
+:is(
+  p,
+  dl,
+  ol:not([class]):not([role]),
+  ul:not([class]):not([role])
+) {
+  margin-bottom: var(--spacer);
+}
 
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+:is(li, dt, dd) {
+  margin-bottom: calc( var(--spacer) / 2 );
+}
+
+/*
+ * Headings.
+ */
+
+:is(
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6
+) {
+  --heading-font: var(--font-highlight);
+
+  margin-bottom: 0.65em;
+  line-height: var(--line-height);
   font-weight: 500;
   font-family: var(--heading-font);
-  line-height: 1.2;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
+
+/*
+ * Headings.
+ * Setting fluid type scale.
+ */
 
 // Major third ratio.
 $type-scale: 1.25;
@@ -43,7 +77,7 @@ $heading-size: $base-size;
   // Apply the heading size for this level based on ratio.
   $heading-size: $heading-size * $type-scale;
 
-  h#{ $heading } {
+  h#{ $heading }, .h#{ $heading } {
     // Have the heading size as the default, backup.
     font-size: $heading-size;
 

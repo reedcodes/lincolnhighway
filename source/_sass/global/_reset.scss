@@ -1,6 +1,8 @@
-// Reed's CSS Reset.
-// Based on and inspired by resets from
-// Andy Bell and Stephanie Eckles.
+/***
+ * inspired by several resets going around, e.g.
+ * https://piccalil.li/blog/a-modern-css-reset/
+ * https://meyerweb.com/eric/tools/css/reset/
+ ***/
 
 *,
 *::before,
@@ -16,12 +18,52 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: system-ui, sans-serif;
+  text-rendering: optimizeSpeed;
 }
 
 :first-child { margin-top: 0; }
 :last-child { margin-bottom: 0; }
 
 [id] { scroll-margin-top: 2rem; }
+
+:focus,
+:focus-visible {
+  scroll-margin-bottom: 10vh;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+a {
+  --line-size: max(2px, 0.1em);
+  --link-underline-color: currentcolor;
+
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: var(--line-size);
+  text-decoration-color: var(--link-underline-color);
+  text-underline-offset: inherit;
+
+  &:focus {
+    outline: var(--line-size) solid currentColor;
+    outline-offset: var(--line-size);
+    text-decoration: none;
+
+    // For devices that support :focus-visible.
+    &:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  // For devices that support :focus-visible.
+  &:focus-visible {
+    outline: var(--line-size) solid currentColor;
+    outline-offset: var(--line-size);
+    text-decoration: none;
+  }
+}
 
 ul[role="list"],
 ol[role="list"] {
@@ -31,9 +73,14 @@ ol[role="list"] {
 }
 
 img,
+picture,
 svg {
+  display: block;
   max-width: 100%;
-  height: auto;
+
+  &[width] {
+    height: auto;
+  }
 }
 
 svg {
@@ -41,7 +88,6 @@ svg {
   fill: currentColor;
 }
 
-table,
 input,
 button,
 textarea,
