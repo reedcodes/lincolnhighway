@@ -3,12 +3,16 @@
 const gulp = require( 'gulp' ),
       sass = require( 'gulp-dart-sass' );
 
-const cssSource = './source/assets/sass/**/*.scss';
+// Define CSS source and distribution directories.
+const cssSource = './source/_sass/**/*.scss';
+const cssBuild = './site/dist/css';
+
+// Define CSS source paths from other locations, e.g. node modules.
 const cssIncludePaths = [
   './node_modules/@fortawesome/fontawesome-free/scss'
 ];
-const cssBuild = './site/assets/css';
 
+// Task to compile CSS files.
 gulp.task( 'sass', function() {
   return gulp.src( cssSource )
     .pipe( sass( {

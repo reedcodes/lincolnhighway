@@ -1,0 +1,15 @@
+{% set menu = collections.all | eleventyNavigation( "Home" ) %}
+
+<nav class="menu" id="menu" aria-label="global site">
+  {%- include "partials/profile.njk" -%}
+
+  {%- if not menu | length == 0 -%}
+    <ul class="menu-list" role="list">
+      {%- for item in menu %}
+        <li class="menu-list-item">
+          <a class="menu-list-link" href="{{- item.url | url -}}">{{- item.title -}}</a>
+        </li>
+      {%- endfor %}
+    </ul>
+  {%- endif -%}
+</nav>

@@ -6,23 +6,32 @@
 </head>
 <body>
 
-  {%- include "partials/header.njk" -%}
+  <header class="header wrapper" id="header" aria-label="site intro">
+    <div class="container">
+      {%- include "partials/header.njk" -%}
+    </div>
+  </header>
 
-  {%- include "partials/navigation.njk" -%}
+  <main class="main wrapper" id="main" aria-label="body content">
+    <div class="container">
 
-  <main class="main">
-    {%- block title_content -%}
-      {%- if not home -%}
+      {%- if home -%}
+        <h1 class="title h3 color-primary">{{- title -}}</h1>
+        <p class="subtitle h1">{{- subtitle -}}</p>
+      {%- else -%}
         <h1>{{- title -}}</h1>
       {%- endif -%}
-    {%- endblock title_content -%}
 
-    {%- block main_content -%}
       {{ content | safe }}
-    {%- endblock main_content -%}
+
+    </div>
   </main>
 
-  {%- include "partials/footer.njk" -%}
+  <footer class="footer wrapper" id="footer" aria-label="site information">
+    <div class="container">
+      {%- include "partials/footer.njk" -%}
+    </div>
+  </footer>
 
 <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </body>
