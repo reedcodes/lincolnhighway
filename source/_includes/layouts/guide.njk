@@ -7,17 +7,18 @@
 </head>
 <body>
 
-  <nav class="menu">
-    {%- include "partials/menu-guide.njk" -%}
+  <nav class="nav wrapper" id="menu-guide" aria-label="style guide links">
+    <div class="container">
+      {%- include "partials/menu-guide.njk" -%}
+    </div>
   </nav>
 
-  <main class="main">
-    {%- if not home -%}
+  <main class="main wrapper" id="main" aria-label="style guide content">
+    <div class="container">
       <h1>{{- title -}}</h1>
-    {%- endif -%}
 
-    {{ content | safe }}
-
+      {{ content | safe }}
+    </div>
   </main>
 
 </body>

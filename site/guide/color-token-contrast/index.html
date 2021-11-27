@@ -17,25 +17,32 @@
 </head>
 <body>
 
-  <nav class="menu"><ul>
-  <li><a href="/guide/">Style Guide</a></li>
+  <nav class="nav wrapper" id="menu-guide" aria-label="style guide links">
+    <div class="container"><ul class="menu-list" role="list">
+  <li class="menu-list-item"><a class="menu-list-link" href="/guide/">Style Guide</a></li>
+
   
-    <li>
-      <a href="/guide/color-token-contrast/">
+    <li class="menu-list-item">
+      <a class="menu-list-link" href="/guide/color-token-contrast/">
         Color Token Contrast
       </a>
     </li>
   
-    <li>
-      <a href="/guide/colors/">
+    <li class="menu-list-item">
+      <a class="menu-list-link" href="/guide/colors/">
         Colors
       </a>
     </li>
   
 </ul>
-</nav>
+</div>
+  </nav>
 
-  <main class="main"><h1>Color Token Contrast</h1><blockquote>
+  <main class="main wrapper" id="main" aria-label="style guide content">
+    <div class="container">
+      <h1>Color Token Contrast</h1>
+
+      <blockquote>
 <p>The following are contrast safe combinations as calculated for <em>normal</em> text based on WCAG AA 4.5</p>
 </blockquote>
 <h2>color-main</h2>
@@ -117,7 +124,7 @@
 <li><code>color-accent</code></li>
 </ul>
 
-
+    </div>
   </main>
 
 </body>

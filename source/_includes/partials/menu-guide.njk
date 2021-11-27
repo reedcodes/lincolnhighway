@@ -1,8 +1,9 @@
-<ul>
-  <li><a href="/guide/">Style Guide</a></li>
+<ul class="menu-list" role="list">
+  <li class="menu-list-item"><a class="menu-list-link" href="{{ "/guide/" | url }}">Style Guide</a></li>
+
   {% for page in collections.guide %}
-    <li>
-      <a href="{{ page.url }}">
+    <li class="menu-list-item">
+      <a class="menu-list-link" href="{{ page.url | url }}">
         {{ page.data.title }}
       </a>
     </li>
