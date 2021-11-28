@@ -21,6 +21,7 @@ $spacer: 1em;
 body {
   font-size: clamp(1rem, (1rem + 2vw), 1.5rem);
   line-height: var(--line-height);
+  font-family: var(--font-body);
 }
 
 /*
