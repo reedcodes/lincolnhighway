@@ -1,14 +1,14 @@
 {
   "twitter": {
     "text": "Tweets on Twitter",
-    "url": "https://twitter.com/reedcodes/"
+    "url": "https://twitter.com/search?q=(%23LincolnHighwayJournal)(from%3AReedCodes)"
   },
   "instagram": {
     "text": "Snapshots on Instagram",
-    "url": "https://instagram.com/reedcodes/"
+    "url": "https://www.instagram.com/explore/tags/lincolnhighwayjournal/"
   },
   "flickr": {
     "text": "Albums on Flickr",
-    "url": "https://flickr.com/reedcodes/"
+    "url": "https://flickr.com/photos/lincolnhighwayjournal/albums"
   }
 }

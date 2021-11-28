@@ -1,9 +1,9 @@
 ---
-layout: layouts/travelogue.njk
 title: Travelogue
+layout: layouts/travelogue.njk
 permalink: "/travelogue/"
-date: Last Modified
 eleventyNavigation:
   key: Travelogue
-  parent: Home
+  parent: Blog
+date: Last Modified
 ---

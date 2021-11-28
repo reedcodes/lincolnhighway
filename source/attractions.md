@@ -1,10 +1,10 @@
 ---
-title: Dining
+title: Attractions
 layout: layouts/review.njk
-permalink: "/dining/"
+permalink: "/attractions/"
 eleventyNavigation:
-  key: Dining
+  key: Attractions
   parent: Dashboard
 date: Last Modified
-reviews: dining
+reviews: attractions
 ---

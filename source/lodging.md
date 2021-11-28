@@ -1,10 +1,10 @@
 ---
-layout: layouts/review.njk
 title: Lodging
+layout: layouts/review.njk
 permalink: "/lodging/"
-date: Last Modified
 eleventyNavigation:
   key: Lodging
-  parent: Home
+  parent: Dashboard
+date: Last Modified
 reviews: lodging
 ---

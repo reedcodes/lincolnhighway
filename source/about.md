@@ -1,10 +1,10 @@
 ---
-title: Maps
+title: About
 layout: layouts/default.njk
-permalink: "/maps/"
+permalink: "/about/"
 eleventyNavigation:
-  key: Maps
+  key: About
   parent: Home
-  order: 3
+  order: 1
 date: Last Modified
 ---
