@@ -2,7 +2,6 @@
   "layout": "layouts/blog.njk",
   "tags": "blog",
   "permalink": "/blog/{{ page.fileSlug }}/",
-  "date": "Last Modified",
   "eleventyNavigation": {
     "parent": "Blog"
   }

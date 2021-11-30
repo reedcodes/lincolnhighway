@@ -1,4 +1,4 @@
-{%- for blog in collections.blog -%}
+{%- for blog in collections.blog | reverse -%}
   {%- if loop.index0 < 1 -%}
 
     <div class="blog-latest">

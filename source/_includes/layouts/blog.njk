@@ -7,9 +7,12 @@
     <p>blog landing</p>
     {%- include "partials/blog-latest.njk" -%}
 
+    <h2>Older posts</h2>
     <ul>
-      {%- for blog in collections.blog -%}
-        <li><a href="{{ blog.url | url }}">{{ blog.date | readDate }}: {{ blog.data.title }}</a></li>
+      {%- for blog in collections.blog | reverse -%}
+        {%- if loop.index0 > 0 -%}
+          <li><a href="{{ blog.url | url }}">{{ blog.date | readDate }}: {{ blog.data.title }}</a></li>
+        {%- endif -%}
       {%- endfor -%}
     </ul>
 

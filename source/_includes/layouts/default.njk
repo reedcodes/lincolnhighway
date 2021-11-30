@@ -28,6 +28,10 @@
         {{ content | safe }}
       {% endblock main_content %}
 
+      {%- if not home -%}
+        {%- include "partials/tag-list.njk" -%}
+      {%- endif -%}
+
     </div>
   </main>
 
