@@ -6,5 +6,4 @@ eleventyNavigation:
   key: Maps
   parent: Home
   order: 3
-date: Last Modified
 ---

@@ -6,5 +6,4 @@ eleventyNavigation:
   key: About
   parent: Home
   order: 1
-date: Last Modified
 ---

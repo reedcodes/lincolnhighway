@@ -1,10 +1,9 @@
 ---
 title: Blog
-layout: layouts/blog.njk
+layout: layouts/default.njk
 permalink: "/blog/"
 eleventyNavigation:
   key: Blog
   parent: Home
   order: 2
-date: Last Modified
 ---

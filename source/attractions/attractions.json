@@ -1,9 +1,0 @@
-{
-  "layout": "layouts/review.njk",
-  "tags": [ "dashboard", "attractions" ],
-  "permalink": "/attractions/{{ page.fileSlug }}/",
-  "eleventyNavigation": {
-    "parent": "Attractions"
-  },
-  "date": "Last Modified"
-}
