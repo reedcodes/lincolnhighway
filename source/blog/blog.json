@@ -1,5 +1,5 @@
 {
-  "layout": "layouts/blog.njk",
+  "layout": "layouts/default.njk",
   "tags": "blog",
   "permalink": "/blog/{{ page.fileSlug }}/",
   "eleventyNavigation": {

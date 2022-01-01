@@ -1,32 +1,26 @@
 module.exports = [
   {
-    // beige
-    name: "main",
-    color: "#f4f4e1"
+    name: "egg",
+    color: "hsla(48, 25%, 95%, 1)"
   },
   {
-    // black-green
-    name: "contrast",
-    color: "#0e1e0d"
+    name: "straw",
+    color: "hsla(61, 46%, 64%, 1)"
   },
   {
-    // straw
-    name: "highlight",
-    color: "#ccce7a"
+    name: "honey",
+    color: "hsla(42, 100%, 48%, 1)"
   },
   {
-    // rust
-    name: "primary",
-    color: "#c43121"
+    name: "teal",
+    color: "hsla(185, 75%, 24%, 1)"
   },
   {
-    // teal
-    name: "secondary",
-    color: "#95caba"
+    name: "rust",
+    color: "hsla(0, 100%, 27%, 1)"
   },
   {
-    // dark beige
-    name: "accent",
-    color: "#bea467",
+    name: "smoky",
+    color: "hsla(42, 100%, 2%, 1)"
   }
 ];
