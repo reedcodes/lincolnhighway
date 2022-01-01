@@ -26,9 +26,9 @@
   },
   "main": "gulpfile.js",
   "scripts": {
-    "tokens": "npx a11y-color-tokens --colorTokensPath='source/_data/colors.js' --outputDirPath='source/_sass/color' --compatibilityDocsPath='source/guide'",
+    "build:tokens": "npx a11y-color-tokens --colorTokensPath='source/_data/colors.js' --outputDirPath='source/_sass/color' --compatibilityDocsPath='source/guide'",
     "build:sass": "gulp sass",
-    "build:eleventy": "npx @11ty/eleventy",
-    "build": "npm-run-all tokens build:sass build:eleventy"
+    "build:11ty": "npx @11ty/eleventy",
+    "build": "npm-run-all build:tokens build:sass build:11ty"
   }
 }

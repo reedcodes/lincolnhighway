@@ -3,47 +3,47 @@
   Modify colors in source/_data/colors.js
  */
 
-$color-main: #f4f4e1 !default;
-$color-on-main: #707059 !default;
-$color-contrast: #0e1e0d !default;
-$color-on-contrast: #70896F !default;
-$color-highlight: #ccce7a !default;
-$color-on-highlight: #565725 !default;
-$color-primary: #c43121 !default;
-$color-on-primary: #FFE2DF !default;
-$color-secondary: #95caba !default;
-$color-on-secondary: #35544B !default;
-$color-accent: #bea467 !default;
-$color-on-accent: #4A3B19 !default;
+$color-egg: hsla(48, 25%, 95%, 1) !default;
+$color-on-egg: hsl(46.69999999999999, 4.1%, 42.9%) !default;
+$color-straw: hsla(61, 46%, 64%, 1) !default;
+$color-on-straw: hsl(61.19999999999999, 41.5%, 24.1%) !default;
+$color-honey: hsla(42, 100%, 48%, 1) !default;
+$color-on-honey: hsl(35.89999999999998, 100%, 21%) !default;
+$color-teal: hsla(185, 75%, 24%, 1) !default;
+$color-on-teal: hsl(185.60000000000002, 37.4%, 77.5%) !default;
+$color-rust: hsla(0, 100%, 27%, 1) !default;
+$color-on-rust: rgb(226, 155, 155) !default;
+$color-smoky: hsla(42, 100%, 2%, 1) !default;
+$color-on-smoky: hsl(43.30000000000001, 7.8%, 45.1%) !default;
 
-$base-color-tokens: ("main", "contrast", "highlight", "primary", "secondary", "accent");
+$base-color-tokens: ("egg", "straw", "honey", "teal", "rust", "smoky");
 
 $color-tokens: (
-  "color-main": $color-main,
-  "color-on-main": $color-on-main,
-  "color-contrast": $color-contrast,
-  "color-on-contrast": $color-on-contrast,
-  "color-highlight": $color-highlight,
-  "color-on-highlight": $color-on-highlight,
-  "color-primary": $color-primary,
-  "color-on-primary": $color-on-primary,
-  "color-secondary": $color-secondary,
-  "color-on-secondary": $color-on-secondary,
-  "color-accent": $color-accent,
-  "color-on-accent": $color-on-accent
+  "color-egg": $color-egg,
+  "color-on-egg": $color-on-egg,
+  "color-straw": $color-straw,
+  "color-on-straw": $color-on-straw,
+  "color-honey": $color-honey,
+  "color-on-honey": $color-on-honey,
+  "color-teal": $color-teal,
+  "color-on-teal": $color-on-teal,
+  "color-rust": $color-rust,
+  "color-on-rust": $color-on-rust,
+  "color-smoky": $color-smoky,
+  "color-on-smoky": $color-on-smoky
 ) !default;
 
 @mixin color-tokens() {
-  --color-main: #{$color-main};
-  --color-on-main: #{$color-on-main};
-  --color-contrast: #{$color-contrast};
-  --color-on-contrast: #{$color-on-contrast};
-  --color-highlight: #{$color-highlight};
-  --color-on-highlight: #{$color-on-highlight};
-  --color-primary: #{$color-primary};
-  --color-on-primary: #{$color-on-primary};
-  --color-secondary: #{$color-secondary};
-  --color-on-secondary: #{$color-on-secondary};
-  --color-accent: #{$color-accent};
-  --color-on-accent: #{$color-on-accent};
+  --color-egg: #{$color-egg};
+  --color-on-egg: #{$color-on-egg};
+  --color-straw: #{$color-straw};
+  --color-on-straw: #{$color-on-straw};
+  --color-honey: #{$color-honey};
+  --color-on-honey: #{$color-on-honey};
+  --color-teal: #{$color-teal};
+  --color-on-teal: #{$color-on-teal};
+  --color-rust: #{$color-rust};
+  --color-on-rust: #{$color-on-rust};
+  --color-smoky: #{$color-smoky};
+  --color-on-smoky: #{$color-on-smoky};
 }

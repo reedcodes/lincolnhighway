@@ -4,68 +4,66 @@ title: Color Token Contrast
 
 > The following are contrast safe combinations as calculated for _normal_ text based on WCAG AA 4.5
 
-## color-main
-  - `color-on-main`
-  - `color-contrast`
-  - `color-on-highlight`
-  - `color-primary`
-  - `color-on-secondary`
-  - `color-on-accent`
+## color-egg
+  - `color-on-egg`
+  - `color-on-straw`
+  - `color-on-honey`
+  - `color-teal`
+  - `color-rust`
+  - `color-smoky`
 
-## color-on-main
-  - `color-main`
+## color-on-egg
+  - `color-egg`
 
-## color-contrast
-  - `color-main`
-  - `color-on-contrast`
-  - `color-highlight`
-  - `color-on-primary`
-  - `color-secondary`
-  - `color-accent`
+## color-straw
+  - `color-on-straw`
+  - `color-on-honey`
+  - `color-rust`
+  - `color-smoky`
 
-## color-on-contrast
-  - `color-contrast`
+## color-on-straw
+  - `color-egg`
+  - `color-straw`
+  - `color-on-teal`
 
-## color-highlight
-  - `color-contrast`
-  - `color-on-highlight`
-  - `color-on-secondary`
-  - `color-on-accent`
+## color-honey
+  - `color-on-honey`
+  - `color-rust`
+  - `color-smoky`
 
-## color-on-highlight
-  - `color-main`
-  - `color-highlight`
-  - `color-on-primary`
+## color-on-honey
+  - `color-egg`
+  - `color-straw`
+  - `color-honey`
+  - `color-on-teal`
 
-## color-primary
-  - `color-main`
-  - `color-on-primary`
+## color-teal
+  - `color-egg`
 
-## color-on-primary
-  - `color-contrast`
-  - `color-on-highlight`
-  - `color-primary`
-  - `color-on-secondary`
-  - `color-on-accent`
+## color-on-teal
+  - `color-on-straw`
+  - `color-on-honey`
+  - `color-rust`
+  - `color-smoky`
 
-## color-secondary
-  - `color-contrast`
-  - `color-on-secondary`
-  - `color-on-accent`
+## color-rust
+  - `color-egg`
+  - `color-straw`
+  - `color-honey`
+  - `color-on-teal`
+  - `color-on-rust`
 
-## color-on-secondary
-  - `color-main`
-  - `color-highlight`
-  - `color-on-primary`
-  - `color-secondary`
+## color-on-rust
+  - `color-rust`
+  - `color-smoky`
 
-## color-accent
-  - `color-contrast`
-  - `color-on-accent`
+## color-smoky
+  - `color-egg`
+  - `color-straw`
+  - `color-honey`
+  - `color-on-teal`
+  - `color-on-rust`
+  - `color-on-smoky`
 
-## color-on-accent
-  - `color-main`
-  - `color-highlight`
-  - `color-on-primary`
-  - `color-secondary`
-  - `color-accent`
+## color-on-smoky
+  - `color-smoky`
