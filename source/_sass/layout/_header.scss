@@ -1,0 +1,13 @@
+.header {
+  --header-bg-color: var(--color-primary);
+  --header-text-color: var(--color-main);
+  --links-color: var(--color-main);
+  --links-act-color: var(--color-accent);
+
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+
+  a:not(:hover, :focus) {
+    --link-underline-color: transparent;
+  }
+}

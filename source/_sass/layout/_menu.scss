@@ -1,0 +1,14 @@
+.menu {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  &-list {
+    display: flex;
+    gap: 2vw;
+
+    &-item {
+      margin-bottom: 0;
+    }
+  }
+}

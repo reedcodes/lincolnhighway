@@ -1,26 +1,32 @@
 module.exports = [
   {
-    name: "egg",
+    // Egg.
+    name: "main",
     color: "hsla(48, 25%, 95%, 1)"
   },
   {
-    name: "straw",
+    // Straw.
+    name: "highlight",
     color: "hsla(61, 46%, 64%, 1)"
   },
   {
-    name: "honey",
+    // Honey.
+    name: "accent",
     color: "hsla(42, 100%, 48%, 1)"
   },
   {
-    name: "teal",
+    // Teal.
+    name: "secondary",
     color: "hsla(185, 75%, 24%, 1)"
   },
   {
-    name: "rust",
+    // Rust.
+    name: "primary",
     color: "hsla(0, 100%, 27%, 1)"
   },
   {
-    name: "smoky",
+    // Smoky.
+    name: "contrast",
     color: "hsla(42, 100%, 2%, 1)"
   }
 ];
