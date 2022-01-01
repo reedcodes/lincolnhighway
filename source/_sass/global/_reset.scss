@@ -38,17 +38,17 @@ button {
 }
 
 a {
-  --line-size: max(2px, 0.1em);
+  --link-line-size: max(2px, 0.1em);
   --link-underline-color: currentcolor;
 
   text-decoration-skip-ink: auto;
-  text-decoration-thickness: var(--line-size);
+  text-decoration-thickness: var(--link-line-size);
   text-decoration-color: var(--link-underline-color);
   text-underline-offset: inherit;
 
   &:focus {
-    outline: var(--line-size) solid currentColor;
-    outline-offset: var(--line-size);
+    outline: var(--link-line-size) solid currentColor;
+    outline-offset: var(--link-line-size);
     text-decoration: none;
 
     // For devices that support :focus-visible.
@@ -59,8 +59,8 @@ a {
 
   // For devices that support :focus-visible.
   &:focus-visible {
-    outline: var(--line-size) solid currentColor;
-    outline-offset: var(--line-size);
+    outline: var(--link-line-size) solid currentColor;
+    outline-offset: var(--link-line-size);
     text-decoration: none;
   }
 }
