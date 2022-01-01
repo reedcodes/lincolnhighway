@@ -2,14 +2,22 @@
 
 <html>
 <head>
-  {%- include "partials/head.njk" -%}
+  {%- include "global/head.njk" -%}
   <link rel="stylesheet" media="screen" href="{{ site.assets.css }}guide.css" />
 </head>
 <body>
 
   <nav class="nav wrapper" id="menu-guide" aria-label="style guide links">
     <div class="container">
-      {%- include "partials/menu-guide.njk" -%}
+      <ul class="menu-list" role="list">
+        {% for page in collections.guide %}
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="{{ page.url | url }}">
+              {{ page.data.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </nav>
 
