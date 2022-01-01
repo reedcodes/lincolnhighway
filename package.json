@@ -19,10 +19,10 @@
     "a11y-color-tokens": "^0.5.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "include-media": "^1.4.10",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.43.5"
+    "sass": "^1.45.2"
   },
   "main": "gulpfile.js",
   "scripts": {
