@@ -5,45 +5,81 @@
 
 $color-main: hsla(48, 25%, 95%, 1) !default;
 $color-on-main: hsl(46.69999999999999, 4.1%, 42.9%) !default;
-$color-highlight: hsla(61, 46%, 64%, 1) !default;
-$color-on-highlight: hsl(61.19999999999999, 41.5%, 24.1%) !default;
-$color-accent: hsla(42, 100%, 48%, 1) !default;
-$color-on-accent: hsl(35.89999999999998, 100%, 21%) !default;
-$color-secondary: hsla(185, 75%, 24%, 1) !default;
-$color-on-secondary: hsl(185.60000000000002, 37.4%, 77.5%) !default;
-$color-primary: hsla(0, 100%, 27%, 1) !default;
-$color-on-primary: rgb(226, 155, 155) !default;
 $color-contrast: hsla(42, 100%, 2%, 1) !default;
 $color-on-contrast: hsl(43.30000000000001, 7.8%, 45.1%) !default;
+$color-primary: hsla(0, 100%, 27%, 1) !default;
+$color-on-primary: rgb(226, 155, 155) !default;
+$color-secondary: hsla(185, 75%, 24%, 1) !default;
+$color-on-secondary: hsl(185.60000000000002, 37.4%, 77.5%) !default;
+$color-accent: hsla(42, 100%, 48%, 1) !default;
+$color-on-accent: hsl(35.89999999999998, 100%, 21%) !default;
+$color-highlight: hsla(61, 46%, 64%, 1) !default;
+$color-on-highlight: hsl(61.19999999999999, 41.5%, 24.1%) !default;
+$color-dark-main: hsla(48, 0%, 90%, 1) !default;
+$color-on-dark-main: hsl(0, 0%, 40.4%) !default;
+$color-dark-contrast: hsla(42, 80%, 8%, 1) !default;
+$color-on-dark-contrast: hsl(42, 20.7%, 47.5%) !default;
+$color-dark-primary: hsla(0, 50%, 37%, 1) !default;
+$color-on-dark-primary: rgb(229, 182, 182) !default;
+$color-dark-secondary: hsla(185, 35%, 34%, 1) !default;
+$color-on-dark-secondary: hsl(187.5, 28.6%, 89%) !default;
+$color-dark-accent: hsla(42, 85%, 58%, 1) !default;
+$color-on-dark-accent: hsl(41.30000000000001, 100%, 20.8%) !default;
+$color-dark-highlight: hsla(61, 41%, 69%, 1) !default;
+$color-on-dark-highlight: hsl(60, 27.1%, 27.5%) !default;
 
-$base-color-tokens: ("main", "highlight", "accent", "secondary", "primary", "contrast");
+$base-color-tokens: ("main", "contrast", "primary", "secondary", "accent", "highlight", "dark-main", "dark-contrast", "dark-primary", "dark-secondary", "dark-accent", "dark-highlight");
 
 $color-tokens: (
   "color-main": $color-main,
   "color-on-main": $color-on-main,
-  "color-highlight": $color-highlight,
-  "color-on-highlight": $color-on-highlight,
-  "color-accent": $color-accent,
-  "color-on-accent": $color-on-accent,
-  "color-secondary": $color-secondary,
-  "color-on-secondary": $color-on-secondary,
+  "color-contrast": $color-contrast,
+  "color-on-contrast": $color-on-contrast,
   "color-primary": $color-primary,
   "color-on-primary": $color-on-primary,
-  "color-contrast": $color-contrast,
-  "color-on-contrast": $color-on-contrast
+  "color-secondary": $color-secondary,
+  "color-on-secondary": $color-on-secondary,
+  "color-accent": $color-accent,
+  "color-on-accent": $color-on-accent,
+  "color-highlight": $color-highlight,
+  "color-on-highlight": $color-on-highlight,
+  "color-dark-main": $color-dark-main,
+  "color-on-dark-main": $color-on-dark-main,
+  "color-dark-contrast": $color-dark-contrast,
+  "color-on-dark-contrast": $color-on-dark-contrast,
+  "color-dark-primary": $color-dark-primary,
+  "color-on-dark-primary": $color-on-dark-primary,
+  "color-dark-secondary": $color-dark-secondary,
+  "color-on-dark-secondary": $color-on-dark-secondary,
+  "color-dark-accent": $color-dark-accent,
+  "color-on-dark-accent": $color-on-dark-accent,
+  "color-dark-highlight": $color-dark-highlight,
+  "color-on-dark-highlight": $color-on-dark-highlight
 ) !default;
 
 @mixin color-tokens() {
   --color-main: #{$color-main};
   --color-on-main: #{$color-on-main};
-  --color-highlight: #{$color-highlight};
-  --color-on-highlight: #{$color-on-highlight};
-  --color-accent: #{$color-accent};
-  --color-on-accent: #{$color-on-accent};
-  --color-secondary: #{$color-secondary};
-  --color-on-secondary: #{$color-on-secondary};
-  --color-primary: #{$color-primary};
-  --color-on-primary: #{$color-on-primary};
   --color-contrast: #{$color-contrast};
   --color-on-contrast: #{$color-on-contrast};
+  --color-primary: #{$color-primary};
+  --color-on-primary: #{$color-on-primary};
+  --color-secondary: #{$color-secondary};
+  --color-on-secondary: #{$color-on-secondary};
+  --color-accent: #{$color-accent};
+  --color-on-accent: #{$color-on-accent};
+  --color-highlight: #{$color-highlight};
+  --color-on-highlight: #{$color-on-highlight};
+  --color-dark-main: #{$color-dark-main};
+  --color-on-dark-main: #{$color-on-dark-main};
+  --color-dark-contrast: #{$color-dark-contrast};
+  --color-on-dark-contrast: #{$color-on-dark-contrast};
+  --color-dark-primary: #{$color-dark-primary};
+  --color-on-dark-primary: #{$color-on-dark-primary};
+  --color-dark-secondary: #{$color-dark-secondary};
+  --color-on-dark-secondary: #{$color-on-dark-secondary};
+  --color-dark-accent: #{$color-dark-accent};
+  --color-on-dark-accent: #{$color-on-dark-accent};
+  --color-dark-highlight: #{$color-dark-highlight};
+  --color-on-dark-highlight: #{$color-on-dark-highlight};
 }
