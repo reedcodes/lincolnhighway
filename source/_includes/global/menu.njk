@@ -1,11 +1,10 @@
-{% set menu = collections.all | eleventyNavigation( "Home" ) %}
+{% set menu = collections.all | eleventyNavigation() %}
 
 <nav class="menu" id="menu" aria-label="global site">
   {%- if not menu | length == 0 -%}
     <ul class="menu-list" role="list">
-      <li class="menu-list-item"><a class="menu-list-link" href="/">Home</a></li>
       {%- for item in menu %}
-        <li class="menu-list-item"><a class="menu-list-link" href="{{- item.url | url -}}">{{- item.title -}}</a></li>
+        <li class="menu-list-item"><a class="menu-list-link" href="{{- item.url | url -}}" {% if page.url === item.url %}aria-current="page"{% endif %}>{{- item.title -}}</a></li>
       {%- endfor %}
     </ul>
   {%- endif -%}
