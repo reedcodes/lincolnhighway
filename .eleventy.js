@@ -1,9 +1,13 @@
-module.exports = function( eleventyConfig ) {
-  // import 11ty nav plugin
-  const eleventyNavigationPlugin = require( '@11ty/eleventy-navigation' );
-
-  // import date methods
+// Import date methods.
   const { DateTime } = require( 'luxon' );
+
+// Import 11ty nav plugin.
+const eleventyNavigationPlugin = require( '@11ty/eleventy-navigation' );
+
+// Import 11ty date plugin.
+const pluginDate = require('eleventy-plugin-date');
+
+module.exports = function( eleventyConfig ) {
 
   // Send assets from source to site.
   eleventyConfig.addPassthroughCopy( {
@@ -23,7 +27,7 @@ module.exports = function( eleventyConfig ) {
 
   // Add category collection.
   eleventyConfig.addCollection( 'category', ( collection ) => {
-    return collection.getAll().filter( (post) => post.data.category ).reverse();
+    return collection.getAll().filter( (post) => post.data.category );
   });
 
   // Flickr grid (wrapper) shortcode.
