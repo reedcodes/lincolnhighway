@@ -1,5 +1,6 @@
 ---
 title: Blog
+permalink: "/blog/"
 layout: layouts/blog.njk
 eleventyNavigation:
   key: Blog
