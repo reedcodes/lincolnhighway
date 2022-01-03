@@ -1,7 +1,0 @@
-{%- if tags | length -%}
-  <ul>
-    {%- for tag in hashtag -%}
-      <li><a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a></li>
-    {%- endfor -%}
-  </ul>
-{%- endif -%}
