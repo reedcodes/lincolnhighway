@@ -1,0 +1,8 @@
+{
+  "layout": "layouts/default.njk",
+  "category": ["blog", "sightseeing"],
+  "permalink": "/sightseeing/{{ page.fileSlug }}/",
+  "eleventyNavigation": {
+    "parent": "Sightseeing"
+  }
+}

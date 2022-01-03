@@ -1,6 +1,5 @@
 {
   "layout": "layouts/default.njk",
-  "tags": "blog",
   "permalink": "/blog/{{ page.fileSlug }}/",
   "eleventyNavigation": {
     "parent": "Blog"

@@ -1,0 +1,8 @@
+{
+  "layout": "layouts/default.njk",
+  "category": ["blog", "planning"],
+  "permalink": "/planning/{{ page.fileSlug }}/",
+  "eleventyNavigation": {
+    "parent": "Planning"
+  }
+}

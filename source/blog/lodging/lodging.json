@@ -1,0 +1,8 @@
+{
+  "layout": "layouts/default.njk",
+  "category": ["blog", "lodging"],
+  "permalink": "/lodging/{{ page.fileSlug }}/",
+  "eleventyNavigation": {
+    "parent": "Lodging"
+  }
+}

@@ -18,7 +18,12 @@ module.exports = function( eleventyConfig ) {
   eleventyConfig.addFilter( 'readDate', ( dateObj ) => {
     return DateTime
       .fromJSDate( dateObj, { setZone: 'America/New_York' } )
-      .toFormat( 'EEEE d MMMM yyyy' );
+      .toFormat( 'EEEE, MMMM d, yyyy' );
+  });
+
+  // Add category collection.
+  eleventyConfig.addCollection( 'category', ( collection ) => {
+    return collection.getAll().filter( (post) => post.data.category ).reverse();
   });
 
   // Flickr grid (wrapper) shortcode.

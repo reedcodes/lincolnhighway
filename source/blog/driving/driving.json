@@ -1,0 +1,8 @@
+{
+  "layout": "layouts/default.njk",
+  "category": ["blog", "driving"],
+  "permalink": "/driving/{{ page.fileSlug }}/",
+  "eleventyNavigation": {
+    "parent": "Driving"
+  }
+}
