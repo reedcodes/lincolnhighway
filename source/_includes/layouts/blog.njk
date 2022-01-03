@@ -21,14 +21,7 @@
         {% include "post/feature.njk" %}
       {%- endif -%}
 
-      <header>
-        <p>{{ post_date | shortDate }}</p>
-        <h2><a href="{{ post_url }}">{{ post_title }}</a></h2>
-      </header>
-
-      {%- if post_teaser -%}
-        <p>{{ post_teaser | safe }}</p>
-      {%- endif -%}
+      {% include "post/header.njk" %}
 
     </article>
   {%- endfor -%}

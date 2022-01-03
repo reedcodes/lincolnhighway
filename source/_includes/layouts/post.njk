@@ -7,6 +7,11 @@
 {%- set post_feature_alt = post_feature.alt -%}
 {%- set post_feature_embed = post_feature.embed -%}
 
+{%- set post_date = date -%}
+{%- set post_url = url -%}
+{%- set post_title = title -%}
+{%- set post_teaser = teaser -%}
+
 {%- block feature_hero -%}
   {%- if post_feature -%}
     <section class="feature wrapper" aria-label="feature image">
@@ -16,3 +21,9 @@
     </section>
   {%- endif -%}
 {%- endblock feature_hero -%}
+
+{%- block main_content -%}
+  {% include "post/header.njk" %}
+
+  {{ content | safe }}
+{%- endblock main_content -%}
