@@ -16,15 +16,21 @@ module.exports = function( eleventyConfig ) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Add date filter.
-  eleventyConfig.addFilter( 'readDate', ( dateObj ) => {
+  eleventyConfig.addFilter( 'shortDate', ( dateObj ) => {
     return DateTime
-      .fromJSDate( dateObj, { setZone: 'America/New_York' } )
-      .toFormat( 'EEEE, MMMM d, yyyy' );
+      .fromJSDate( dateObj )
+      .toFormat( 'd MMM yyyy' );
   });
 
-  // Add category collection.
-  eleventyConfig.addCollection( 'category', ( collection ) => {
-    return collection.getAll().filter( (post) => post.data.category );
+  eleventyConfig.addFilter( 'longDate', ( dateObj ) => {
+    return DateTime
+      .fromJSDate( dateObj )
+      .toFormat( 'EEE d MMM yyyy t' );
+  });
+
+  // Add blog glob.
+  eleventyConfig.addCollection( 'blogPosts', ( collection ) => {
+    return collection.getFilteredByGlob( './source/blog/*/*.md' );
   });
 
   // Flickr grid (wrapper) shortcode.

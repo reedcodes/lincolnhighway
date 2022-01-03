@@ -2,6 +2,7 @@
 title: Planning
 date: 2022-01-02
 tags: [ "planning", "preparation" ]
+teaser: Nisi varius vel parturient dictum fusce torquent adipiscing purus ultrices a scelerisque imperdiet curabitur a ullamcorper vitae a ultrices tristique suspendisse a neque quisque gravida.
 ---
 
 Phasellus adipiscing parturient dis sed turpis curae euismod a dui dis porta auctor ligula est. Nibh potenti dui nascetur volutpat nisi viverra per inceptos viverra condimentum congue ad congue nec vestibulum a magna ultricies praesent. Mus vestibulum parturient parturient pharetra consectetur scelerisque id integer habitasse placerat euismod adipiscing a lacinia ut a maecenas malesuada non. Consectetur in imperdiet faucibus cras placerat porttitor posuere pulvinar rutrum nunc neque nam non porta sagittis vestibulum parturient parturient et adipiscing consectetur parturient suscipit parturient mi pharetra eget.

@@ -7,3 +7,5 @@ eleventyNavigation:
   parent: Home
   order: 2
 ---
+
+This is **blog** stuff.

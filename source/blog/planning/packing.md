@@ -1,7 +1,8 @@
 ---
 title: Packing
-date: 2021-11-29
+date: 2022-09-20
 tags: [ "packing", "organization" ]
+teaser: Morbi sem dis vel posuere integer pulvinar primis interdum hac commodo at eleifend inceptos tincidunt.
 ---
 
 Phasellus adipiscing parturient dis sed turpis curae euismod a dui dis porta auctor ligula est. Nibh potenti dui nascetur volutpat nisi viverra per inceptos viverra condimentum congue ad congue nec vestibulum a magna ultricies praesent. Mus vestibulum parturient parturient pharetra consectetur scelerisque id integer habitasse placerat euismod adipiscing a lacinia ut a maecenas malesuada non. Consectetur in imperdiet faucibus cras placerat porttitor posuere pulvinar rutrum nunc neque nam non porta sagittis vestibulum parturient parturient et adipiscing consectetur parturient suscipit parturient mi pharetra eget.
