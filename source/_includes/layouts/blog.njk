@@ -1,22 +1,35 @@
-{%- extends 'layouts/default.njk' -%}
+{%- extends "layouts/default.njk" -%}
 
 {%- block main_content -%}
   {{ content | safe }}
 
   {%- for post in collections.blogPosts | reverse -%}
+    {%- set post_feature = post.data.feature -%}
+    {%- set post_date = post.data.date -%}
+    {%- set post_url = post.url -%}
+    {%- set post_title = post.data.title -%}
+    {%- set post_teaser = post.data.teaser -%}
+
     <article>
-      {%- if post.data.feature -%}
-        <img src="{{ post.data.feature.src }}" alt="{{ post.data.feature.alt }}"/>
+
+      {%- if post_feature -%}
+        {%- set post_feature_id = post_feature.id -%}
+        {%- set post_feature_source = post_feature.source -%}
+        {%- set post_feature_alt = post_feature.alt -%}
+        {%- set post_feature_embed = post_feature.embed -%}
+
+        {% include "post/feature.njk" %}
       {%- endif -%}
+
       <header>
-        <p>{{ post.data.date | shortDate }}</p>
-        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <p>{{ post_date | shortDate }}</p>
+        <h2><a href="{{ post_url }}">{{ post_title }}</a></h2>
       </header>
-      {%- if post.data.teaser -%}
-        <div>
-          {{ post.data.teaser | safe }}
-        </div>
+
+      {%- if post_teaser -%}
+        <p>{{ post_teaser | safe }}</p>
       {%- endif -%}
+
     </article>
   {%- endfor -%}
 {%- endblock main_content -%}
