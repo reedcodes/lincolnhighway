@@ -1,5 +1,5 @@
 {
-  "layout": "layouts/default.njk",
+  "layout": "layouts/post.njk",
   "category": ["blog", "lodging"],
   "permalink": "/lodging/{{ page.fileSlug }}/",
   "eleventyNavigation": {

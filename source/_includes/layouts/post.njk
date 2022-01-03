@@ -1,0 +1,11 @@
+{%- extends 'layouts/default.njk' -%}
+
+{%- block feature_hero -%}
+  {%- if feature -%}
+    <section class="feature wrapper">
+      <div class="container">
+        {% flickr feature.id, feature.source, feature.alt, feature.embed %}
+      </div>
+    </section>
+  {%- endif -%}
+{%- endblock feature_hero -%}

@@ -1,8 +1,0 @@
-{
-  "layout": "layouts/default.njk",
-  "tags": "photos",
-  "permalink": "/photos/{{ page.fileSlug }}/",
-  "eleventyNavigation": {
-    "parent": "Photos"
-  }
-}

@@ -1,11 +1,7 @@
-module.exports = function( user, id, source, width, height, title, caption ) {
-  return `<figure class="flickr-item">
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/${user}/${id}/">
-      <img src="https://live.staticflickr.com/65535/${source}.jpg" width="${width}" height="${height}" alt="${title}">
+module.exports = function( id, source, alt, embed ) {
+  return `<figure class="flickr">
+    <a data-flickr-embed="${embed}" href="https://www.flickr.com/photos/lincolnhighwayjournal/${id}/">
+      <img src="https://live.staticflickr.com/${source}.jpg" width="1600" height="900" alt="${alt}">
     </a>
-    <figcaption>
-      <p id="photo-${id}">${caption}</p>
-      <a aria-labelledby="photo-${id}" href="https://www.flickr.com/photos/${user}/${id}/">view on flickr</a>
-    </figcaption>
   </figure>`;
 };
