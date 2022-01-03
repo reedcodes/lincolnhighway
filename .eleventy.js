@@ -1,11 +1,8 @@
 // Import date methods.
-  const { DateTime } = require( 'luxon' );
+const { DateTime } = require( 'luxon' );
 
 // Import 11ty nav plugin.
 const eleventyNavigationPlugin = require( '@11ty/eleventy-navigation' );
-
-// Import 11ty date plugin.
-const pluginDate = require('eleventy-plugin-date');
 
 module.exports = function( eleventyConfig ) {
 

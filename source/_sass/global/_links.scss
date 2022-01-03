@@ -3,6 +3,10 @@ a {
   color: var(--links-color);
   font-weight: 600;
 
+  :is( h1, h2, h3, h4, h5, h6 ) & {
+    font-weight: inherit;
+  }
+
   &:hover,
   &:focus {
     color: var(--links-act-color);
