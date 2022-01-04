@@ -2,10 +2,14 @@
 
 {%- set post_list = pagination.items -%}
 
-{% if tag %}
-  {% set post_list = collections[tag] %}
-  {% set title = "Tag Archive: " + tag %}
-{% endif %}
+{%- if tag -%}
+  {%- set post_list = collections[tag] -%}
+  {%- set title = "Tag Archive: " + tag -%}
+{%- endif -%}
+
+{%- if categoryName -%}
+  {%- set post_list = collections.categories[categoryName] -%}
+{%- endif -%}
 
 {%- block main_content -%}
   {{ content | safe }}
