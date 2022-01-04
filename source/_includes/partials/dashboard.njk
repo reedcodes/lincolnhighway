@@ -1,0 +1,8 @@
+<div>
+  <h2>The road so far</h2>
+  <ul>
+    {%- for category in collections.categoryList -%}
+      <li>{{ category }}: {{ collections.categories[category] | length }}</li>
+    {%- endfor -%}
+  </ul>
+</div>

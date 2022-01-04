@@ -18,6 +18,8 @@ module.exports = function( eleventyConfig ) {
 
   // Add blog glob.
   eleventyConfig.addCollection( "blogPosts", require("./source/_config/collections/blog-posts.js") );
+  eleventyConfig.addCollection( "categoryList", require("./source/_config/collections/category-list.js") );
+  eleventyConfig.addCollection( "categories", require("./source/_config/collections/categories.js") );
 
   // Shortcodes.
   eleventyConfig.addShortcode( "flickr", require("./source/_config/shortcodes/flickr.js") );
