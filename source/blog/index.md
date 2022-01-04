@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 2
 pagination:
   data: collections.blogPosts
-  size: 2
+  size: 10
 ---
 
 This is **blog** stuff.

@@ -1,6 +1,6 @@
 {%- extends "layouts/default.njk" -%}
 
-{%- set post_list = collections.blogPosts -%}
+{%- set post_list = pagination.items -%}
 
 {%- block main_content -%}
   {{ content | safe }}
