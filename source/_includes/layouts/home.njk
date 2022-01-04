@@ -5,6 +5,9 @@
 {%- block main_content -%}
   {{ content | safe }}
 
+  {%- include "partials/social.njk" -%}
+
+
   {%- include "post/list.njk" -%}
 
   {%- include "partials/social.njk" -%}

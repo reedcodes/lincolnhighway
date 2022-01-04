@@ -10,7 +10,7 @@
 {%- if post_tags -%}
   <p>tags:
     {% for tag in post_tags -%}
-      {%- if not loop.last -%}<a href="/tag/{{ tag | slug }}/">{{ tag }}</a>, {% else -%} <a href="/tag/{{ tag | slug }}/">{{ tag }}</a>{%- endif -%}
+      {%- if not loop.last -%}<a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a>, {% else -%} <a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a>{%- endif -%}
     {%- endfor -%}
   </p>
 {%- endif -%}
