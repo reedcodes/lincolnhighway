@@ -1,1 +1,5 @@
-{% flickr post_feature.id, post_feature.source, post_feature.alt, post_feature.embed %}
+{%- if post_feature.flickr -%}
+  {% flickr post_feature.id, post_feature.source, post_feature.alt, post_feature.embed %}
+{%- else -%}
+  {% image post_feature.source, post_feature.alt %}
+{%- endif -%}

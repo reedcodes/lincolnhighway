@@ -24,6 +24,7 @@ module.exports = function( eleventyConfig ) {
   // Shortcodes.
   eleventyConfig.addShortcode( "flickr", require("./source/_config/shortcodes/flickr.js") );
   eleventyConfig.addShortcode( "icon", require("./source/_config/shortcodes/icon.js") );
+  eleventyConfig.addShortcode( "image", require("./source/_config/shortcodes/image.js") );
 
   // 11ty config options.
   return {
