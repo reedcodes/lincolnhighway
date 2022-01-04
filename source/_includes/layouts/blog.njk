@@ -1,11 +1,16 @@
 {%- extends "layouts/default.njk" -%}
 
+{%- set post_list = pagination.items -%}
+
 {% if tag %}
+  {% set post_list = collections[tag] %}
   {% set title = "Tag Archive: " + tag %}
 {% endif %}
 
 {%- block main_content -%}
   {{ content | safe }}
 
-  {%- include "post/list.njk" -%}
+  {% include "post/list.njk" %}
+
+  {% include "post/pagination.njk" %}
 {%- endblock main_content -%}

@@ -1,0 +1,11 @@
+<article>
+
+  {%- if post_feature -%}
+    {% include "post/feature.njk" %}
+  {%- endif -%}
+
+  {% include "post/header.njk" %}
+
+  <a href="{{ post_url }}">Continue reading <span class="sr-only">{{ post_title }}</span></a>
+
+</article>

@@ -1,6 +1,6 @@
 {%- extends "layouts/default.njk" -%}
 
-{%- set post_list_max = 3 -%}
+{%- set post_list = collections.blogPosts -%}
 
 {%- block main_content -%}
   {{ content | safe }}
