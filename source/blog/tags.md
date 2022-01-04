@@ -1,6 +1,6 @@
 ---
 permalink: "/blog/tag/{{ tag | slug }}/"
-layout: layouts/blog.njk
+layout: layouts/taxonomy.njk
 eleventyNavigation:
   key: Tags
   parent: Blog

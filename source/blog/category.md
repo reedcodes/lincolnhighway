@@ -1,6 +1,6 @@
 ---
 permalink: "/{{ categoryName | slug }}/"
-layout: layouts/blog.njk
+layout: layouts/taxonomy.njk
 eleventyNavigation:
   key: Categories
   parent: Blog
