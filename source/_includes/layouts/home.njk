@@ -3,7 +3,20 @@
 {%- set post_list = collections.blogPosts -%}
 
 {%- block main_content -%}
-  {{ content | safe }}
+  <section class="hero-home" aria-labelledby="hero-title">
+    <header>
+      <p>{{ hero.eyebrow }}</p>
+      <h1 id="hero-title">{{ hero.title }}</h1>
+    </header>
+
+    <div class="hero-content">
+      {{ content | safe }}
+    </div>
+
+    <div class="hero-image">
+      {% image hero.source, hero.alt %}
+    </div>
+  </section>
 
   {%- include "partials/social.njk" -%}
 
