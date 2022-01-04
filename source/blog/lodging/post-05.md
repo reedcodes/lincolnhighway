@@ -1,13 +1,11 @@
 ---
-title: Fort Wayne
-date: 2022-10-08
-tags: [ "fort wayne", "indiana", "diner", "vegan" ]
-teaser: Taciti quam blandit a mi dolor tempus sit vulputate ullamcorper libero integer ultricies a erat donec penatibus mi ullamcorper platea a nec litora parturient eu ad ut.
+title: Sed id est tortor
+date: 2022-10-10
+tags: [ "nulla", "auctor", "porttitor", "semper" ]
+teaser: Nam dignissim magna et erat convallis laoreet. Nulla laoreet vel orci in fringilla.
 feature:
-  id: 51797392798
-  source: 65535/51797392798_ea5c38d8bd_h
-  alt: Me, lounging on my couch looking at maps in my new Rand McNally 2022 road atlas.
-  embed: false
+  source: photos/lodging/photo-05.jpg
+  alt: Mauris sem ex
 ---
 
 Phasellus adipiscing parturient dis sed turpis curae euismod a dui dis porta auctor ligula est. Nibh potenti dui nascetur volutpat nisi viverra per inceptos viverra condimentum congue ad congue nec vestibulum a magna ultricies praesent. Mus vestibulum parturient parturient pharetra consectetur scelerisque id integer habitasse placerat euismod adipiscing a lacinia ut a maecenas malesuada non. Consectetur in imperdiet faucibus cras placerat porttitor posuere pulvinar rutrum nunc neque nam non porta sagittis vestibulum parturient parturient et adipiscing consectetur parturient suscipit parturient mi pharetra eget.
