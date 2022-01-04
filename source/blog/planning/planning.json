@@ -1,6 +1,6 @@
 {
   "layout": "layouts/post.njk",
-  "category": ["blog", "planning"],
+  "category": "planning",
   "permalink": "/planning/{{ page.fileSlug }}/",
   "eleventyNavigation": {
     "parent": "Planning"

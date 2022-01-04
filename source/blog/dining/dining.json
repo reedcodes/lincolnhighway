@@ -1,6 +1,6 @@
 {
   "layout": "layouts/post.njk",
-  "category": ["blog", "dining"],
+  "category": "dining",
   "permalink": "/dining/{{ page.fileSlug }}/",
   "eleventyNavigation": {
     "parent": "Dining"

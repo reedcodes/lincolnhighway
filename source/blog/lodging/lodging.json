@@ -1,6 +1,6 @@
 {
   "layout": "layouts/post.njk",
-  "category": ["blog", "lodging"],
+  "category": "lodging",
   "permalink": "/lodging/{{ page.fileSlug }}/",
   "eleventyNavigation": {
     "parent": "Lodging"

@@ -4,12 +4,7 @@
 </header>
 
 {%- if post_category -%}
-  <p>category:
-    {% for category in post_category -%}
-      {%- if category != "blog" -%}
-        {{ category }}
-      {%- endif -%}
-    {%- endfor -%}
+  <p>category: {{ post_category }}</p>
 {%- endif -%}
 
 {%- if post_tags -%}
