@@ -9,6 +9,7 @@
     {%- set post_url = post.url -%}
     {%- set post_title = post.data.title -%}
     {%- set post_teaser = post.data.teaser -%}
+    {%- set post_category = post.data.category -%}
 
     <article>
 
@@ -22,6 +23,8 @@
       {%- endif -%}
 
       {% include "post/header.njk" %}
+
+      <a href="{{ post_url }}">Continue reading <span class="sr-only">{{ post_title }}</span></a>
 
     </article>
   {%- endfor -%}

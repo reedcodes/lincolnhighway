@@ -1,3 +1,12 @@
+{%- set post_feature = feature -%}
+
+{%- set post_feature_id = post_feature.id -%}
+{%- set post_feature_source = post_feature.source -%}
+{%- set post_feature_alt = post_feature.alt -%}
+{%- set post_feature_embed = post_feature.embed -%}
+
+
+
 <!doctype html>
 
 <html>
@@ -12,8 +21,15 @@
     </div>
   </header>
 
-  {% block feature_hero %}
-  {% endblock feature_hero %}
+  {%- block feature_hero -%}
+    {%- if post_feature -%}
+      <section class="feature wrapper" aria-label="feature image">
+        <div class="container">
+          {% include "post/feature.njk" %}
+        </div>
+      </section>
+    {%- endif -%}
+  {%- endblock feature_hero -%}
 
   <main class="main wrapper" id="main" aria-label="body content">
     <div class="container">

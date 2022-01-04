@@ -1,29 +1,12 @@
 {%- extends "layouts/default.njk" -%}
 
-{%- set post_feature = feature -%}
-
-{%- set post_feature_id = post_feature.id -%}
-{%- set post_feature_source = post_feature.source -%}
-{%- set post_feature_alt = post_feature.alt -%}
-{%- set post_feature_embed = post_feature.embed -%}
-
 {%- set post_date = date -%}
 {%- set post_url = url -%}
 {%- set post_title = title -%}
 {%- set post_teaser = teaser -%}
+{%- set post_category = category -%}
+{%- set post_tags = tags -%}
 
-{%- block feature_hero -%}
-  {%- if post_feature -%}
-    <section class="feature wrapper" aria-label="feature image">
-      <div class="container">
-        {% include "post/feature.njk" %}
-      </div>
-    </section>
-  {%- endif -%}
-{%- endblock feature_hero -%}
-
-{%- block main_content -%}
+{%- block title_content -%}
   {% include "post/header.njk" %}
-
-  {{ content | safe }}
-{%- endblock main_content -%}
+{%- endblock title_content -%}
