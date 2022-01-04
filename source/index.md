@@ -4,9 +4,7 @@ home: true
 eleventyNavigation:
   key: Home
   order: 0
-pagination:
-  data: collections.blogPosts
-  size: 3
+post_max: 3
 ---
 
 This is the **home** page.

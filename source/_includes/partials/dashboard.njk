@@ -1,8 +1,8 @@
 <div>
   <h2>The road so far</h2>
   <ul>
-    {%- for category in collections.categoryList -%}
-      <li>{{ category }}: {{ collections.categories[category] | length }}</li>
+    {%- for category in collections.categoryList | sort -%}
+      <li><a href="/{{ category | lower }}/">{{ category }}: {{ collections.categories[category] | length }}</a></li>
     {%- endfor -%}
   </ul>
 </div>
