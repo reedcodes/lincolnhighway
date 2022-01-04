@@ -1,5 +1,9 @@
 {%- extends "layouts/default.njk" -%}
 
+{% if tag %}
+  {% set title = "Tag Archive: " + tag %}
+{% endif %}
+
 {%- block main_content -%}
   {{ content | safe }}
 

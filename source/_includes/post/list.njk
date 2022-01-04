@@ -1,6 +1,10 @@
 {%- set post_list = collections.blogPosts | reverse -%}
 {%- set post_list_max = post_list_max | default( post_list | length ) -%}
 
+{% if tag %}
+  {% set post_list = collections[tag] %}
+{% endif %}
+
 {%- for post in post_list -%}
   {%- set post_feature = post.data.feature -%}
   {%- set post_date = post.data.date -%}
