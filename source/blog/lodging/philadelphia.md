@@ -3,6 +3,11 @@ title: Philadelphia
 date: 2022-10-02
 tags: [ "philadelphia", "pennsylvania", "hotel" ]
 teaser: Imperdiet dignissim ullamcorper adipiscing posuere vestibulum a dictumst hac aenean sodales a senectus sociis parturient elementum dis molestie dolor ultricies condimentum bibendum ullamcorper ac pulvinar.
+feature:
+  id: 51797392798
+  source: 65535/51797392798_ea5c38d8bd_h
+  alt: Me, lounging on my couch looking at maps in my new Rand McNally 2022 road atlas.
+  embed: false
 ---
 
 Phasellus adipiscing parturient dis sed turpis curae euismod a dui dis porta auctor ligula est. Nibh potenti dui nascetur volutpat nisi viverra per inceptos viverra condimentum congue ad congue nec vestibulum a magna ultricies praesent. Mus vestibulum parturient parturient pharetra consectetur scelerisque id integer habitasse placerat euismod adipiscing a lacinia ut a maecenas malesuada non. Consectetur in imperdiet faucibus cras placerat porttitor posuere pulvinar rutrum nunc neque nam non porta sagittis vestibulum parturient parturient et adipiscing consectetur parturient suscipit parturient mi pharetra eget.

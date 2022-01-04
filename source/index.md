@@ -1,5 +1,5 @@
 ---
-layout: layouts/default.njk
+layout: layouts/home.njk
 home: true
 eleventyNavigation:
   key: Home

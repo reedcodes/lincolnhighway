@@ -1,5 +1,7 @@
 {%- extends "layouts/default.njk" -%}
 
+{%- set post_list_max = 3 -%}
+
 {%- block main_content -%}
   {{ content | safe }}
 
