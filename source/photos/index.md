@@ -5,3 +5,7 @@ eleventyNavigation:
   key: Photos
   order: 4
 ---
+
+{%- for album in albums -%}
+  {% flickrAlbum album.id, album.source, album.title %}
+{%- endfor -%}
