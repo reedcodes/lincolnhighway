@@ -1,0 +1,10 @@
+<div class="stats">
+  <h2>By the numbers</h2>
+  <ul class="stats-list" role="list">
+    {%- for key, value in stats -%}
+      {%- if value != 0 %}
+        <li class="stats-item{{ " stats-first" if loop.first }}">{{ key }}: {{ value }}</li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</div>
