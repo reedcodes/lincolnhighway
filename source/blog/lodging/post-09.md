@@ -1,7 +1,7 @@
 ---
 title: Phasellus pellentesque, sapien
 date: 2022-10-18
-tags: [ "eget", "tincidunt", "mi", "sapien", "consequat", "lacus" ]
+tags: [ "eget", "tincidunt", "consequat" ]
 teaser: Morbi tristique, urna nec varius porttitor, risus nunc rhoncus quam, sit amet accumsan ipsum leo a elit.
 feature:
   source: photos/lodging/photo-09.jpg

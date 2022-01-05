@@ -8,5 +8,11 @@ pagination:
   data: collections
   size: 1
   alias: tag
-  filter: [ "all", "blogPosts", "categories", "categoryList" ]
+  filter: [
+    "all",
+    "blogPosts",
+    "categories",
+    "categoryList",
+    "tagList"
+  ]
 ---

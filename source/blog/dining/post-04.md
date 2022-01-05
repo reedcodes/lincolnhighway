@@ -1,7 +1,7 @@
 ---
 title: Nam laoreet molestie rutrum
 date: 2022-10-08
-tags: [ "ante", "ipsum", "primis", "in", "faucibus", "orci", "luctus" ]
+tags: [ "primis", "faucibus", "luctus" ]
 teaser: Donec eu lectus arcu. Etiam sodales scelerisque erat, eu ultricies tellus aliquet in. Nunc nec viverra risus. Nullam auctor justo eget convallis aliquet.
 feature:
   source: photos/dining/photo-04.jpg

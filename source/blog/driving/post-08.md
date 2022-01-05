@@ -1,7 +1,7 @@
 ---
 title: Aliquam congue elit dolor, id pharetra erat venenatis eget
 date: 2022-10-16
-tags: [ "sodales", "commodo", "nisl", "vitae", "blandit" ]
+tags: [ "sodales", "vitae", "blandit" ]
 teaser: Aliquam nec tristique augue. Aenean rutrum mauris sit amet risus condimentum convallis.
 feature:
   source: photos/driving/photo-08.jpg

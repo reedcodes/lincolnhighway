@@ -1,7 +1,7 @@
 ---
 title: Cras scelerisque hendrerit augue a porttitor
 date: 2022-10-24
-tags: [ "dapibus", "mi", "nec", "luctus", "imperdiet" ]
+tags: [ "dapibus", "luctus", "imperdiet" ]
 teaser: Nunc vel turpis sed libero rutrum facilisis non dictum elit. Sed luctus, metus quis malesuada scelerisque, velit turpis efficitur arcu, non tempus risus leo vitae mauris.
 feature:
   source: photos/planning/photo-12.jpg

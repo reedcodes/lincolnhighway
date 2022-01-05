@@ -1,7 +1,7 @@
 ---
 title: Praesent vitae viverra nisi
 date: 2022-10-02
-tags: [ "morbi", "venenatis", "bibendum", "purus" ]
+tags: [ "morbi", "venenatis", "bibendum" ]
 teaser: Morbi tincidunt rutrum nisi, ac facilisis nibh ullamcorper eu. Maecenas rhoncus sapien sed odio finibus, at scelerisque augue mattis.
 feature:
   source: photos/dining/photo-01.jpg

@@ -1,7 +1,7 @@
 ---
 title: Aliquam malesuada sem venenatis volutpat congue
 date: 2022-10-22
-tags: [ "ullamcorper", "risus", "eget", "rhoncus", "imperdiet" ]
+tags: [ "ullamcorper", "risus", "eget" ]
 teaser: Nulla risus orci, placerat eget mi vel, sollicitudin fringilla nibh. Nunc turpis metus, varius eget rutrum eget, fringilla a eros.
 feature:
   source: photos/driving/photo-11.jpg

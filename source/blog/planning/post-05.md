@@ -1,7 +1,7 @@
 ---
 title: Sed id est tortor
 date: 2022-10-10
-tags: [ "nulla", "auctor", "porttitor", "semper" ]
+tags: [ "nulla", "auctor", "semper" ]
 teaser: Nam dignissim magna et erat convallis laoreet. Nulla laoreet vel orci in fringilla.
 feature:
   source: photos/planning/photo-05.jpg

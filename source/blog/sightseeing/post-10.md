@@ -1,7 +1,7 @@
 ---
 title: Fusce vehicula tortor risus, sit amet interdum
 date: 2022-10-20
-tags: [ "sed", "venenatis", "sodales", "enim" ]
+tags: [ "sed", "venenatis", "sodales" ]
 teaser: Pellentesque et scelerisque enim. Nulla tincidunt, eros sed sollicitudin lobortis, tortor libero euismod arcu, sit amet maximus tortor elit imperdiet nibh.
 feature:
   source: photos/sightseeing/photo-10.jpg

@@ -1,7 +1,7 @@
 ---
 title: Mauris volutpat, lorem at fermentum suscipit
 date: 2022-10-14
-tags: [ "ac", "bibendum", "mi", "lacus", "quis", "orci" ]
+tags: [ "bibendum", "lacus", "orci" ]
 teaser: Curabitur sed nulla posuere, fermentum sem vel, porta enim. Nulla pharetra sodales pharetra. Duis laoreet ex quis vehicula maximus.
 feature:
   source: photos/driving/photo-07.jpg

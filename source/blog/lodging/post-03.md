@@ -1,7 +1,7 @@
 ---
 title: Mauris hendrerit eros magna
 date: 2022-10-06
-tags: [ "consequat", "neque", "ut", "volutpat", "ultricies" ]
+tags: [ "consequat", "neque", "volutpat" ]
 teaser: Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus sapien quam, rutrum non felis non, dignissim egestas libero.
 feature:
   source: photos/lodging/photo-03.jpg

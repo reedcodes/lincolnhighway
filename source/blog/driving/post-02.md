@@ -1,7 +1,7 @@
 ---
 title: Aenean ornare neque vel pharetra volutpat
 date: 2022-10-04
-tags: [ "nec", "metus", "tristique", "tempus", "augue", "id", "pretium" ]
+tags: [ "metus", "tristique", "tempus" ]
 teaser: Fusce at pharetra tortor, eget finibus mauris. Proin consectetur eleifend sem. Curabitur viverra, metus in vestibulum consequat.
 feature:
   source: photos/driving/photo-01.jpg
