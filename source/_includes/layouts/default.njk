@@ -11,13 +11,13 @@
 
 <html>
 <head>
-  {%- include "global/head.njk" -%}
+  {% include "global/head.njk" %}
 </head>
 <body>
 
   <header class="header wrapper" id="header" aria-label="global site">
     <div class="container">
-      {%- include "global/header.njk" -%}
+      {% include "global/header.njk" %}
     </div>
   </header>
 
@@ -34,20 +34,23 @@
   <main class="main wrapper" id="main" aria-label="body content">
     <div class="container">
 
-      {% block title_content %}
+      {%- block title_content -%}
         <h1>{{- title -}}</h1>
-      {% endblock title_content %}
+      {%- endblock title_content -%}
 
-      {% block main_content %}
+      {%- block main_content -%}
         {{ content | safe }}
-      {% endblock main_content %}
+      {%- endblock main_content -%}
 
     </div>
   </main>
 
+  {%- block aside_content -%}
+  {%- endblock aside_content -%}
+
   <footer class="footer wrapper" id="footer" aria-label="site information">
     <div class="container">
-      {%- include "global/footer.njk" -%}
+      {% include "global/footer.njk" %}
     </div>
   </footer>
 

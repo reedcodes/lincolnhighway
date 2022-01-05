@@ -10,3 +10,16 @@
 {%- block title_content -%}
   {% include "post/header.njk" %}
 {%- endblock title_content -%}
+
+{%- set post_max = 5 -%}
+{%- set post_list = collections.blogPosts -%}
+
+{%- block aside_content -%}
+  <aside class="aside-latest-posts">
+    <h2>Latest Posts</h2>
+
+    {%- include "post/list.njk" -%}
+
+    <a href="{{ "/blog/" | url }}">View all blog posts</a>
+  </aside>
+{%- endblock aside_content -%}
