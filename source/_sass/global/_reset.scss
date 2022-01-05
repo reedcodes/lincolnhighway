@@ -72,6 +72,11 @@ ol[role="list"] {
   padding: 0;
 }
 
+iframe {
+  width: min( 100vw, 100% );
+  border: 0;
+}
+
 img,
 picture,
 svg {

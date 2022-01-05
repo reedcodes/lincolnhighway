@@ -18,6 +18,16 @@
     </div>
   </section>
 
+  <div class="greetings">
+    {%- include "maps/google-route.njk" -%}
+
+    <div class="greeting">
+      <p>{{ greetings.date | shortDate }}</p>
+      <h2>Greetings from {{ greetings.location }}!</h2>
+      <p>{{ greetings.greeting }}</p>
+    </div>
+  </div>
+
   {%- include "partials/social.njk" -%}
 
   {%- include "partials/dashboard.njk" -%}
