@@ -1,14 +1,28 @@
 .wrapper {
+  --page-max: 1600px;
+  --content-max: 70ch;
+  --content-width: min( min(96vw, var(--page-max)), var(--content-max) );
+
+  --gutter-full: minmax( 0, 1fr );
+  --gutter-wide: minmax( 0, calc( ( var(--page-max) - var(--content-max) ) / 2 ) );
+
   display: grid;
   grid-template-columns:
-    [wrapper-start]
-      minmax(2vw, 1fr)
-      [container-start] min( min(96vw, 1200px), 80ch ) [container-end]
-      minmax(2vw, 1fr)
+    [width-full-start]
+      var(--gutter-full)
+        [width-wide-start]
+          var(--gutter-wide)
+            [container-start] var(--content-width) [container-end]
+          var(--gutter-wide)
+        [width-wide-end]
+      var(--gutter-full)
     [wrapper-end];
 }
 
 .container {
   grid-column: container;
   padding: 2vh 0;
+
+  &-wide { grid-column: width-wide; }
+  &-full { grid-column: width-full; }
 }

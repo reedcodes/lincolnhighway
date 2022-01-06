@@ -15,11 +15,13 @@
 {%- set post_list = collections.blogPosts -%}
 
 {%- block aside_content -%}
-  <aside class="aside-latest-posts">
-    <h2>Latest Posts</h2>
+  <aside class="aside wrapper aside-latest-posts">
+    <div class="container">
+      <h2>Latest Posts</h2>
 
-    {%- include "post/list.njk" -%}
+      {%- include "post/list.njk" -%}
 
-    <a href="{{ "/blog/" | url }}">View all blog posts</a>
+      <a href="{{ "/blog/" | url }}">View all blog posts</a>
+    </div>
   </aside>
 {%- endblock aside_content -%}
