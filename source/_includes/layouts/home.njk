@@ -1,5 +1,8 @@
 {%- extends "layouts/default.njk" -%}
 
+{%- set body_classes = body_classes + " body-home" -%}
+{%- set main_container_classes = "-wide" -%}
+
 {%- set post_list = collections.blogPosts -%}
 
 {%- block main_content -%}
@@ -21,7 +24,7 @@
   <div class="greetings">
     {%- include "maps/google-route.njk" -%}
 
-    <div class="greeting">
+    <div class="card greeting">
       <p>{{ greetings.date | shortDate }}</p>
       <h2>Greetings from {{ greetings.location }}!</h2>
       <p>{{ greetings.greeting }}</p>

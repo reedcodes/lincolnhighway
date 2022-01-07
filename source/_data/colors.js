@@ -22,7 +22,7 @@ module.exports = [
   {
     // Honey.
     name: "accent",
-    color: "hsla(42, 100%, 48%, 1)"
+    color: "hsla(42, 95%, 60%, 1)"
   },
   {
     // Straw.

@@ -74,7 +74,10 @@ title: Color Token Contrast
   - `color-contrast`
   - `color-primary`
   - `color-on-accent`
+  - `color-on-highlight`
   - `color-dark-contrast`
+  - `color-dark-primary`
+  - `color-on-dark-accent`
 
 ## color-on-accent
   - `color-main`
@@ -82,9 +85,7 @@ title: Color Token Contrast
   - `color-accent`
   - `color-highlight`
   - `color-dark-main`
-  - `color-on-dark-primary`
   - `color-on-dark-secondary`
-  - `color-dark-accent`
   - `color-dark-highlight`
 
 ## color-highlight
@@ -99,6 +100,7 @@ title: Color Token Contrast
 ## color-on-highlight
   - `color-main`
   - `color-on-secondary`
+  - `color-accent`
   - `color-highlight`
   - `color-dark-main`
   - `color-on-dark-secondary`
@@ -141,6 +143,7 @@ title: Color Token Contrast
 ## color-dark-primary
   - `color-main`
   - `color-on-secondary`
+  - `color-accent`
   - `color-highlight`
   - `color-dark-main`
   - `color-on-dark-primary`
@@ -150,7 +153,6 @@ title: Color Token Contrast
 ## color-on-dark-primary
   - `color-contrast`
   - `color-primary`
-  - `color-on-accent`
   - `color-dark-contrast`
   - `color-dark-primary`
   - `color-on-dark-accent`
@@ -175,13 +177,13 @@ title: Color Token Contrast
 ## color-dark-accent
   - `color-contrast`
   - `color-primary`
-  - `color-on-accent`
   - `color-dark-contrast`
   - `color-on-dark-accent`
 
 ## color-on-dark-accent
   - `color-main`
   - `color-on-secondary`
+  - `color-accent`
   - `color-highlight`
   - `color-dark-main`
   - `color-on-dark-primary`

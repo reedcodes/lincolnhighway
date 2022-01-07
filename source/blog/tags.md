@@ -10,6 +10,7 @@ pagination:
   alias: tag
   filter: [
     "all",
+    "guide",
     "blogPosts",
     "categories",
     "categoryList",

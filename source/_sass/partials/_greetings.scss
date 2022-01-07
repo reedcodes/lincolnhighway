@@ -1,0 +1,12 @@
+.greetings {
+
+}
+
+.greeting {
+  // Change background gradient color: Highlight.
+  --bg-gradient-h: 61;
+  --bg-gradient-s: 46%;
+  --bg-gradient-l: 64%;
+
+  color: var(--color-on-highlight);
+}

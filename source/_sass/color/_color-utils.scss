@@ -4,6 +4,7 @@
 
 @use 'color-tokens' as *;
 
+// Color utility classes.
 .color {
   &-alert {
     color: var(--color-primary);
@@ -14,6 +15,9 @@
   }
 }
 
+
+
+// Functional color classes.
 @each $color in $base-color-tokens {
   .bg-#{$color} {
     background-color: var(--color-#{$color});

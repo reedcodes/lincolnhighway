@@ -1,0 +1,35 @@
+// Set up a Sass variable to use for the reusable background gradient. Colors
+// move at a 45-degree angle from the bottom right to the top left. There are
+// hard stops at about one-third and two-thirds. In the background, the hue is
+// the same, and the saturation and lightness are calculated based on the
+// original values.
+$bg-gradient: linear-gradient(
+    var(--bg-gradient-d),
+    hsla(
+      var(--bg-gradient-h),
+      var(--bg-gradient-s),
+      var(--bg-gradient-l),
+      var(--bg-gradient-a)
+    ) 33%,
+    hsla(
+      var(--bg-gradient-h),
+      calc( var(--bg-gradient-s) - 10% ),
+      calc( var(--bg-gradient-l) + 5% ),
+      var(--bg-gradient-a)
+    ) 33% 67%,
+    hsla(
+      var(--bg-gradient-h),
+      calc( var(--bg-gradient-s) - 20% ),
+      calc( var(--bg-gradient-l) + 10% ),
+      var(--bg-gradient-a)
+    ) 67%
+  );
+
+%bg-gradient {
+  // The default color value for the background gradient is color-primary.
+  --bg-gradient-d: 315deg;
+  --bg-gradient-h: 0;
+  --bg-gradient-s: 100%;
+  --bg-gradient-l: 27%;
+  --bg-gradient-a: 1;
+}
