@@ -1,27 +1,27 @@
 {%- extends "layouts/default.njk" -%}
 
 {%- set body_classes = body_classes + " body-home" -%}
-{%- set main_container_classes = "-wide" -%}
+{%- set main_container_classes = "-full wrapper" -%}
 
 {%- set post_list = collections.blogPosts -%}
 
 {%- block main_content -%}
-  <section class="hero-home" aria-labelledby="hero-title">
-    <header>
-      <p>{{ hero.eyebrow }}</p>
-      <h1 id="hero-title">{{ hero.title }}</h1>
+  <section class="home-hero container" aria-labelledby="home-hero-title">
+    <header class="home-hero-header">
+      <p class="home-hero-eyebrow">{{ hero.eyebrow }}</p>
+      <h1 id="home-hero-title">{{ hero.title }}</h1>
     </header>
 
-    <div class="hero-content">
+    <div class="home-hero-content">
       {{ content | safe }}
     </div>
 
-    <div class="hero-image">
+    <div class="home-hero-image">
       {% image hero.source, hero.alt %}
     </div>
   </section>
 
-  <div class="greetings">
+  {# <div class="greetings">
     {%- include "maps/google-route.njk" -%}
 
     <div class="card greeting">
@@ -29,13 +29,21 @@
       <h2>Greetings from {{ greetings.location }}!</h2>
       <p>{{ greetings.greeting }}</p>
     </div>
+  </div> #}
+
+  <div class="home-social container">
+    {%- include "partials/social.njk" -%}
   </div>
 
-  {%- include "partials/social.njk" -%}
+  <div class="home-dashboard container">
+    {%- include "partials/dashboard.njk" -%}
+  </div>
 
-  {%- include "partials/dashboard.njk" -%}
+  <div class="home-post-list container">
+    {%- include "post/list.njk" -%}
+  </div>
 
-  {%- include "post/list.njk" -%}
-
-  {%- include "partials/stats.njk" -%}
+  <div class="home-stats container">
+    {%- include "partials/stats.njk" -%}
+  </div>
 {%- endblock main_content -%}
