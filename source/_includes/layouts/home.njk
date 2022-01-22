@@ -21,29 +21,19 @@
     </div>
   </section>
 
-  {# <div class="greetings">
-    {%- include "maps/google-route.njk" -%}
-
+  <div class="home-greetings container">
     <div class="card greeting">
       <p>{{ greetings.date | shortDate }}</p>
       <h2>Greetings from {{ greetings.location }}!</h2>
       <p>{{ greetings.greeting }}</p>
     </div>
-  </div> #}
-
-  <div class="home-social container">
-    {%- include "partials/social.njk" -%}
-  </div>
-
-  <div class="home-dashboard container">
-    {%- include "partials/dashboard.njk" -%}
-  </div>
-
-  <div class="home-post-list container">
-    {%- include "post/list.njk" -%}
   </div>
 
   <div class="home-stats container">
     {%- include "partials/stats.njk" -%}
+  </div>
+
+  <div class="home-post-list container">
+    {%- include "post/list.njk" -%}
   </div>
 {%- endblock main_content -%}
