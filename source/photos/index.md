@@ -3,7 +3,7 @@ title: Photos
 layout: layouts/default.njk
 eleventyNavigation:
   key: Photos
-  order: 4
+  order: 5
 ---
 
 {%- for album in albums -%}

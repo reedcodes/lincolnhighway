@@ -1,10 +1,38 @@
 {
-  "miles driven": 1246,
-  "hotels & motels": 12,
-  "diners & restaurants": 15,
-  "roadside attractions": 23,
-  "hotel shampoos": 9,
-  "cups of coffee": 35,
-  "local brochures": 18,
-  "black bean burgers": 8
+  "days": {
+    "title": "days on the road",
+    "item": 16
+  },
+  "miles": {
+    "title": "miles driven",
+    "item": 1246
+  },
+  "lodging": {
+    "title": "hotels & motels",
+    "item": 12
+  },
+  "dining": {
+    "title": "diners & restaurants",
+    "item": 15
+  },
+  "sightseeing": {
+    "title": "roadside attractions",
+    "item": 23
+  },
+  "toiletries": {
+    "title": "hotel shampoos",
+    "item": 9
+  },
+  "coffee": {
+    "title": "cups of coffee",
+    "item": 35
+  },
+  "info": {
+    "title": "local brochures",
+    "item": 18
+  },
+  "burgers": {
+    "title": "black bean burgers",
+    "item": 8
+  }
 }
