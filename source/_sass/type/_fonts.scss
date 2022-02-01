@@ -1,13 +1,126 @@
-$neuton: 'Neuton', serif;
-$montez: 'Montez', cursive;
-$raleway: 'Raleway', sans-serif;
+@font-face {
+  font-family: 'Montez';
+  src:
+    local( 'Montez' ),
+    local( 'Montez-Regular' ),
+    url('/dist/webfonts/montez/Montez-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-$title: $montez;
-$highlight: $neuton;
-$body: $raleway;
 
-:root {
-  --font-body: #{$body};
-  --font-highlight: #{$highlight};
-  --font-title: #{$title};
+
+@font-face {
+  font-family: 'Neuton';
+  src:
+    local( 'Neuton Light' ),
+    local( 'Neuton-Light' ),
+    url('/dist/webfonts/neuton/Neuton-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neuton';
+  src:
+    local( 'Neuton' ),
+    local( 'Neuton Regular' ),
+    local( 'Neuton-Regular' ),
+    url('/dist/webfonts/neuton/Neuton-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neuton';
+  src:
+    local( 'Neuton Italic' ),
+    local( 'Neuton-Italic' ),
+    url('/dist/webfonts/neuton/Neuton-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neuton';
+  src:
+    local( 'Neuton Bold' ),
+    local( 'Neuton-Bold' ),
+    url('/dist/webfonts/neuton/Neuton-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Public Sans';
+  src:
+    local( 'Public Sans Light' ),
+    local( 'Public-Sans-Light' ),
+    url('/dist/webfonts/public-sans/PublicSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src:
+    local( 'Public Sans Light Italic' ),
+    local( 'Public-Sans-Light-Italic' ),
+    url('/dist/webfonts/public-sans/PublicSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src:
+    local( 'Public Sans' ),
+    local( 'Public Sans Regular' ),
+    local( 'Public-Sans-Regular' ),
+    url('/dist/webfonts/public-sans/PublicSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src:
+    local( 'Public Sans Italic' ),
+    local( 'Public-Sans-Italic' ),
+    url('/dist/webfonts/public-sans/PublicSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src:
+    local( 'Public Sans Bold' ),
+    local( 'Public-Sans-Bold' ),
+    url('/dist/webfonts/public-sans/PublicSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src:
+    local( 'Public Sans Bold Italic' ),
+    local( 'Public-Sans-Bold-Italic' ),
+    url('/dist/webfonts/public-sans/PublicSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }

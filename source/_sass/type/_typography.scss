@@ -1,11 +1,23 @@
+@use 'fonts' as *;
 @use 'sass:math';
 
 $spacer: 1em;
 
+$serif: 'Neuton', serif;
+$sans-serif: 'Public Sans', sans-serif;
+$cursive: 'Montez', cursive;
 
+$heading: $serif;
+$body: $sans-serif;
+$highlight: $cursive;
 
 :root {
   --spacer: #{$spacer};
+
+  --font-body: #{$body};
+  --font-heading: #{$heading};
+  --font-highlight: #{$highlight};
+
   // Calculate a relative line height.
   // Jesús Ricarte
   // https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/
@@ -49,12 +61,11 @@ body {
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6
 ) {
-  --heading-font: var(--font-highlight);
 
   margin-bottom: 0.65em;
   line-height: var(--line-height);
-  font-weight: 500;
-  font-family: var(--heading-font);
+  font-weight: 400;
+  font-family: var(--font-heading);
   overflow-wrap: break-word;
   hyphens: auto;
 }
