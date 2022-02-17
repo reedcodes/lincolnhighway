@@ -1,7 +1,7 @@
 <nav class="social" id="social" aria-label="social media">
   <ul class="social-list" role="list">
     {%- for info in social -%}
-      <li><a href="{{ info.url }}"><span class="{{ info.icon.type | default( "fab" ) }} fa-fw fa-{{ info.icon.name }}" aria-hidden="true"></span>{{ info.site }}</a></li>
+      <li><a href="{{ info.url }}">{{ info.site }}</a></li>
     {%- endfor -%}
   </ul>
 </nav>
