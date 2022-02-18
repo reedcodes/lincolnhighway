@@ -6,7 +6,8 @@
 {%- endif -%}
 
 {%- if categoryName -%}
-  {%- set post_list = collections.categories[categoryName] -%}
+  {%- set post_list = collections.categories[categoryName] | sort -%}
+  {%- set title = "Category Archive: " + categoryName -%}
 {%- endif -%}
 
 {%- block main_content -%}
