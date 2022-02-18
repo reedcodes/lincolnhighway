@@ -1,9 +1,5 @@
-{%- if collections.tagList -%}
-
-  <ul>
-    {%- for tag in collections.tagList | sort -%}
-      <li><a href="/blog/tag/{{ tag | lower }}/">{{ tag }}</a></li>
-    {%- endfor -%}
-  </ul>
-
-{%- endif -%}
+<p><span class="sr-only">Post tags:</span>
+  {% for tag in post_tags -%}
+    {%- if not loop.last -%}<a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a>, {% else -%} <a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a>{%- endif -%}
+  {%- endfor -%}
+</p>

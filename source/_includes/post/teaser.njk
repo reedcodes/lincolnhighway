@@ -6,6 +6,10 @@
 
   {% include "post/header.njk" %}
 
+  {%- if post_teaser and loop.first and not home -%}
+    <p>{{ post_teaser | safe }}</p>
+  {%- endif -%}
+
   <a href="{{ post_url }}">Continue reading <span class="sr-only">{{ post_title }}</span></a>
 
 </article>

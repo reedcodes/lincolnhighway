@@ -1,0 +1,9 @@
+{%- if collections.tagList -%}
+
+  <ul>
+    {%- for tag in collections.tagList | sort -%}
+      <li><a href="/blog/tag/{{ tag | lower }}/">{{ tag }}</a></li>
+    {%- endfor -%}
+  </ul>
+
+{%- endif -%}

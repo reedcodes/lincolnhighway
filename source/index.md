@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 home: true
-post_max: 6
+post_max: 3
 hero:
   eyebrow: Hello! My name is Reed.
   title: I'm planning a road trip along the Lincoln Highway.

@@ -1,20 +1,12 @@
 <header>
-  <p>{{ post_date | shortDate }}</p>
+  {%- if post_category -%}
+    <p><a href="/{{ post_category | slug }}/"><span class="sr-only">Category:</span> {{ post_category }}</a></p>
+  {%- endif -%}
   <h1>{{ post_title }}</h1>
 </header>
 
-{%- if post_category -%}
-  <p>category: {{ post_category }}</p>
-{%- endif -%}
+<p><span class="sr-only">Posted on</span> {{ post_date | shortDate }}</p>
 
 {%- if post_tags -%}
-  <p>tags:
-    {% for tag in post_tags -%}
-      {%- if not loop.last -%}<a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a>, {% else -%} <a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a>{%- endif -%}
-    {%- endfor -%}
-  </p>
-{%- endif -%}
-
-{%- if post_teaser -%}
-  <p>{{ post_teaser | safe }}</p>
+  {%- include "post/tag-list.njk" -%}
 {%- endif -%}
