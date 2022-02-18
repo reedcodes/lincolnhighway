@@ -21,17 +21,15 @@
     </div>
   </section>
 
-  <div class="home-greetings container">
+  <section class="home-greetings container">
     <div class="card greeting">
-      <p>{{ greetings.date | shortDate }}</p>
+      <a class="eyebrow" href="{{ '/stats/' | url }}">Latest Stats</a>
       <h2>Greetings from {{ greetings.location }}!</h2>
-      <p>{{ greetings.greeting }}</p>
+      <p><strong>{{ stats.days.item }}</strong> days</p>
+      <p><strong>{{ stats.miles.item }}</strong> miles</p>
+      <p class="post-date"><span class="sr-only">Posted on</span> {{ greetings.date | shortDate }}</p>
     </div>
-  </div>
-
-  <div class="home-stats container">
-    {%- include "partials/stats.njk" -%}
-  </div>
+  </section>
 
   <div class="home-post-list container">
     {%- include "post/list.njk" -%}
