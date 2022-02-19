@@ -1,11 +1,12 @@
+{%- set post_title_heading = post_title_heading | default( "h3" ) -%}
+
 <header>
   {%- if post_category -%}
     <p><a href="/{{ post_category | slug }}/"><span class="sr-only">Category:</span> {{ post_category }}</a></p>
   {%- endif -%}
-  <h1>{{ post_title }}</h1>
+  <{{- post_title_heading -}}>{{ post_title }}</{{- post_title_heading -}}>
+  <p><span class="sr-only">Posted on</span> {{ post_date | shortDate }}</p>
 </header>
-
-<p><span class="sr-only">Posted on</span> {{ post_date | shortDate }}</p>
 
 {%- if post_tags -%}
   {%- include "post/tag-list.njk" -%}

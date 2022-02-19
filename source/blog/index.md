@@ -8,6 +8,7 @@ eleventyNavigation:
 pagination:
   data: collections.blogPosts
   size: 10
+post_title_heading: h2
 ---
 
 This is **blog** stuff.

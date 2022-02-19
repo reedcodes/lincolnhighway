@@ -23,15 +23,18 @@
 
   <section class="home-greetings container">
     <div class="card greeting">
-      <a class="eyebrow" href="{{ '/stats/' | url }}">Latest Stats</a>
-      <h2>Greetings from {{ greetings.location }}!</h2>
+      <header>
+        <a class="eyebrow" href="{{ '/stats/' | url }}">Latest Stats</a>
+        <h2>Greetings from {{ greetings.location }}!</h2>
+      </header>
       <p><strong>{{ stats.days.item }}</strong> days</p>
       <p><strong>{{ stats.miles.item }}</strong> miles</p>
       <p class="post-date"><span class="sr-only">Posted on</span> {{ greetings.date | shortDate }}</p>
     </div>
   </section>
 
-  <div class="home-post-list container">
+  <section class="home-post-list container">
+    <h2>Latest Posts</h2>
     {%- include "post/list.njk" -%}
-  </div>
+  </section>
 {%- endblock main_content -%}

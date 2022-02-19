@@ -3,5 +3,6 @@
   "permalink": "/blog/{{ page.fileSlug }}/",
   "eleventyNavigation": {
     "parent": "Blog"
-  }
+  },
+  "post_title_heading": "h1"
 }
