@@ -9,6 +9,7 @@ pagination:
   data: collections.blogPosts
   size: 10
 post_title_heading: h2
+post_teaser_show: true
 ---
 
 This is **blog** stuff.
