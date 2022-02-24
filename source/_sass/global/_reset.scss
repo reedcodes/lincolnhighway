@@ -89,8 +89,12 @@ svg {
 }
 
 svg {
+  --fillColor: currentColor;
+  --strokeColor: currentColor;
+
   pointer-events: none;
-  fill: currentColor;
+  fill: var(--fillColor);
+  stroke: var(--strokeColor);
 }
 
 input,

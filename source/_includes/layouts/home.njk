@@ -36,13 +36,22 @@
   <section class="card-links container-full wrapper">
     <div class="container card-links-container">
       <div class="card-links-card">
-        <a href="{{ '/blog/' | url }}">Read the Blog</a>
+        <a href="{{ '/blog/' | url }}">
+          {%- include "icons/edit.svg" %}
+          Read the Blog
+        </a>
       </div>
       <div class="card-links-card">
-        <a href="{{ '/maps/' | url }}">View the Maps</a>
+        <a href="{{ '/maps/' | url }}">
+          {%- include "icons/map.svg" %}
+          View the Maps
+        </a>
       </div>
       <div class="card-links-card">
-        <a href="{{ '/photos/' | url }}">Browse the Photos</a>
+        <a href="{{ '/photos/' | url }}">
+          {%- include "icons/camera.svg" %}
+          Browse the Photos
+        </a>
       </div>
     </div>
   </section>

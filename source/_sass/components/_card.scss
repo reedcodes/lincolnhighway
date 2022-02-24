@@ -11,4 +11,10 @@
     flex-grow: 1;
     flex-basis: calc( ( 45ch - 100% ) * 999 );
   }
+
+  svg {
+    --fillColor: transparent;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
