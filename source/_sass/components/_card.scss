@@ -1,0 +1,14 @@
+.card-links {
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &-card {
+    flex-grow: 1;
+    flex-basis: calc( ( 45ch - 100% ) * 999 );
+  }
+}

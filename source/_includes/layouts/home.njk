@@ -21,8 +21,8 @@
     </div>
   </section>
 
-  <section class="home-greetings container">
-    <div class="card greeting">
+  <section class="container">
+    <div class="greeting">
       <header>
         <a class="eyebrow" href="{{ '/stats/' | url }}">Latest Stats</a>
         <h2>Greetings from {{ greetings.location }}!</h2>
@@ -33,7 +33,21 @@
     </div>
   </section>
 
-  <section class="home-post-list container">
+  <section class="card-links container-full wrapper">
+    <div class="container card-links-container">
+      <div class="card-links-card">
+        <a href="{{ '/blog/' | url }}">Read the Blog</a>
+      </div>
+      <div class="card-links-card">
+        <a href="{{ '/maps/' | url }}">View the Maps</a>
+      </div>
+      <div class="card-links-card">
+        <a href="{{ '/photos/' | url }}">Browse the Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="post-list home-post-list container">
     <h2>Latest Posts</h2>
     {%- include "post/list.njk" -%}
   </section>
