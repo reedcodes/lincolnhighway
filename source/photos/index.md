@@ -1,11 +1,7 @@
 ---
 title: Photos
-layout: layouts/default.njk
+layout: layouts/photos.njk
 eleventyNavigation:
   key: Photos
   order: 5
 ---
-
-{%- for album in albums -%}
-  {% flickrAlbum album.id, album.source, album.title %}
-{%- endfor -%}

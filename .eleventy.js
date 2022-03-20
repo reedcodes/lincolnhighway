@@ -23,8 +23,8 @@ module.exports = function( eleventyConfig ) {
   eleventyConfig.addCollection( "tagList", require("./source/_config/collections/tag-list.js") );
 
   // Shortcodes.
-  eleventyConfig.addShortcode( "flickr", require("./source/_config/shortcodes/flickr.js") );
   eleventyConfig.addShortcode( "flickrAlbum", require("./source/_config/shortcodes/flickr-album.js") );
+  eleventyConfig.addShortcode( "flickrPhoto", require("./source/_config/shortcodes/flickr-photo.js") );
   eleventyConfig.addShortcode( "icon", require("./source/_config/shortcodes/icon.js") );
   eleventyConfig.addShortcode( "image", require("./source/_config/shortcodes/image.js") );
 

@@ -1,0 +1,11 @@
+{%- extends "layouts/default.njk" -%}
+
+{%- block main_content -%}
+  {{ content | safe }}
+
+  <div class="photos">
+    {%- for photo in photos -%}
+      {%- flickrPhoto photo -%}
+    {%- endfor -%}
+  </div>
+{%- endblock main_content -%}
