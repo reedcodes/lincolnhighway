@@ -5,6 +5,7 @@
 .push-it
 
 # Development files.
+.cache
 .env
 .npm
 node_modules

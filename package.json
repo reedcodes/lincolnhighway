@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "a11y-color-tokens": "^0.5.0",
@@ -27,9 +28,10 @@
   },
   "main": "gulpfile.js",
   "scripts": {
-    "build:tokens": "npx a11y-color-tokens --colorTokensPath='source/_data/colors.js' --outputDirPath='source/_sass/color' --compatibilityDocsPath='source/guide'",
+    "tokens": "npx a11y-color-tokens --colorTokensPath='source/_data/colors.js' --outputDirPath='source/_sass/color' --compatibilityDocsPath='source/guide'",
     "build:sass": "gulp sass",
     "build:11ty": "npx @11ty/eleventy",
-    "build": "npm-run-all build:tokens build:sass build:11ty"
+    "build": "npm-run-all tokens build:sass build:11ty",
+    "serve": "npx @11ty/eleventy --serve"
   }
 }

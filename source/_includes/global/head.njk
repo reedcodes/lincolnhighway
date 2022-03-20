@@ -3,10 +3,4 @@
 
 <title>{%- if not home -%}{{- title }} | {% endif -%}{{- site.site -}}</title>
 
-<!-- Start Google Fonts. -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Montez&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
-<!-- End Google Fonts. -->
-
-<link rel="stylesheet" media="screen" href="{{ site.assets.css }}lincolnhighwayjournal.css" />
+<link rel="stylesheet" media="screen" href="{{ site.assets.css | url }}lincolnhighwayjournal.css" />
