@@ -1,7 +1,0 @@
-@use 'color-tokens' as *;
-@use 'bg-gradient' as *;
-
-:root {
-  @include color-tokens();
-  @extend %bg-gradient;
-}
