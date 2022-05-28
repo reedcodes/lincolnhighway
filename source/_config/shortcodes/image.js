@@ -3,5 +3,5 @@ module.exports = function( source, alt ) {
     source = '/dist/images/' + source;
   }
 
-  return `<img src="${source}" width="1600" height="900" alt="${alt}">`;
+  return `<img src="${source}" width="800" alt="${alt}">`;
 };
