@@ -1,2 +1,7 @@
-# Deployment directory
+# Development.
+.cache/
+node_modules/
+.env
+
+# Deployment.
 .push-it
