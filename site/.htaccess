@@ -1,0 +1,19 @@
+RewriteEngine on
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [NC,L,R=301]
+
+RewriteRule ^$ /site/ [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/site/
+
+RewriteRule ^(.*)$ /site/$1
+
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteRule ^site/(.*[^/])% http://www.lincolnhighwayjournal.com/$1/ [R=301]
+
+RewriteCond %{HTTP_HOST} ^www.lincolnhighwayjournal.com$ [NC]
+
+ErrorDocument 404 /
