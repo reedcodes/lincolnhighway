@@ -13,18 +13,18 @@
   <main class="container container-{{- main_page_class if main_page_class else "default" }} {{ "sidebar" if not home -}}">
 
     <section class="container {{ "sidebar-main" if not home -}}">
-      <h1>{{- title -}}</h1>
+      {%- block page_title -%}
+        <h1>{{- title -}}</h1>
+      {%- endblock page_title -%}
 
       {%- block content -%}
         {{ content | safe }}
       {%- endblock content -%}
     </section>
 
-    {%- if not home -%}
-      <aside class="container sidebar-aside">
-        {% include "global/sidebar.njk" %}
-      </aside>
-    {%- endif -%}
+    {%- block page_sidebar -%}
+      {% include "global/sidebar.njk" %}
+    {%- endblock page_sidebar -%}
 
   </main>
 

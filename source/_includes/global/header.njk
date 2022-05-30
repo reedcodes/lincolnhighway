@@ -1,3 +1,9 @@
-<p>{{- site.website -}}</p>
+{%- if home -%}
+  {%- set title_element = "h1" -%}
+{%- else -%}
+  {%- set title_element = "p" -%}
+{%- endif -%}
+
+<{{- title_element -}}>{{- site.website -}}</{{- title_element -}}>
 
 {% include "global/menu.njk" %}

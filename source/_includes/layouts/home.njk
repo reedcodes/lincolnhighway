@@ -1,9 +1,16 @@
 {%- extends "layouts/default.njk" -%}
+
 {%- set home = true -%}
 {%- set main_page_class = "full" -%}
+
+{%- block page_title -%}
+{%- endblock page_title -%}
 
 {%- block content -%}
 
   {{ content | safe }}
 
 {%- endblock content -%}
+
+{%- block page_sidebar -%}
+{%- endblock page_sidebar -%}
