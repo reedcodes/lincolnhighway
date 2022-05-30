@@ -1,8 +1,7 @@
 ---
 layout: layouts/home.njk
+title: Home Page
 ---
-
-# Home page
 
 Vestibulum et augue elementum, ultricies leo vitae, pellentesque massa. Curabitur quis sapien pharetra, imperdiet metus non, pharetra purus. Donec orci neque, tristique ut quam ac, imperdiet convallis turpis. Vivamus nibh lacus, tincidunt sollicitudin viverra ac, facilisis at diam. Pellentesque eget ultrices urna. Phasellus consectetur urna id leo placerat porttitor. Curabitur eget lacus tempus, dapibus felis in, semper arcu. Curabitur diam arcu, mattis et elementum in, elementum non nunc.
 

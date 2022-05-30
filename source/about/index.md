@@ -1,8 +1,7 @@
 ---
 layout: layouts/default.njk
+title: About
 ---
-
-# About
 
 Mauris dapibus sollicitudin egestas. Duis dictum elementum placerat. Quisque id eros tincidunt, vehicula erat vel, viverra purus. Mauris neque lectus, posuere ut facilisis eget, maximus at ex. In justo nulla, convallis a libero commodo, facilisis laoreet lectus. Sed ut imperdiet nisi. Aliquam vitae orci ac urna finibus facilisis. Vivamus ornare ornare metus quis sodales. Donec et rhoncus turpis.
 
