@@ -1,1 +1,6 @@
-<p>This is the footer.</p>
+<section>
+  <h2>Contact</h2>
+  <p>You can find me on social media, or send me an email at {{ site.email | urlize | safe -}}.</p>
+</section>
+
+{%- include "partials/social.njk" -%}
