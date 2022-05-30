@@ -5,6 +5,7 @@ module.exports = function( eleventyConfig ) {
 
   // Send assets from source to site.
   eleventyConfig.addPassthroughCopy( {
+    "./source/_css/": "dist/css/",
     "./source/_images/": "dist/images/"
   } );
 

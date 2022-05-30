@@ -15,10 +15,17 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-navigation": "^0.3.3",
-    "npm-run-all": "^4.1.5"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.52.1"
   },
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build:11ty": "npx @11ty/eleventy",
+    "build:sass": "gulp sass",
+    "build": "npm-run-all build:sass build:11ty",
     "serve": "npx @11ty/eleventy --serve"
   }
 }
