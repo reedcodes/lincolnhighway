@@ -1,4 +1,2 @@
-body {
-  background: white;
-  color: black;
-}
+@use 'color';
+@use 'global';
