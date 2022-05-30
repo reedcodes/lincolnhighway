@@ -1,0 +1,20 @@
+// If the page has a sidebar, add a flexible and responsive view, so that the
+// content and the sidebar stack on smaller screens.
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw 5vh;
+
+  &-main {
+    flex-basis: 0;
+    flex-grow: 999;
+    // min-width: 60%;
+    min-width: calc( 65% - 5vw );
+  }
+
+  &-aside {
+    flex-basis: 15rem;
+    flex-grow: 1;
+  }
+}

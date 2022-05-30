@@ -1,0 +1,16 @@
+body {
+  // Set the grid, so the header and footer (always first and last) have
+  // responsive heights, while the main area takes over the rest.
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  // By default, the body can take up the entire width of the page, and it
+  // is centered (set it even though it's mostly not needed here).
+  width: min( 100%, 100vw );
+  margin-inline: auto;
+
+  background-color: #fffeef;
+  color: #333;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}

@@ -4,6 +4,6 @@
   {%- set title_element = "p" -%}
 {%- endif -%}
 
-<{{- title_element -}}>{{- site.website -}}</{{- title_element -}}>
+<{{- title_element }} class="site-title">{{- site.website -}}</{{- title_element -}}>
 
 {% include "global/menu.njk" %}
