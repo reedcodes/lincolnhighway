@@ -1,0 +1,7 @@
+{%- if not social | length == 0 -%}
+  <ul class="social-list" role="list">
+    {%- for item in social -%}
+      <li><a href="{{ item.url }}">{{ item.site }}</a></li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
