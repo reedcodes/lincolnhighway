@@ -20,9 +20,11 @@
       {%- endblock content -%}
     </section>
 
-    <aside>
-      {% include "global/sidebar.njk" %}
-    </aside>
+    {%- if not home -%}
+      <aside>
+        {% include "global/sidebar.njk" %}
+      </aside>
+    {%- endif -%}
 
   </main>
 
