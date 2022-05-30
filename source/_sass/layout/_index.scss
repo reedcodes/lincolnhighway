@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  --container-width: 960px;
+  --container-width: 1200px;
 
   width: min( 100%, var(--container-width) );
   margin-inline: auto;
@@ -20,16 +20,17 @@ body {
 .sidebar {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 5vw 5vh;
 
   &-main {
     flex-basis: 0;
     flex-grow: 999;
-    min-inline-size: 50%;
+    // min-width: 60%;
+    min-width: calc( 65% - 5vw );
   }
 
   &-aside {
-    flex-basis: 20vw;
+    flex-basis: 15rem;
     flex-grow: 1;
   }
 }
