@@ -13,7 +13,9 @@
   <main>
 
     <section>
-      {{ content | safe }}
+      {%- block content -%}
+        {{ content | safe }}
+      {%- endblock content -%}
     </section>
 
     <aside>
