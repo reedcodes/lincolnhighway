@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Lincoln Highway Journal</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="icon" href="img/favicon.png">
+  {% include "global/head.njk" %}
 </head>
 
 <body>
 
-  {{ content | safe }}
+  <header>
+    {% include "global/header.njk" %}
+  </header>
+
+  <main>
+
+    <section>
+      {{ content | safe }}
+    </section>
+
+    <aside>
+      {% include "global/sidebar.njk" %}
+    </aside>
+
+  </main>
+
+  <footer>
+    {% include "global/footer.njk" %}
+  </footer>
 
 </body>
 </html>
