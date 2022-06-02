@@ -3,14 +3,15 @@
 {%- set home = true -%}
 {%- set main_page_class = "full" -%}
 
-{%- block page_title -%}
-{%- endblock page_title -%}
+{%- block page_hero -%}
+  <img src="/dist/images/illustrations/city-landscape.svg" width="600">
+{%- endblock page_hero -%}
 
-{%- block content -%}
+{%- block page_content -%}
 
   {{ content | safe }}
 
-{%- endblock content -%}
+{%- endblock page_content -%}
 
 {%- block page_sidebar -%}
 {%- endblock page_sidebar -%}
