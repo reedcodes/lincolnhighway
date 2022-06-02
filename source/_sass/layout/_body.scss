@@ -9,8 +9,6 @@ body {
   width: min( 100%, 100vw );
   margin-inline: auto;
 
-  background-color: #fffeef;
-  color: #333;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
 }

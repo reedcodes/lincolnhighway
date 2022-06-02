@@ -1,12 +1,2 @@
 @forward 'tokens';
 @forward 'utils';
-
-:root {
-  --body-bg-color: var(--color-main);
-  --body-text-color: var(--color-contrast);
-
-  --link-text-color: var(--color-accent);
-  --link-text-hover-color: var(--color-on-highlight);
-  --link-bg-color: transparent;
-  --link-bg-hover-color: transparent;
-}
