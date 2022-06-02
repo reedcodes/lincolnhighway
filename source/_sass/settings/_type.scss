@@ -35,7 +35,9 @@ body {
 
 :is(
   p,
-  dl,
+  dl
+),
+:is(
   ol:not([class]):not([role]),
   ul:not([class]):not([role])
 ) {
