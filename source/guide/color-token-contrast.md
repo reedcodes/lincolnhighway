@@ -7,46 +7,46 @@ title: Color Token Contrast
 ## color-primary
   - `color-on-primary`
   - `color-on-secondary`
-  - `color-accent`
-  - `color-on-highlight`
+  - `color-highlight`
   - `color-contrast`
 
 ## color-on-primary
   - `color-primary`
+  - `color-on-accent`
 
 ## color-secondary
   - `color-on-secondary`
-  - `color-accent`
-  - `color-on-highlight`
+  - `color-highlight`
   - `color-contrast`
 
 ## color-on-secondary
   - `color-primary`
   - `color-secondary`
+  - `color-on-accent`
 
 ## color-accent
-  - `color-primary`
-  - `color-secondary`
   - `color-on-accent`
 
 ## color-on-accent
+  - `color-on-primary`
+  - `color-on-secondary`
   - `color-accent`
-  - `color-on-highlight`
+  - `color-highlight`
   - `color-contrast`
 
 ## color-highlight
-  - `color-contrast`
-
-## color-on-highlight
   - `color-primary`
   - `color-secondary`
   - `color-on-accent`
+
+## color-on-highlight
+  - `color-contrast`
 
 ## color-contrast
   - `color-primary`
   - `color-secondary`
   - `color-on-accent`
-  - `color-highlight`
+  - `color-on-highlight`
   - `color-on-contrast`
 
 ## color-on-contrast
