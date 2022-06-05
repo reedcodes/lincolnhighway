@@ -2,6 +2,7 @@
   --container-width: 1200px;
 
   width: min( 100%, var(--container-width) );
+  margin-block: min( 2vh, 3rem );
   margin-inline: auto;
 
   &-wide { --container-width: 1750px; }

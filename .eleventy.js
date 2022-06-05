@@ -12,6 +12,9 @@ module.exports = function( eleventyConfig ) {
   // Add the 11ty nav plugin.
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+  // Add year shortcode.
+  eleventyConfig.addShortcode( "year", require("./source/_config/shortcodes/year.js") );
+
   // 11ty config options.
   return {
     markdownTemplateEngine: "njk",

@@ -14,6 +14,8 @@
 
   {%- include "partials/maps.njk" -%}
 
+  {{- content | safe -}}
+
 {%- endblock main_content -%}
 
 {%- block page_sidebar -%}

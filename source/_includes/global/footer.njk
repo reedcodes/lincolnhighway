@@ -1,12 +1,16 @@
-<section>
+<div class="contact-info container">
   <h2>Contact</h2>
   <p>You can find me on social media, or send me an email at {{ site.email | urlize | safe -}}.</p>
-</section>
+</div>
 
 {%- include "partials/social.njk" -%}
 
-<p>City illustration from <a href="https://lukaszadam.com/illustrations">Lukasz Adam</a></p>
+<div class="copyright">
+  <p>Lincoln Highway Journal. &copy; {% year -%}, <a href="https://reedcodes.com/">Reed Piernock</a>.</p>
 
-<p>Icons from <a href="https://phosphoricons.com/">Phosphor Icons</a></p>
+  <p>City illustration from <a href="https://lukaszadam.com/illustrations">Lukasz Adam</a></p>
 
-<p>USA map vector from <a href="https://www.freepik.com/vectors/usa-map">freepik</a></p>
+  <p>Icons from <a href="https://phosphoricons.com/">Phosphor Icons</a></p>
+
+  <p>USA map vector from <a href="https://www.freepik.com/vectors/usa-map">freepik</a></p>
+</div>
