@@ -4,14 +4,17 @@
 {%- set main_page_class = "full" -%}
 
 {%- block page_hero -%}
+  <h1>Donec orci neque, tristique ut quam ac</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi.</p>
+  <a href="{{- '/about/' | url -}}">Learn more about the journey</a>
   <img src="/dist/images/illustrations/city-landscape.svg" width="600">
 {%- endblock page_hero -%}
 
-{%- block page_content -%}
+{%- block main_content -%}
 
-  {{ content | safe }}
+  {%- include "partials/maps.njk" -%}
 
-{%- endblock page_content -%}
+{%- endblock main_content -%}
 
 {%- block page_sidebar -%}
 {%- endblock page_sidebar -%}

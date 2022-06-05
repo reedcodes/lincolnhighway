@@ -1,9 +1,5 @@
-{%- if home -%}
-  {%- set title_element = "h1" -%}
-{%- else -%}
-  {%- set title_element = "p" -%}
-{%- endif -%}
+<p class="site-title">{{- site.website -}}</p>
 
-<{{- title_element }} class="site-title">{{- site.website -}}</{{- title_element -}}>
+<img src="/dist/images/logo.svg" alt="site logo of a car in front of a traffic light and gas pump" width="150">
 
 {% include "global/menu.njk" %}

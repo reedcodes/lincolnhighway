@@ -22,16 +22,20 @@
 
   <main class="container container-{{- main_page_class if main_page_class else "default" }} {{ "sidebar" if not home -}}">
 
-    <section class="container {{ "sidebar-main" if not home -}}">
+    {%- block main_content -%}
 
-      {%- block page_content -%}
-        {{ content | safe }}
-      {%- endblock page_content -%}
-    </section>
+      <section class="container {{ "sidebar-main" if not home -}}">
 
-    {%- block page_sidebar -%}
-      {% include "global/sidebar.njk" %}
-    {%- endblock page_sidebar -%}
+        {%- block page_content -%}
+          {{ content | safe }}
+        {%- endblock page_content -%}
+      </section>
+
+      {%- block page_sidebar -%}
+        {% include "global/sidebar.njk" %}
+      {%- endblock page_sidebar -%}
+
+    {%- endblock main_content -%}
 
   </main>
 
