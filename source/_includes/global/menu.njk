@@ -2,8 +2,8 @@
 {% set menu = collections.all | eleventyNavigation() %}
 
 {%- if not menu | length == 0 -%}
-  <nav class="menu" aria-label="global site">
-    <ul>
+  <nav class="site-menu" aria-label="global site">
+    <ul class="site-menu-list" role="list">
       {%- for item in menu %}
         <li>
           <a href="{{- item.url | url -}}">

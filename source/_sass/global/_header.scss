@@ -1,6 +1,57 @@
+.header {
+  &-wrap {
+    background-color: var(--color-on-highlight);
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  > * {
+    flex-basis: 33%;
+  }
+}
+
 .site-title {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
   font-family: var(--font-heading);
+}
+
+.site-logo {
+  --logo-width: 100px;
+  --logo-spacing: 0.5rem;
+  --logo-background: var(--color-highlight);
+
+  a {
+    aspect-ratio: 1;
+    display: block;
+    width: calc( var(--logo-width) + ( var(--logo-spacing) * 2 ) );
+    margin-inline: auto;
+    padding: var(--logo-spacing);
+    border-radius: 50%;
+    background-color: var(--logo-background);
+  }
+
+  img {
+    aspect-ratio: 1;
+    width: var(--logo-width);
+    margin-inline: auto;
+  }
+}
+
+.site-menu {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: end;
+  }
+
+  li {
+    margin: 0;
+  }
 }

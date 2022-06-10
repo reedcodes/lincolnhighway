@@ -8,8 +8,10 @@
 
 <body>
 
-  <header class="container">
-    {% include "global/header.njk" %}
+  <header class="container container-full header-wrap">
+    <div class="container header">
+      {% include "global/header.njk" %}
+    </div>
   </header>
 
   <section class="container container-wide hero {{ "hero-home" if home -}}" {% if not home %}style="background-image: url( {{- hero_image -}} )"{%- endif -%}>

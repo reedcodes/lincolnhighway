@@ -1,5 +1,9 @@
 <p class="site-title">{{- site.website -}}</p>
 
-<img src="/dist/images/logo.svg" alt="site logo of a car in front of a traffic light and gas pump" width="150">
+<div class="site-logo">
+  <a href="{{- '/' | url -}}">
+    <img src="/dist/images/logo.svg" alt="home link, a site logo of a car in front of a traffic light and gas pump" width="150">
+  </a>
+</div>
 
 {% include "global/menu.njk" %}
