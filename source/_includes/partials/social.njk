@@ -1,7 +1,7 @@
 <div class="social-links">
 
   {%- if not social | length == 0 -%}
-    <ul class="social-list" role="list">
+    <ul class="social-list list-inline" role="list">
       {%- for item in social -%}
         <li><a href="{{ item.url }}">{{ item.site }}</a></li>
       {%- endfor -%}

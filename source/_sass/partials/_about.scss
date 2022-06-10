@@ -1,0 +1,8 @@
+.about {
+  &-reed {
+    width: 65%;
+    margin-inline: auto;
+    border: 5px solid var(--aside-image-border);
+    border-radius: 50%;
+  }
+}
