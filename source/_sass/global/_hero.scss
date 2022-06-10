@@ -2,8 +2,6 @@
   --hero-bg-color: var(--color-contrast);
   --hero-text-color: var(--color-primary);
 
-  display: grid;
-  place-content: center;
   padding-block: min( 2vh, 3rem );
   background-color: var(--hero-bg-color);
   background-size: cover;
@@ -12,7 +10,37 @@
   color: var(--hero-text-color);
 
   &-home {
+    --sidebar-align: center;
+    --sidebar-justify: center;
+    --sidebar-aside-width: min(100vw, 33%);
+
     --hero-bg-color: transparent;
     --hero-text-color: inherit;
+  }
+
+  &-description {
+  }
+
+  &-image {
+    --hero-img-aspect-ratio: inherit;
+    --hero-img-border-space: 10px;
+
+    // aspect-ratio: var(--hero-img-aspect-ratio);
+    // position: relative;
+    // left: calc( var(--hero-img-border-space) * -1) ;
+    //
+    // img {
+    //   --image-aspect-ratio: inherit;
+    // }
+    //
+    // &::after {
+    //   --hero-img-border: var(--color-accent);
+    //
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   inset: var(--hero-img-border-space) calc( var(--hero-img-border-space) * -1) calc( var(--hero-img-border-space) * -1) var(--hero-img-border-space);
+    //   border: 5px solid var(--hero-img-border);
+    // }
   }
 }

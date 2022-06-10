@@ -1,0 +1,28 @@
+// Sidebar can be used anywhere there is a main area with an aside or image.
+// If the page has a sidebar, add a flexible and responsive view, so that the
+// content and the sidebar stack on smaller screens.
+
+.sidebar {
+  --sidebar-gap-column: 5vw;
+  --sidebar-gap-row: 5vh;
+  --sidebar-align: start;
+  --sidebar-justify: start;
+  --sidebar-main-width: calc( 65% - 5vw );
+  --sidebar-aside-width: 15rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sidebar-gap-column) var(--sidebar-gap-row);
+  place-items: var(--sidebar-align) var(--sidebar-justify);
+
+  &-main {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: var(--sidebar-main-width);
+  }
+
+  &-aside {
+    flex-basis: var(--sidebar-aside-width);
+    flex-grow: 1;
+  }
+}

@@ -14,7 +14,7 @@
     </div>
   </header>
 
-  <section class="container container-wide hero {{ "hero-home" if home -}}" {% if not home %}style="background-image: url( {{- hero_image -}} )"{%- endif -%}>
+  <section class="container container-wide hero {{ "sidebar hero-home" if home -}}" {% if not home %}style="background-image: url( {{- hero_image -}} )"{%- endif -%}>
     {%- block page_hero -%}
       {%- include "global/hero.njk" -%}
     {%- endblock page_hero -%}
