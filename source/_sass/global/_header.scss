@@ -1,16 +1,25 @@
 .header {
   &-wrap {
-    background-color: var(--color-on-highlight);
+    --header-background: var(--color-on-highlight);
+
+    background-image: linear-gradient(
+      transparent 0 33%,
+      var(--header-background) 33% 67%,
+      transparent 67% 100%
+    );
   }
 
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
 
   > * {
-    flex-grow: 1;
+    --header-flex: 2;
+
+    flex-grow: var(--header-flex);
     flex-basis: calc( ( 30rem - 100% ) * 999 );
   }
 }
@@ -23,6 +32,7 @@
 }
 
 .site-logo {
+  --header-flex: 1;
   --logo-width: 100px;
   --logo-spacing: 0.5rem;
   --logo-background: var(--color-highlight);
@@ -50,7 +60,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
   }
 
   li {
