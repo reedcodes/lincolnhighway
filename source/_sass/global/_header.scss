@@ -66,4 +66,13 @@
   li {
     margin: 0;
   }
+
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    &:hover {
+      --link-line-size: 0.5rem;
+    }
+  }
 }
