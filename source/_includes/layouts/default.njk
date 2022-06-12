@@ -20,7 +20,7 @@
     {%- endblock page_hero -%}
   </section>
 
-  <main class="container container-{{- main_page_class if main_page_class else "default" }} {{ "sidebar" if not home -}}">
+  <main class="container container-{{- main_page_class if main_page_class else "default" }} main {{ "sidebar" if not home -}}">
 
     {%- block main_content -%}
 
@@ -39,7 +39,7 @@
 
   </main>
 
-  <footer class="container container-full">
+  <footer class="container container-full footer">
     {% include "global/footer.njk" %}
   </footer>
 
