@@ -12,7 +12,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: var(--sidebar-gap-column) var(--sidebar-gap-row);
+  gap: var(--sidebar-gap-row) var(--sidebar-gap-column);
   place-items: var(--sidebar-align) var(--sidebar-justify);
 
   &-main {

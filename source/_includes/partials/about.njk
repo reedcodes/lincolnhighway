@@ -1,11 +1,15 @@
-<section class="about">
+<section class="about sidebar">
 
-  <img class="about-reed" src="/dist/images/reedcodes.jpg" width="120" alt="a cartoon illustration of Reed, with gray hair and glasses">
+  <div class="about-reed sidebar-aside">
+    <img class="about-reed-image" src="/dist/images/reedcodes.jpg" width="120" alt="a cartoon illustration of Reed, with gray hair and glasses">
+  </div>
 
-  <p>I'm Reed, and this fall I'll be heading on an adventure to drive the entirety of the Lincoln Highway! This website and blog documents that journey.</p>
+  <div class="sidebar-main">
+    <p>I'm Reed, and this fall I'll be heading on an adventure to drive the entirety of the Lincoln Highway! This website and blog documents that journey.</p>
 
-  {%- if not page.title == "About" -%}
-    <a href="{{- '/about/' | url -}}">Read more about me and the Lincoln Highway</a>
-  {%- endif -%}
+    {%- if not page.title == "About" -%}
+      <a href="{{- '/about/' | url -}}">Read more about me and the Lincoln Highway</a>
+    {%- endif -%}
+  </div>
 
 </section>

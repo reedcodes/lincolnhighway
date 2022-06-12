@@ -1,8 +1,14 @@
 .about {
+  --sidebar-gap-row: 2rem;
+  --sidebar-gap-column: 5rem;
+  --sidebar-aside-width: 150px;
+
   &-reed {
-    width: 150px;
-    margin-inline: auto;
-    border: 5px solid var(--aside-image-border);
-    border-radius: 50%;
+    &-image {
+      width: 150px;
+      margin-inline: auto;
+      border: 5px solid var(--aside-image-border);
+      border-radius: 50%;
+    }
   }
 }
