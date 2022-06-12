@@ -1,7 +1,33 @@
 .social {
-  &-list {
-    li {
-      margin-block: 2rem;
+  &-item {
+    margin-block: 2rem;
+  }
+
+
+
+  &-link {
+    display: block;
+    padding: 8px;
+
+    svg {
+      --social-size: 32px;
+
+      width: var(--social-size);
+      height: var(--social-size);
+      fill: transparent;
+    }
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+
+  &-instagram {
+    svg {
+      :last-child {
+        stroke-width: transparent;
+        fill: currentColor;
+      }
     }
   }
 }

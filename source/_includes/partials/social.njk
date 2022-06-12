@@ -3,7 +3,14 @@
   {%- if not social | length == 0 -%}
     <ul class="social-list list-inline" role="list">
       {%- for item in social -%}
-        <li><a href="{{ item.url }}">{{ item.site }}</a></li>
+        <li class="social-item">
+          <a class="social-link social-{{- item.icon -}}" href="{{ item.url | url }}">
+
+            {%- set social_icon = "icons/social-" ~ item.icon ~ ".svg" -%}
+            {%- include social_icon -%}
+
+          </a>
+        </li>
       {%- endfor -%}
     </ul>
   {%- endif -%}
