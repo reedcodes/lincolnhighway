@@ -10,6 +10,8 @@
     {%- if not page.title == "About" -%}
       <a href="{{- '/about/' | url -}}">Read more about me and the Lincoln Highway</a>
     {%- endif -%}
+
+    {%- include "partials/social.njk" -%}
   </div>
 
 </section>
