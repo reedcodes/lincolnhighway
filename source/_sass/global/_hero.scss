@@ -1,10 +1,13 @@
 .hero {
+  --header-space: 3rem;
+
   --hero-display: grid;
   --hero-bg-color: var(--color-contrast);
   --hero-text-color: var(--color-primary);
 
   display: var(--hero-display);
   place-content: center;
+  margin-top: calc( -1 * var(--header-space) );
   padding-block: min( 2vh, 3rem );
   background-color: var(--hero-bg-color);
   background-size: cover;

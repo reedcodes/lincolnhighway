@@ -1,12 +1,9 @@
 .header {
   &-wrap {
+    --header-space: 3rem;
     --header-background: var(--color-on-highlight);
 
-    background-image: linear-gradient(
-      transparent 0 33%,
-      var(--header-background) 33% 67%,
-      transparent 67% 100%
-    );
+    background-color: var(--header-background);
   }
 
   display: flex;
@@ -24,6 +21,11 @@
   }
 }
 
+.site-title,
+.site-menu {
+  margin-block: var(--header-space);
+}
+
 .site-title {
   margin: 0;
   font-size: 1.5rem;
@@ -33,9 +35,13 @@
 
 .site-logo {
   --header-flex: 1;
-  --logo-width: 100px;
-  --logo-spacing: 0.5rem;
+  --logo-width: 150px;
+  --logo-spacing: 1rem;
+  --logo-border: var(--color-contrast);
   --logo-background: var(--color-highlight);
+
+  z-index: 1;
+  margin-block: calc( -1 * var(--header-space) );
 
   a {
     aspect-ratio: 1;
@@ -44,6 +50,7 @@
     margin-inline: auto;
     padding: var(--logo-spacing);
     border-radius: 50%;
+    border: 5px solid var(--logo-border);
     background-color: var(--logo-background);
   }
 
