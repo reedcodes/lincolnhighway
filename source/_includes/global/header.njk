@@ -1,9 +1,13 @@
-<p class="site-title">{{- site.website -}}</p>
+<div class="container header-inner sidebar">
 
-<div class="site-logo">
-  <a href="{{- '/' | url -}}">
-    <img src="/dist/images/logo.svg" alt="home link, a site logo of a car in front of a traffic light and gas pump" width="150">
-  </a>
+  <div class="header-site-logo sidebar-aside">
+    <a class="site-logo" href="{{- '/' | url -}}">
+      <img src="/dist/images/title.svg" alt="{{- site.website -}}, link to homepage" width="100">
+    </a>
+  </div>
+
+  <div class="header-site-menu sidebar-main">
+    {% include "global/menu.njk" %}
+  </div>
+
 </div>
-
-{% include "global/menu.njk" %}

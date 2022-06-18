@@ -1,13 +1,12 @@
 .hero {
-  --header-space: 3rem;
-
   --hero-display: grid;
+  --hero-margin-block: 0;
   --hero-bg-color: var(--color-contrast);
   --hero-text-color: var(--color-primary);
 
   display: var(--hero-display);
   place-content: center;
-  margin-top: calc( -1 * var(--header-space) );
+  margin-block: var(--hero-margin-block);
   padding-block: min( 2vh, 3rem );
   background-color: var(--hero-bg-color);
   background-size: cover;
@@ -21,6 +20,7 @@
     --sidebar-aside-width: min(100vw, 33%);
 
     --hero-display: flex;
+    --hero-margin-block: 5vh;
     --hero-bg-color: transparent;
     --hero-text-color: inherit;
   }
