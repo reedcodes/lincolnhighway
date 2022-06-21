@@ -2,19 +2,19 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="114.35842mm"
-   height="145.52066mm"
-   viewBox="0 0 114.35842 145.52066"
+   width="432.22079"
+   height="549.99933"
+   viewBox="0 0 114.35842 145.52065"
    version="1.1"
-   id="svg5"
+   id="svg10269"
+   sodipodi:docname="title-2.svg"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
-   sodipodi:docname="title.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview7"
+     id="namedview10271"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -22,33 +22,24 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
+     inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="3.659624"
-     inkscape:cx="199.7473"
-     inkscape:cy="263.55167"
+     inkscape:zoom="0.914906"
+     inkscape:cx="95.63824"
+     inkscape:cy="275.98464"
      inkscape:window-width="2560"
      inkscape:window-height="1379"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g7286" />
+     inkscape:current-layer="svg10269" />
   <defs
-     id="defs2">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath7182">
-      <g
-         inkscape:label="Clip"
-         id="use7184"
-         style="stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4" />
-    </clipPath>
-  </defs>
+     id="defs10266" />
   <g
      id="g7286"
-     transform="matrix(1.0324833,0,0,1.0324833,-29.059385,12.758937)">
+     transform="matrix(1.0324833,0,0,1.0324833,-29.059386,9.5839353)">
     <path
-       style="fill:#f7f5ed;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;paint-order:stroke fill markers;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#f7f5ed;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="M 12.760849,37.456213 H 101.70758 V 108.13363 H 12.718051 Z"
        id="path7546"
        transform="matrix(0.96853868,0,0,0.96853868,28.145138,-12.357524)"
@@ -123,12 +114,13 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:232.554px;font-family:Cookie;-inkscape-font-specification:'Cookie, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;fill:#a6a6a5;fill-opacity:1;stroke:#000000;stroke-width:4.36038;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-     x="54.969769"
-     y="137.06151"
-     id="text10691"><tspan
+     x="102.79056"
+     y="212.80118"
+     id="text10691"
+     transform="translate(-47.820791,-75.739666)"><tspan
        sodipodi:role="line"
        id="tspan10689"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:232.554px;font-family:Cookie;-inkscape-font-specification:'Cookie, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a6a6a5;fill-opacity:1;stroke:#000000;stroke-width:4.36038;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       x="0"
-       y="0">L</tspan></text>
+       x="102.79056"
+       y="212.80118">L</tspan></text>
 </svg>
