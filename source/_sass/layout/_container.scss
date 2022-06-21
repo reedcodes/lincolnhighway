@@ -1,10 +1,14 @@
 .container {
   --container-width: 1200px;
+  --container-margin-block: min( 2vh, 3rem );
+  --container-margin-inline: auto;
+  --container-padding-block: inherit;
   --container-padding-inline: 2vw;
 
   width: min( 100%, var(--container-width) );
-  margin-block: min( 2vh, 3rem );
-  margin-inline: auto;
+  margin-block: var(--container-margin-block);
+  margin-inline: var(--container-margin-inline);
+  padding-block: var(--container-padding-block);
   padding-inline: var(--container-padding-inline);
 
   &-wide {

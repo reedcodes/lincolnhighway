@@ -6,7 +6,7 @@
   {% include "global/head.njk" %}
 </head>
 
-<body>
+<body class="{{ "home" if home else "default" }}">
 
   <header class="container container-full header">
     {% include "global/header.njk" %}
