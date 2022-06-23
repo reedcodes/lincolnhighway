@@ -9,7 +9,7 @@ $sans-serif: sans-serif;
   --spacer: #{$spacer};
 
   --font-body: #{ $sans-serif };
-  --font-heading: #{ $serif };
+  --font-heading: #{ $sans-serif };
 
   // Calculate a relative line height.
   // Jesús Ricarte

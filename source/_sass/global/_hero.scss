@@ -13,15 +13,12 @@
   background-position: center;
   background-blend-mode: luminosity;
   color: var(--hero-text-color);
+  text-align: center;
 
   &-home {
-    --sidebar-align: center;
-    --sidebar-justify: center;
-
-    --hero-display: flex;
-    --hero-margin-block: 5vh;
-    --hero-bg-color: transparent;
-    --hero-text-color: inherit;
+    --hero-display: block;
+    --hero-bg-color: var(--color-highlight);
+    --hero-text-color: var(--color-primary);
   }
 
   &-description {
@@ -35,6 +32,8 @@
     aspect-ratio: var(--hero-img-aspect-ratio);
     position: relative;
     left: calc( var(--hero-img-border-space) * -1) ;
+    width: min( 100%, 600px );
+    margin-inline: auto;
 
     img {
       --image-aspect-ratio: inherit;

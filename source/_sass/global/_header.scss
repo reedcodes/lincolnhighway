@@ -1,6 +1,6 @@
 .header {
   --container-margin-block: 0;
-  --header-bg-color: var(--color-secondary);
+  --header-bg-color: var(--color-highlight);
 
   background-color: var(--header-bg-color);
 
@@ -15,6 +15,11 @@
 
   .site-menu-list {
     --flex-items-justify: end;
+  }
+
+  .site-menu-link {
+    --link-text-color: var(--color-on-highlight);
+    --link-text-hover-color: var(--color-secondary);
   }
 
 }
