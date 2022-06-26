@@ -18,20 +18,15 @@
     {%- endblock page_hero -%}
   </section>
 
-  <main class="container container-{{- main_page_class if main_page_class else "default" }} main {{ "sidebar" if not home -}}">
+  <main class="container container-{{- main_page_class if main_page_class else "default" }} main">
 
     {%- block main_content -%}
 
-      <section class="container {{ "sidebar-main" if not home -}}">
-
+      <section class="container">
         {%- block page_content -%}
           {{ content | safe }}
         {%- endblock page_content -%}
       </section>
-
-      {%- block page_sidebar -%}
-        {% include "global/sidebar.njk" %}
-      {%- endblock page_sidebar -%}
 
     {%- endblock main_content -%}
 
