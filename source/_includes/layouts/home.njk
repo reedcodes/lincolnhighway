@@ -4,12 +4,12 @@
 {%- set main_page_class = "full" -%}
 
 {%- block page_hero -%}
-  <div class="hero-description container">
+  <div class="hero-description container container-narrow">
     <h1>Donec orci neque, tristique ut quam ac</h1>
     <p>Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi.</p>
     <a href="{{- '/about/' | url -}}">Learn more about the journey</a>
   </div>
-  <div class="hero-image container">
+  <div class="hero-image container container-narrow">
     <img src="/dist/images/illustrations/city-landscape.svg" width="600">
   </div>
 {%- endblock page_hero -%}
@@ -18,11 +18,4 @@
 
   {%- include "partials/maps.njk" -%}
 
-  <section class="container">
-    {{- content | safe -}}
-  </section>
-
 {%- endblock main_content -%}
-
-{%- block page_sidebar -%}
-{%- endblock page_sidebar -%}

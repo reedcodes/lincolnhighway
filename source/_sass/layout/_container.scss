@@ -11,6 +11,10 @@
   padding-block: var(--container-padding-block);
   padding-inline: var(--container-padding-inline);
 
+  &-narrow {
+    --container-width: 800px;
+  }
+
   &-wide {
     --container-width: 1750px;
   }
