@@ -6,12 +6,7 @@
     padding-block: min( 3rem, 5vh );
   }
 
-  &-credits {
-    margin-block: min( 3rem, 5vh );
-    font-size: 1rem;
-
-    p {
-      margin-block: 0;
-    }
+  &-colophon {
+    --sidebar-align: center;
   }
 }
