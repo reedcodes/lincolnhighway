@@ -28,6 +28,7 @@
     "build:11ty": "npx @11ty/eleventy",
     "build:sass": "gulp sass",
     "build": "npm-run-all build:sass build:11ty",
+    "clean": "rm -rf ./site/ && npm run build",
     "serve": "npx @11ty/eleventy --serve"
   }
 }
