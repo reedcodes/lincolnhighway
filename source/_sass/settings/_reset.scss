@@ -46,6 +46,7 @@ a {
   --link-line-size: max(2px, 0.1em);
   --link-underline-color: currentcolor;
 
+  background-color: var(--link-bg-color);
   color: var(--link-text-color);
 
   text-decoration-skip-ink: auto;
@@ -56,6 +57,7 @@ a {
   &:hover,
   &:focus,
   &:focus-visible {
+    background-color: var(--link-bg-hover-color);
     color: var(--link-text-hover-color);
   }
 

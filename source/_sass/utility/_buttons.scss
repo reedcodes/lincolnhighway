@@ -1,0 +1,52 @@
+@use 'color/color-tokens' as *;
+
+.btn {
+  --btn-bg-color: var(--color-contrast);
+  --btn-bg-hover-color: var(--color-primary);
+  --btn-text-color: var(--btn-bg-hover-color);
+  --btn-text-hover-color: var(--btn-bg-color);
+
+  --link-bg-color: var(--btn-bg-color);
+  --link-bg-hover-color: var(--btn-bg-hover-color);
+  --link-text-color: var(--btn-text-color);
+  --link-text-hover-color: var(--btn-text-hover-color);
+
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    outline: 0;
+    box-shadow:
+      0 0 0 2px var(--link-text-hover-color),
+      0 0 0 4px var(--link-bg-hover-color);
+  }
+
+  svg {
+    width: auto;
+    max-height: 1.25em;
+    margin-inline-end: 0.25em;
+  }
+
+  @each $color in $base-color-tokens {
+    &-#{$color} {
+      --btn-bg-color: var(--color-#{$color});
+      --btn-bg-hover-color: var(--color-on-#{$color});
+    }
+  }
+
+  @each $color in $base-color-tokens {
+    &-on-#{$color} {
+      --btn-bg-color: var(--color-on-#{$color});
+      --btn-bg-hover-color: var(--color-#{$color});
+    }
+  }
+}
