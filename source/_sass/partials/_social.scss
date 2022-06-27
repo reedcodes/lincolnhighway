@@ -8,20 +8,10 @@
 
       width: var(--social-size);
       height: var(--social-size);
-      fill: transparent;
     }
 
     &:hover {
       transform: scale(1.25);
-    }
-  }
-
-  &-instagram {
-    svg {
-      :last-child {
-        stroke-width: transparent;
-        fill: currentColor;
-      }
     }
   }
 }

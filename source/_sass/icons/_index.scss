@@ -1,0 +1,10 @@
+.icon {
+  --fillColor: transparent;
+  --strokeColor: currentColor;
+
+  &-instagram {
+    :last-child {
+      fill: currentColor;
+    }
+  }
+}
