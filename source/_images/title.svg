@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="432.22079"
+   width="2581.5769"
    height="549.99933"
-   viewBox="0 0 114.35842 145.52065"
+   viewBox="0 0 683.04224 145.52065"
    version="1.1"
    id="svg10269"
-   sodipodi:docname="title-2.svg"
+   sodipodi:docname="title.svg"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,8 +25,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="0.914906"
-     inkscape:cx="95.63824"
-     inkscape:cy="275.98464"
+     inkscape:cx="859.65116"
+     inkscape:cy="277.07765"
      inkscape:window-width="2560"
      inkscape:window-height="1379"
      inkscape:window-x="0"
@@ -37,7 +37,7 @@
      id="defs10266" />
   <g
      id="g7286"
-     transform="matrix(1.0324833,0,0,1.0324833,-29.059386,9.5839353)">
+     transform="matrix(1.0324833,0,0,1.0324833,-29.059389,9.5839459)">
     <path
        style="fill:#f7f5ed;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="M 12.760849,37.456213 H 101.70758 V 108.13363 H 12.718051 Z"
@@ -114,13 +114,23 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:232.554px;font-family:Cookie;-inkscape-font-specification:'Cookie, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;fill:#a6a6a5;fill-opacity:1;stroke:#000000;stroke-width:4.36038;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-     x="102.79056"
-     y="212.80118"
-     id="text10691"
-     transform="translate(-47.820791,-75.739666)"><tspan
+     x="54.969769"
+     y="137.06151"
+     id="text10691"><tspan
        sodipodi:role="line"
        id="tspan10689"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:232.554px;font-family:Cookie;-inkscape-font-specification:'Cookie, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a6a6a5;fill-opacity:1;stroke:#000000;stroke-width:4.36038;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       x="102.79056"
-       y="212.80118">L</tspan></text>
+       x="54.969769"
+       y="137.06151">L</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:84.6667px;font-family:Cookie;-inkscape-font-specification:'Cookie, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#fcfbf3;fill-opacity:1;stroke:#000000;stroke-width:3.96875;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     x="373.9726"
+     y="104.80815"
+     id="text348"><tspan
+       sodipodi:role="line"
+       id="tspan346"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:84.6667px;font-family:Cookie;-inkscape-font-specification:'Cookie, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fcfbf3;fill-opacity:1;stroke:#000000;stroke-width:3.96875;stroke-dasharray:none;stroke-opacity:1"
+       x="373.9726"
+       y="104.80815">incoln Highway Journal</tspan></text>
 </svg>

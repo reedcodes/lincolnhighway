@@ -1,25 +1,33 @@
 .header {
+  --link-text-color: var(--color-on-highlight);
+  --link-text-hover-color: var(--color-primary);
   --container-padding-block: min( 1rem, 2vh );
   --header-bg-color: var(--color-highlight);
 
   background-color: var(--header-bg-color);
 
   &-inner {
-    --sidebar-align: center;
+    --flex-items-justify: space-between;
   }
+}
 
-  .site-logo {
-    display: block;
-    width: max-content;
-  }
+.site-logo {
+  display: block;
+  width: max-content;
+}
 
-  .site-menu-list {
+.site-menu {
+  &-list {
     --flex-items-justify: end;
   }
 
-  .site-menu-link {
-    --link-text-color: var(--color-on-highlight);
-    --link-text-hover-color: var(--color-secondary);
-  }
+  &-link {
+    --link-underline-color: transparent;
 
+    &:focus,
+    &:hover {
+      --link-line-size: max( 4px, 0.2em );
+      --link-underline-color: currentColor;
+    }
+  }
 }
