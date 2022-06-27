@@ -8,4 +8,8 @@
     color: var(--color-primary);
     text-align: center;
   }
+
+  .social-list {
+    --flex-items-justify: start;
+  }
 }
