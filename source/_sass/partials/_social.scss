@@ -1,4 +1,8 @@
 .social {
+  &-list {
+    --flex-items-gap: 1rem;
+  }
+
   &-link {
     display: block;
     padding: 8px;

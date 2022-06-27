@@ -1,9 +1,9 @@
 <div class="social-links">
 
   {%- if not social | length == 0 -%}
-    <ul class="social-list list-inline" role="list">
+    <ul class="social-list flex-items" role="list">
       {%- for item in social -%}
-        <li class="social-item">
+        <li class="social-item flex-item">
           <a class="social-link social-{{- item.icon -}}" href="{{ item.url | url }}">
 
             {%- set social_icon = "icons/social-" ~ item.icon ~ ".svg" -%}

@@ -11,7 +11,7 @@
 }
 
 .flex-item {
-  --flex-item-margin: inherit;
+  --flex-item-margin: 0;
 
   margin: var(--flex-item-margin);
 }
