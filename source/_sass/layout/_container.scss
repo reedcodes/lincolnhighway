@@ -1,6 +1,6 @@
 .container {
   --container-width: 1200px;
-  --container-margin-block: min( 2vh, 3rem );
+  --container-margin-block: inherit;
   --container-margin-inline: auto;
   --container-padding-block: inherit;
   --container-padding-inline: 2vw;

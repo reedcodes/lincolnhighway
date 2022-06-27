@@ -1,9 +1,9 @@
 .footer {
+  --container-padding-block: min( 1rem, 2vh );
+
   &-info {
     --link-text-color: var(--color-primary);
     --link-text-hover-color: var(--color-secondary);
-
-    padding-block: min( 3rem, 5vh );
   }
 
   &-colophon {

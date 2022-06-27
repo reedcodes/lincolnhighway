@@ -1,5 +1,5 @@
 .header {
-  --container-margin-block: 0;
+  --container-padding-block: min( 1rem, 2vh );
   --header-bg-color: var(--color-highlight);
 
   background-color: var(--header-bg-color);

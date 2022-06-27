@@ -1,0 +1,40 @@
+.home {
+  .hero {
+    --hero-display: block;
+    --hero-bg-color: var(--color-highlight);
+    --hero-text-color: var(--color-primary);
+
+    --hero-bg-gradient-size: 96px;
+
+    background-image: linear-gradient(
+      to top,
+      var(--color-primary) var(--hero-bg-gradient-size),
+      var(--color-highlight) var(--hero-bg-gradient-size)
+    );
+
+    &-image {
+      --hero-img-aspect-ratio: inherit;
+      --hero-img-border-space: 15px;
+      --hero-img-border-radius: var(--hero-img-border-space);
+
+      aspect-ratio: var(--hero-img-aspect-ratio);
+      width: min( 100%, 600px );
+      margin-inline: auto;
+
+      img {
+        --image-aspect-ratio: inherit;
+
+        background-color: var(--color-on-highlight);
+        box-shadow: 0 0 4px 0 var(--color-contrast);
+        border-radius: var(--hero-img-border-radius);
+      }
+    }
+  }
+}
+
+.info {
+  &-lincoln-highway,
+  &-stats {
+    --container-margin-block: min( 6rem, 12vh );
+  }
+}

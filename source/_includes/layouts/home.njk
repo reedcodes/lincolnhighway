@@ -6,8 +6,7 @@
 {%- block page_hero -%}
   <div class="hero-description container container-narrow">
     <h1>Donec orci neque, tristique ut quam ac</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi.</p>
-    <a href="{{- '/about/' | url -}}">Learn more about the journey</a>
+    <p>Felis ullamcorper nascetur scelerisque pretium non lacinia curabitur condimentum habitasse ipsum a conubia nibh mattis ac consequat commodo cum aenean parturient nisi id mus nunc sed nec.</p>
   </div>
   <div class="hero-image container container-narrow">
     <img src="/dist/images/illustrations/city-landscape.svg" width="600">
@@ -16,6 +15,27 @@
 
 {%- block main_content -%}
 
+  <div class="container container-narrow info-lincoln-highway">
+    <h2>The Lincoln Highway</h2>
+    <p>Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis.</p>
+  </div>
+
   {%- include "partials/maps.njk" -%}
+
+  <div class="container container-narrow info-stats">
+    <h2>The Road Ahead</h2>
+
+    <div class="stats">
+      <div class="stat">
+        <h3>21 days</h3>
+        <p>Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+      </div>
+
+      <div class="stat">
+        <h3>13 states</h3>
+        <p>Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis.</p>
+      </div>
+    </div>
+  </div>
 
 {%- endblock main_content -%}

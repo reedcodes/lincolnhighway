@@ -1,49 +1,15 @@
 .hero {
+  --container-padding-block: min( 1rem, 2vh );
   --hero-display: grid;
-  --hero-margin-block: 0;
   --hero-bg-color: var(--color-contrast);
   --hero-text-color: var(--color-primary);
 
   display: var(--hero-display);
   place-content: center;
-  margin-block: var(--hero-margin-block);
-  padding-block: min( 2vh, 3rem );
   background-color: var(--hero-bg-color);
   background-size: cover;
   background-position: center;
   background-blend-mode: luminosity;
   color: var(--hero-text-color);
   text-align: center;
-
-  &-home {
-    --hero-display: block;
-    --hero-bg-color: var(--color-highlight);
-    --hero-text-color: var(--color-primary);
-
-    --hero-bg-gradient-size: 132px;
-
-    background-image: linear-gradient(
-      to top,
-      var(--color-primary) var(--hero-bg-gradient-size),
-      var(--color-highlight) var(--hero-bg-gradient-size)
-    );
-  }
-
-  &-image {
-    --hero-img-aspect-ratio: inherit;
-    --hero-img-border-space: 15px;
-    --hero-img-border-radius: var(--hero-img-border-space);
-
-    aspect-ratio: var(--hero-img-aspect-ratio);
-    width: min( 100%, 600px );
-    margin-inline: auto;
-
-    img {
-      --image-aspect-ratio: inherit;
-
-      background-color: var(--color-on-highlight);
-      box-shadow: 0px 0px 4px 0px var(--color-contrast);
-      border-radius: var(--hero-img-border-radius);
-    }
-  }
 }
