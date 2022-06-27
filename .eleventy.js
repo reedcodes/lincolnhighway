@@ -6,7 +6,8 @@ module.exports = function( eleventyConfig ) {
   // Send assets from source to site.
   eleventyConfig.addPassthroughCopy( {
     "./source/_css/": "dist/css/",
-    "./source/_images/": "dist/images/"
+    "./source/_images/": "dist/images/",
+    "./source/_webfonts/": "dist/webfonts/"
   } );
 
   // Add the 11ty nav plugin.

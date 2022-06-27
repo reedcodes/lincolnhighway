@@ -1,9 +1,10 @@
+@use 'fonts' as *;
 @use 'sass:math';
 
 $spacer: 1em;
 
 $serif: serif;
-$sans-serif: sans-serif;
+$sans-serif: 'Public Sans', 'Helvetica', 'Arial', sans-serif;
 
 :root {
   --spacer: #{$spacer};
@@ -56,10 +57,11 @@ body {
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6
 ) {
+  --heading-font-weight: 900;
 
   margin-bottom: 0.65em;
   line-height: var(--line-height);
-  font-weight: 400;
+  font-weight: var(--heading-font-weight);
   font-family: var(--font-heading);
   overflow-wrap: break-word;
   hyphens: auto;
