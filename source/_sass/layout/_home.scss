@@ -2,6 +2,7 @@
   .hero {
     --hero-display: block;
     --hero-bg-color: var(--color-highlight);
+    --hero-bg-blend: unset;
     --hero-text-color: var(--color-primary);
 
     --hero-bg-gradient-size: 96px;
@@ -24,7 +25,7 @@
       img {
         --image-aspect-ratio: inherit;
 
-        background-color: var(--color-on-highlight);
+        background-color: var(--color-primary);
         box-shadow: 0 0 4px 0 var(--color-contrast);
         border-radius: var(--hero-img-border-radius);
       }
