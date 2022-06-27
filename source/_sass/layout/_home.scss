@@ -44,4 +44,14 @@
 
 .stats {
   text-align: left;
+
+  .icon {
+    --fillColor: var(--color-primary);
+
+    width: 120px;
+    height: auto;
+    margin-block-end: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-accent);
+  }
 }
