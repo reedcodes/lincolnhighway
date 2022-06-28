@@ -9,7 +9,32 @@
     text-align: center;
   }
 
+  &-colophon {
+    --container-margin-block: min( 6rem, 12vh );
+  }
+
+  &-contact,
+  &-tech {
+    display: grid;
+    gap: min( 1rem, 3vh );
+    grid-template-rows: auto auto 1fr auto;
+    place-items: start;
+
+    h2,
+    p {
+      margin-block: 0;
+    }
+
+    .btn {
+      margin-block: 1em;
+    }
+  }
+
   .social-list {
     --flex-items-justify: start;
+  }
+
+  .copyright {
+    padding-block: 8px;
   }
 }

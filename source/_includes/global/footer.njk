@@ -6,24 +6,25 @@
   </div>
 </div>
 
-<div class="container footer-colophon">
-  <div class="footer-contact">
+<div class="container footer-colophon cards">
+  <div class="footer-contact card">
     <h2>Get in Touch</h2>
+
+    {%- include "partials/social.njk" -%}
+
     <p>You can find me on social media! or you can send me an email. I'd love to chat with folks about road trips or the Lincoln Highway.</p>
+
     <a class="btn btn-accent" href="mailto:{{ site.email | safe -}}">Send a message</a>
   </div>
 
-  <div class="footer-code">
+  <div class="footer-tech card">
     <h2>The Tech Stuff</h2>
+
+    <p class="copyright">&copy; {% year %} <a href="https://reedcodes.com/">Reed Piernock</a>.</p>
+
     <p>This site is built using tools such as 11ty and Sass. Hosting and domain available through DreamHost. "Get Inspired" illustration from <a href="https://www.streamlinehq.com/">Streamline</a>. Icons from <a href="https://phosphoricons.com/">Phosphor Icons</a>.</p>
+
     <a class="btn btn-accent" href="https://github.com/reedcodes/lincolnhighway">View on GitHub</a>
   </div>
 
-  <div class="footer-copyright">
-    <p>Lincoln Highway Journal. &copy; {% year -%}, <a href="https://reedcodes.com/">Reed Piernock</a>.</p>
-  </div>
-
-  <div class="footer-social">
-    {%- include "partials/social.njk" -%}
-  </div>
 </div>
