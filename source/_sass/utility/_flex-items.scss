@@ -1,0 +1,17 @@
+.flex-items {
+  --flex-items-gap: 2rem;
+  --flex-items-align: center;
+  --flex-items-justify: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--flex-items-gap);
+  align-items: var(--flex-items-align);
+  justify-content: var(--flex-items-justify);
+}
+
+.flex-item {
+  --flex-item-margin: 0;
+
+  margin: var(--flex-item-margin);
+}

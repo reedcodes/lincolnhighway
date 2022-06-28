@@ -1,0 +1,35 @@
+.header {
+  --link-text-color: var(--color-on-highlight);
+  --link-text-hover-color: var(--color-primary);
+  --container-padding-block: min( 1rem, 2vh );
+  --header-bg-color: var(--color-highlight);
+
+  background-color: var(--header-bg-color);
+
+  &-inner {
+    --flex-items-justify: space-between;
+  }
+}
+
+.site-logo {
+  display: block;
+  width: auto;
+  max-width: min( 100%, 100vw );
+  height: 100px;
+}
+
+.site-menu {
+  &-list {
+    --flex-items-justify: end;
+  }
+
+  &-link {
+    --link-underline-color: transparent;
+
+    &:focus,
+    &:hover {
+      --link-line-size: max( 4px, 0.2em );
+      --link-underline-color: currentColor;
+    }
+  }
+}

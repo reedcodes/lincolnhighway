@@ -1,0 +1,13 @@
+<div class="container header-inner flex-items">
+
+  <div class="header-site-logo flex-item">
+    <a class="site-logo" href="{{- '/' | url -}}">
+      <img src="/dist/images/title.svg" alt="{{- site.website -}}, link to homepage" height="100">
+    </a>
+  </div>
+
+  <div class="header-site-menu flex-item">
+    {% include "global/menu.njk" %}
+  </div>
+
+</div>

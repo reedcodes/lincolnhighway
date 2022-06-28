@@ -1,0 +1,18 @@
+.cards {
+  --cards-gap: 5rem;
+  --cards-width: 52rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cards-gap);
+}
+
+.card {
+  flex-grow: 1;
+  flex-basis: calc(( var(--cards-width) - 100%) * 999);
+}
+
+.card:nth-last-child(n+ 3),
+.card:nth-last-child(n+ 3) ~ * {
+  flex-basis: 100%;
+}
