@@ -13,7 +13,9 @@
 
 .site-logo {
   display: block;
-  width: max-content;
+  width: auto;
+  max-width: min( 100%, 100vw );
+  height: 100px;
 }
 
 .site-menu {
