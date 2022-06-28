@@ -1,0 +1,14 @@
+.stacked {
+  --stack-display: grid;
+  --stack-place-items: center;
+  --stack-text-align: center;
+
+  display: var(--stack-display);
+  grid-template-areas: 'stacked';
+  place-items: var(--stack-place-items);
+  text-align: var(--stack-text-align);
+
+  > * {
+    grid-area: stacked;
+  }
+}
