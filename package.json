@@ -1,0 +1,34 @@
+{
+  "name": "lincolnhighway",
+  "version": "1.0.0",
+  "description": "a website documenting Reed's road trip along the Lincoln Highway, the 'Main Street across America'",
+  "author": "Reed Piernock",
+  "license": "GPL-3.0-only",
+  "homepage": "https://lincolnhighwayjournal.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reedcodes/lincolnhighway"
+  },
+  "bugs": {
+    "url": "https://github.com/reedcodes/lincolnhighway/issues"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-navigation": "^0.3.3",
+    "a11y-color-tokens": "^0.5.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.52.1"
+  },
+  "scripts": {
+    "tokens": "npx a11y-color-tokens --colorTokensPath='source/_data/colors.js' --outputDirPath='source/_sass/color' --compatibilityDocsPath='source/guide'",
+    "build:11ty": "npx @11ty/eleventy",
+    "build:sass": "gulp sass",
+    "build": "npm-run-all build:sass build:11ty",
+    "clean": "rm -rf ./site/ && npm run build",
+    "serve": "npx @11ty/eleventy --serve"
+  }
+}

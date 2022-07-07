@@ -1,0 +1,21 @@
+.social {
+  &-list {
+    --flex-items-gap: 1rem;
+  }
+
+  &-link {
+    display: block;
+    padding: 8px;
+
+    svg {
+      --social-size: 32px;
+
+      width: var(--social-size);
+      height: var(--social-size);
+    }
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+}

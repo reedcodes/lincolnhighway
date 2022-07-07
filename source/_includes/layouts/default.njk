@@ -1,0 +1,38 @@
+{%- set hero_image = hero_image if hero_image else "/dist/images/photos/highway.jpg" -%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include "global/head.njk" %}
+</head>
+
+<body class="{{ "home" if home else "default" }}">
+
+  <header class="container container-full header">
+    {% include "global/header.njk" %}
+  </header>
+
+  <section class="container container-full hero stacked" {% if not home %} style="background-image: url( {{- hero_image -}} )"{%- endif -%}>
+    {%- block page_hero -%}
+      {%- include "global/hero.njk" -%}
+    {%- endblock page_hero -%}
+  </section>
+
+  <main class="container container-{{- main_page_class if main_page_class else "default" }} main">
+
+    {%- block main_content -%}
+
+      <section class="container">
+        {{ content | safe }}
+      </section>
+
+    {%- endblock main_content -%}
+
+  </main>
+
+  <footer class="container container-full footer">
+    {% include "global/footer.njk" %}
+  </footer>
+
+</body>
+</html>

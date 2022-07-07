@@ -1,0 +1,16 @@
+
+{% set menu = collections.all | eleventyNavigation() %}
+
+{%- if not menu | length == 0 -%}
+  <nav class="site-menu" aria-label="global site">
+    <ul class="site-menu-list flex-items" role="list">
+      {%- for item in menu %}
+        <li class="site-menu-item flex-item">
+          <a class="site-menu-link" href="{{- item.url | url -}}">
+            {{- item.title -}}
+          </a>
+        </li>
+      {%- endfor %}
+    </ul>
+  </nav>
+{%- endif -%}

@@ -1,0 +1,12 @@
+.main {
+  --container-padding-block: min( 1rem, 2vh );
+}
+
+// Containers inside the main body content on default pages don't need the
+// side padding, because the main container already has the side padding.
+
+.container {
+  .default .main#{&} & {
+    --container-padding-inline: 0;
+  }
+}

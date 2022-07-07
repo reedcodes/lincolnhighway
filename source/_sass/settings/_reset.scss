@@ -1,0 +1,128 @@
+/***
+ * inspired by several resets going around, e.g.
+ * https://piccalil.li/blog/a-modern-css-reset/
+ * https://meyerweb.com/eric/tools/css/reset/
+ ***/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+:first-child { margin-top: 0; }
+:last-child { margin-bottom: 0; }
+
+[id] {
+  scroll-margin-top: 2vh;
+  scroll-margin-bottom: 2vh;
+}
+
+:focus,
+:focus-visible {
+  scroll-margin-bottom: 10vh;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+a {
+  --link-line-size: max(2px, 0.1em);
+  --link-underline-color: currentcolor;
+
+  background-color: var(--link-bg-color);
+  color: var(--link-text-color);
+
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: var(--link-line-size);
+  text-decoration-color: var(--link-underline-color);
+  text-underline-offset: inherit;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: var(--link-bg-hover-color);
+    color: var(--link-text-hover-color);
+  }
+
+  &:focus {
+    outline: var(--link-line-size) solid currentColor;
+    outline-offset: var(--link-line-size);
+    text-decoration: none;
+
+    // For devices that support :focus-visible.
+    &:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  // For devices that support :focus-visible.
+  &:focus-visible {
+    outline: var(--link-line-size) solid currentColor;
+    outline-offset: var(--link-line-size);
+    text-decoration: none;
+  }
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  width: min( 100vw, 100% );
+  border: 0;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+
+  &[width] {
+    height: auto;
+  }
+}
+
+svg {
+  --fillColor: currentColor;
+  --strokeColor: currentColor;
+
+  pointer-events: none;
+  fill: var(--fillColor);
+  stroke: var(--strokeColor);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
