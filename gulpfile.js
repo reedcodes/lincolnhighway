@@ -7,7 +7,7 @@ const cleanCSS = require( 'gulp-clean-css' ),
 
 // Define CSS source and distribution directories.
 const cssSource = './source/_sass/**/*.scss';
-const cssBuild = './source/_css';
+const cssBuild = './site/dist/css';
 
 // Task to compile CSS files.
 gulp.task( 'sass', function() {
