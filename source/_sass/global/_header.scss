@@ -1,8 +1,6 @@
 .header {
-  --link-text-color: var(--color-on-highlight);
-  --link-text-hover-color: var(--color-primary);
   --container-padding-block: min( 1rem, 2vh );
-  --header-bg-color: var(--color-highlight);
+  --header-bg-color: var(--color-primary);
 
   background-color: var(--header-bg-color);
 

@@ -2,10 +2,6 @@
   --container-padding-block: min( 1rem, 2vh );
 
   &-support {
-    --link-text-color: var(--color-on-highlight);
-    --link-text-hover-color: var(--color-secondary);
-
-    color: var(--color-primary);
     text-align: center;
   }
 

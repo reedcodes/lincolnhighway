@@ -2,9 +2,9 @@
   --container-padding-block: min( 1rem, 2vh );
 
   --hero-display: grid;
-  --hero-bg-color: var(--color-contrast);
+  --hero-bg-color: var(--color-foreground);
   --hero-bg-blend: luminosity;
-  --hero-text-color: var(--color-primary);
+  --hero-text-color: var(--color-background);
 
   --stack-display: var(--hero-display);
 
