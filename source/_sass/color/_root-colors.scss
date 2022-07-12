@@ -5,13 +5,11 @@
 :root {
   @each $token in $base-color-tokens {
     $color: map.get($color-tokens, 'color-#{$token}');
-
     --color-#{$token}: #{$color};
 
     @for $i from 4 through 1 {
       $scale: $i * 5%;
       $color-light: color.adjust( $color, $lightness: $scale );
-
       --color-#{$token}-#{5 - $i}: #{$color-light};
     }
 
@@ -20,9 +18,13 @@
     @for $i from 1 through 4 {
       $scale: $i * -5%;
       $color-dark: color.adjust( $color, $lightness: $scale );
-
       --color-#{$token}-#{5 + $i}: #{$color-dark};
     }
+  }
+
+  @each $token in $base-color-tokens {
+    $color: map.get($color-tokens, 'color-on-#{$token}');
+    --color-on-#{$token}: #{$color};
   }
 
   --body-bg-color: var(--color-background);
