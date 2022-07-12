@@ -1,0 +1,17 @@
+---
+title: Colors
+---
+
+<h2>Colors</h2>
+
+<ul class="swatch-list" role="list">
+  {% for token in colors %}
+    <li>
+      <figure class="swatch bg-{{ token.name }}">
+        <figcaption class="swatch-caption">
+          <strong>{{ token.name }}</strong>
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+</ul>
