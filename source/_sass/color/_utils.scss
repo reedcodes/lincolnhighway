@@ -1,26 +1,22 @@
-/***
- * colors are set in _data/colors.js
- ***/
-
 @use 'color-tokens' as *;
 
 // Functional color classes.
-@each $color in $base-color-tokens {
-  .bg-#{$color} {
-    background-color: var(--color-#{$color});
-    color: var(--color-on-#{$color});
+@each $token in $base-color-tokens {
+  .bg-#{$token} {
+    background-color: var(--color-#{$token});
+    color: var(--color-on-#{$token});
   }
 
-  .bg-on-#{$color} {
-    background-color: var(--color-on-#{$color});
-    color: var(--color-#{$color});
+  .bg-on-#{$token} {
+    background-color: var(--color-on-#{$token});
+    color: var(--color-#{$token});
   }
 
-  .color-#{$color} {
-    color: var(--color-#{$color});
+  .color-#{$token} {
+    color: var(--color-#{$token});
   }
 
-  .color-on-#{$color} {
-    color: var(--color-#{$color});
+  .color-on-#{$token} {
+    color: var(--color-#{$token});
   }
 }

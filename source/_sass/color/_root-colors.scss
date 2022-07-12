@@ -1,0 +1,35 @@
+@use 'sass:color';
+@use 'sass:map';
+@use 'color-tokens' as *;
+
+:root {
+  @each $token in $base-color-tokens {
+    $color: map.get($color-tokens, 'color-#{$token}');
+
+    --color-#{$token}: #{$color};
+
+    @for $i from 4 through 1 {
+      $scale: $i * 5%;
+      $color-light: color.adjust( $color, $lightness: $scale );
+
+      --color-#{$token}-#{5 - $i}: #{$color-light};
+    }
+
+    --color-#{$token}-5: #{$color};
+
+    @for $i from 1 through 4 {
+      $scale: $i * -5%;
+      $color-dark: color.adjust( $color, $lightness: $scale );
+
+      --color-#{$token}-#{5 + $i}: #{$color-dark};
+    }
+  }
+
+  --body-bg-color: var(--color-background);
+  --body-text-color: var(--color-foreground);
+
+  --link-text-color: var(--color-primary);
+  --link-text-hover-color: var(--color-secondary-9);
+  --link-bg-color: transparent;
+  --link-bg-hover-color: transparent;
+}

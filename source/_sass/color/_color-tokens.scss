@@ -3,30 +3,30 @@
   Modify colors in source/_data/colors.js
  */
 
-$color-primary: hsla( 53, 60%, 97%, 1 ) !default;
-$color-on-primary: hsl(52, 6.8%, 43.3%) !default;
-$color-secondary: hsla( 49, 90%, 62%, 1 ) !default;
-$color-on-secondary: hsl(49, 88.1%, 23.1%) !default;
-$color-accent: hsla( 340, 70%, 52%, 1 ) !default;
-$color-on-accent: hsl(0, 100%, 99.6%) !default;
-$color-highlight: hsla( 219, 78%, 35%, 1 ) !default;
-$color-on-highlight: hsl(219.5, 65.5%, 77.3%) !default;
-$color-contrast: hsla( 60, 1%, 23%, 1 ) !default;
-$color-on-contrast: hsl(60, 0.6%, 64.5%) !default;
+$color-primary: #1446A0 !default;
+$color-on-primary: #A1BCEC !default;
+$color-secondary: #DB3069 !default;
+$color-on-secondary: #FFFFFF !default;
+$color-tertiary: #F5D547 !default;
+$color-on-tertiary: #6F5C07 !default;
+$color-background: #FCFBF3 !default;
+$color-on-background: #767467 !default;
+$color-foreground: #3C3C3B !default;
+$color-on-foreground: #A6A6A5 !default;
 
-$base-color-tokens: ("primary", "secondary", "accent", "highlight", "contrast");
+$base-color-tokens: ("primary", "secondary", "tertiary", "background", "foreground");
 
 $color-tokens: (
   "color-primary": $color-primary,
   "color-on-primary": $color-on-primary,
   "color-secondary": $color-secondary,
   "color-on-secondary": $color-on-secondary,
-  "color-accent": $color-accent,
-  "color-on-accent": $color-on-accent,
-  "color-highlight": $color-highlight,
-  "color-on-highlight": $color-on-highlight,
-  "color-contrast": $color-contrast,
-  "color-on-contrast": $color-on-contrast
+  "color-tertiary": $color-tertiary,
+  "color-on-tertiary": $color-on-tertiary,
+  "color-background": $color-background,
+  "color-on-background": $color-on-background,
+  "color-foreground": $color-foreground,
+  "color-on-foreground": $color-on-foreground
 ) !default;
 
 @mixin color-tokens() {
@@ -34,10 +34,10 @@ $color-tokens: (
   --color-on-primary: #{$color-on-primary};
   --color-secondary: #{$color-secondary};
   --color-on-secondary: #{$color-on-secondary};
-  --color-accent: #{$color-accent};
-  --color-on-accent: #{$color-on-accent};
-  --color-highlight: #{$color-highlight};
-  --color-on-highlight: #{$color-on-highlight};
-  --color-contrast: #{$color-contrast};
-  --color-on-contrast: #{$color-on-contrast};
+  --color-tertiary: #{$color-tertiary};
+  --color-on-tertiary: #{$color-on-tertiary};
+  --color-background: #{$color-background};
+  --color-on-background: #{$color-on-background};
+  --color-foreground: #{$color-foreground};
+  --color-on-foreground: #{$color-on-foreground};
 }
