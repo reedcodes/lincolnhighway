@@ -4,10 +4,10 @@ title: Colors
 
 <h2>Colors</h2>
 
-<ul class="swatch-list" role="list">
+<ul class="swatch-list grid" role="list">
   {% for token in colors %}
     <li>
-      <figure class="swatch bg-{{ token.name }}">
+      <figure class="guide-color-item bg-{{ token.name }}">
         <figcaption class="swatch-caption">
           <strong>{{ token.name }}</strong>
         </figcaption>
@@ -15,3 +15,21 @@ title: Colors
     </li>
   {% endfor %}
 </ul>
+
+
+
+{%- for token in colors -%}
+  <h2 class="bg-{{ token.name }}">{{- token.name -}}</h2>
+
+  <ul class="guide-color-list grid" role="list">
+    {%- for i in range(1, 10) -%}
+      <li>
+        <figure class="guide-color-item bg-{{- token.name -}}-{{- i -}}">
+          <figcaption>
+            <strong>{{- token.name -}}-{{- i -}}</strong>
+          </figcaption>
+        </figure>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endfor -%}

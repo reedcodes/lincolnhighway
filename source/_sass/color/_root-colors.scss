@@ -1,29 +1,35 @@
 @use 'sass:color';
 @use 'sass:map';
+@use 'sass:math';
+
 @use 'color-tokens' as *;
 
 :root {
   @each $token in $base-color-tokens {
     $color: map.get($color-tokens, 'color-#{$token}');
+
     --color-#{$token}: #{$color};
 
     @for $i from 4 through 1 {
-      $scale: $i * 5%;
+      $scale: $i * 10%;
       $color-light: color.adjust( $color, $lightness: $scale );
+
       --color-#{$token}-#{5 - $i}: #{$color-light};
     }
 
     --color-#{$token}-5: #{$color};
 
     @for $i from 1 through 4 {
-      $scale: $i * -5%;
+      $scale: $i * -10%;
       $color-dark: color.adjust( $color, $lightness: $scale );
+
       --color-#{$token}-#{5 + $i}: #{$color-dark};
     }
   }
 
   @each $token in $base-color-tokens {
     $color: map.get($color-tokens, 'color-on-#{$token}');
+
     --color-on-#{$token}: #{$color};
   }
 
