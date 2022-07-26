@@ -1,28 +1,29 @@
-@use 'color-map' as *;
+@use 'tokens' as *;
 
-// Functional color classes.
+// This loop creates background and color utility classes for each value in a
+// theme color palette.
+
+// Loop through each token in the theme colors tokens map. Because each item in
+// that map is technically a mini-map itself, grab `$token` and `$value`, even
+// though only the token is needed here.
 @each $token, $value in $tokens {
   .bg-#{$token} {
     background-color: var(--color-#{$token});
-    color: var(--color-on-#{$token});
-  }
-
-  .bg-on-#{$token} {
-    background-color: var(--color-on-#{$token});
-    color: var(--color-#{$token});
   }
 
   .color-#{$token} {
     color: var(--color-#{$token});
   }
 
-  .color-on-#{$token} {
-    color: var(--color-#{$token});
-  }
-
+  // For each token, create a class for each color in the theme color's scaled
+  // palette. Each color has 9 values in the palette.
   @for $i from 1 through 9 {
     .bg-#{$token}-#{$i} {
       background-color: var(--color-#{$token}-#{$i});
+    }
+
+    .color-#{$token}-#{$i} {
+      color: var(--color-#{$token}-#{$i});
     }
   }
 }

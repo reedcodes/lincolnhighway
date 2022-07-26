@@ -1,10 +1,8 @@
 @use 'sass:color';
 @use 'sass:math';
 
-@use 'color-tokens' as *;
-
 // AAA contrast is 7:1.
-$ratio: 7;
+$ratio: 7 !default;
 
 @function formula($value) {
   @if ($value <= 0.03928) {

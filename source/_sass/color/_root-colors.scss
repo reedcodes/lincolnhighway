@@ -2,19 +2,38 @@
 @use 'sass:map';
 @use 'sass:math';
 
-@use 'color-map' as *;
+@use 'tokens' as *;
 
 :root {
+  // At the document root, create a bunch of CSS custom properties to use
+  // later, one prop for _each_ scaled palette value for _each_ theme color.
+  // This creates props like so:
+  //
+  // --color-primary-1: [value];
+  // --color-primary-2: [value];
+  // ...
+  //
+  // all the way to `-9` for _each_ theme color. There are 5 theme colors, and
+  // this creates all 45 color props.
+
+  // Loop through each token in the theme colors tokens map.
   @each $token, $value in $tokens {
+    // Create a CSS custom property for the token and its value;
     --color-#{$token}: #{$value};
 
+    // Create a CSS custom property for _each_ theme color scaled palette.
+    // Each color has 9 values in the palette.
     @for $i from 1 through 9 {
+      // Go through the `$color-map`, find the token, _then_ find the scaled
+      // palette. Grab that value and set it to the temp `$color` var.
       $color: map.get($color-map, $token, '#{$token}-#{$i}');
 
+      // Now create a CSS custom property for that scaled palette.
       --color-#{$token}-#{$i}: #{$color};
     }
   }
 
+  // Set up some basic color props to use globally.
   --body-bg-color: var(--color-background);
   --body-text-color: var(--color-foreground);
 
