@@ -1,7 +1,7 @@
-@use 'color-tokens' as *;
+@use 'color-map' as *;
 
 // Functional color classes.
-@each $token in $base-color-tokens {
+@each $token, $value in $tokens {
   .bg-#{$token} {
     background-color: var(--color-#{$token});
     color: var(--color-on-#{$token});
