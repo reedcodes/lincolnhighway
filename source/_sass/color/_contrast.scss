@@ -69,7 +69,7 @@ $ratio: (
 // `luminance()`
 //
 // The equation to calculate the luminance of a color is:
-//   `L = 0.2126 * R + 0.7152 * G + 0.0722 * B`.
+//   L = 0.2126 * R + 0.7152 * G + 0.0722 * B
 // https://www.w3.org/WAI/WCAG21/Techniques/general/G18.html
 
 @function luminance($color) {
@@ -82,7 +82,7 @@ $ratio: (
   $blue: formula(math.div(color.blue($color), 255));
 
   // Now, calculate the luminance!
-  $luminance: ($red * 0.2126 + $green * 0.7152 + $blue * 0.0722) + 0.05;
+  $luminance: ($red * 0.2126 + $green * 0.7152 + $blue * 0.0722);
 
   // Then, return the luminance.
   @return $luminance;
@@ -105,14 +105,21 @@ $ratio: (
   // Find the luminance of the second color.
   $color2-l: luminance($color2);
 
+  // The equation for getting the color contrast is:
+  //   C = (L1 + 0.05) / (L2 + 0.05)
   // In order to get the proper ratio value, the larger number must be divided
   // by the smaller number. That way the value of `$contrast` will be greater
   // than or equal to 1.
   @if ($color1-l > $color2-l) {
-    $contrast: math.div(($color1-l), ($color2-l));
+    $dividend: $color1-l;
+    $divisor: $color2-l;
   } @else {
-    $contrast: math.div(($color2-l), ($color1-l));
+    $dividend: $color2-l;
+    $divisor: $color1-l;
   }
+
+  // Calculate the contrast ratio.
+  $contrast: math.div(($dividend + 0.05), ($divisor + 0.05));
 
   // Return the contrast ratio.
   @return $contrast;
