@@ -1,40 +1,119 @@
 @use 'sass:color';
 @use 'sass:math';
 
-// AAA contrast is 7:1.
-$ratio: 7 !default;
+// This file creates several functions, with the ultimate goal of returning a
+// ratio used to determine if two colors have appropriate color contrast.
+// WCAG Success Criteria 1.4.3 & 1.4.6 state the color used for text must have
+// sufficient contrast with the color of its background.
+// https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum
+// https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced
+//
+// Color contrast lies on a scale, with 1:1 being no contrast at all (e.g. the
+// colors are exactly the same) and with 22:1 being the absolute highest
+// contrast. However! Higher contrast ratios aren't necessarily better; at 22:1,
+// pure black text on pure white background can still be an accessibility issue.
+//
+// There are no minimum text size requirements recorded in any WCAG success
+// criteria, though most guides agree that main body copy be arund 16px, which
+// is the default size defined in most browsers. A lower contrast ratio is
+// allowed if:
+// 1. text is _at least_ 24px (large), or
+// 2. text is _at least_ 19px AND bold.
+// https://webaim.org/articles/contrast/
+
+$ratio: (
+  'aa': (
+    // For normal text, AA contrast is 4.5:1.
+    'normal': 4.5,
+    // For large or bold text, AA contrast is 3:1.
+    'bold': 3
+  ),
+  'aaa': (
+    // For normal text, AAA contrast is 7:1.
+    'normal': 7,
+    // For large or bold text, AAA contrast is 4.5:1.
+    'bold': 4.5
+  )
+);
+
+
+
+// `formula()`
+//
+// The R, G, and B values in the equation for luminance are not the literal
+// red, green, and blue values from the color itself. Once the initial red,
+// green, or blue value is found, it is divided by 255. If that quotient is less
+// than or equal to 0.04045, then one value is used; if it's larger, another.
+// https://www.w3.org/WAI/WCAG21/Techniques/general/G18.html
 
 @function formula($value) {
-  @if ($value <= 0.03928) {
+  // If the quotient of the red, green, or blue value divided by 255 is less
+  // than or equal to 0.04045...
+  @if ($value <= 0.04045) {
+    // Divide that number by 12.92.
     $value: math.div($value, 12.92);
-  } @else {
+  }
+  // If the quotient is greater than 0.04045...
+  @else {
+    // Add 0.055 to that number, then divide that sum by 1.055. Next, take that
+    // quotient and raise it to the power of 2.4.
     $value: math.pow( math.div(($value + 0.055), 1.055), 2.4);
   }
 
+  // Now return the value to use for R, G, or B in the luminance equation.
   @return $value;
 }
 
+
+
+// `luminance()`
+//
+// The equation to calculate the luminance of a color is:
+//   `L = 0.2126 * R + 0.7152 * G + 0.0722 * B`.
+// https://www.w3.org/WAI/WCAG21/Techniques/general/G18.html
+
 @function luminance($color) {
+  // Grab the different red, green, and blue values from the passed-in color.
+  // Those values are each divided by 255. However! In order to correctly
+  // calculate the luminance, pass the value to the formula function to grab
+  // the _actual_ value for the equation. 
   $red: formula(math.div(color.red($color), 255));
   $green: formula(math.div(color.green($color), 255));
   $blue: formula(math.div(color.blue($color), 255));
 
+  // Now, calculate the luminance!
   $luminance: ($red * 0.2126 + $green * 0.7152 + $blue * 0.0722) + 0.05;
 
+  // Then, return the luminance.
   @return $luminance;
 }
 
-@function contrast($color1, $color2) {
-  $contrast: 0;
 
+
+// `contrast()`
+//
+// The contrast function accepts two values, both colors, and returns a
+// contrast ratio that determines if those colors used together (one as text,
+// one as background) meet Success Criterion 1.4.6. 
+@function contrast($color1, $color2) {
+  // Set up the var to hold the contrast ratio. Assume both color are the same.
+  $contrast: 1;
+
+  // Find the luminance of the first color.
   $color1-l: luminance($color1);
+
+  // Find the luminance of the second color.
   $color2-l: luminance($color2);
 
+  // In order to get the proper ratio value, the larger number must be divided
+  // by the smaller number. That way the value of `$contrast` will be greater
+  // than or equal to 1.
   @if ($color1-l > $color2-l) {
     $contrast: math.div(($color1-l), ($color2-l));
   } @else {
     $contrast: math.div(($color2-l), ($color1-l));
   }
 
+  // Return the contrast ratio.
   @return $contrast;
 }
