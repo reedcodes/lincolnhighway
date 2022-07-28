@@ -160,10 +160,14 @@ $wcag-ratio: (
       // Get the contrast of the passed-in color with this test color.
       $contrast: contrast($constant, $test);
 
+      // Find the blackness of this color. Pure black is 100%.
+      $blackness: color.blackness($test);
+
       // If the contrast is greater than the ratio, the colors are compatible.
       // However, we want the color combination with the greatest passing
-      // contrast, without have a contrast that is _too_ high.
-      @if ($contrast > $ratio) and ($contrast < 16.5) {
+      // contrast, without have a contrast that is _too_ high. We also do not
+      // want to pair a color with pure black.
+      @if ($contrast > $ratio) and ($contrast < 12) and ($blackness < 100%) {
         // Test the new contrast against the previously set highest contrast.
         // If the new contrast is higher than `$highest`, then it now becomes
         // the new highest contrast.

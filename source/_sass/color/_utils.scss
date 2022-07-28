@@ -1,3 +1,6 @@
+@use 'sass:map';
+
+@use 'contrast' as *;
 @use 'tokens' as *;
 
 // This loop creates background and color utility classes for each value in a
@@ -8,7 +11,14 @@
 // though only the token is needed here.
 @each $token, $value in $tokens {
   .bg-#{$token} {
+    // Set the background color to the token.
     background-color: var(--color-#{$token});
+
+    // Get the accessible contrast color.
+    $contrast: a11y-color('#{$token}');
+
+    // Set the color for this background to the contrasting color.
+    color: var(--color-#{$contrast});
   }
 
   .color-#{$token} {
