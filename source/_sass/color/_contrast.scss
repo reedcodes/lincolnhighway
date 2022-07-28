@@ -1,6 +1,7 @@
 @use 'sass:color';
 @use 'sass:map';
 @use 'sass:math';
+@use 'sass:string';
 
 @use 'tokens' as *;
 
@@ -108,8 +109,6 @@ $wcag-ratio: (
   // Set up the var to hold the contrast ratio. Assume both color are the same.
   $contrast: 1;
 
-  // @debug $color1, $color2;
-
   // Find the luminance of the first color.
   $color1-l: luminance($color1);
 
@@ -145,9 +144,15 @@ $wcag-ratio: (
 // color palettes to find one with appropriate contrast. The function assumes
 // AA compliance, unless another ratio is specified as a property when called.
 
-@function a11y-color($token, $ratio: map.get($wcag-ratio, 'aa', 'normal')) {
-  // Get the value from the passed-in token.
-  $constant: map.get($tokens, $token);
+@function a11y-color($palette, $ratio: map.get($wcag-ratio, 'aa', 'normal')) {
+  // Get the theme color token for the passed in color palette. This can be used
+  // to loop through all the colors later. Since palette names all end in `-x`
+  // where `x` is a number between 1 and 9, we can slice off the last two (2)
+  // characters to get the token.
+  $token: string.slice($palette, 1, -3);
+
+  // Get the color value from the passed-in token.
+  $constant: map.get($color-map, $token, $palette);
 
   // Set up the var to hold the contrast ratio. Assume both color are the same.
   $contrast: 1;
@@ -158,10 +163,10 @@ $wcag-ratio: (
   // Set the var for the eventual resulting contrast color.
   $pair: '';
 
-  @each $color, $value in $tokens {
+  @each $token, $value in $tokens {
     @for $i from 1 through 9 {
       // Get the color value to test against the passed-in color value.
-      $test: map.get($color-map, $color, '#{$color}-#{$i}');
+      $test: map.get($color-map, $token, '#{$token}-#{$i}');
 
       // Get the contrast of the passed-in color with this test color.
       $contrast: contrast($constant, $test);
@@ -181,7 +186,7 @@ $wcag-ratio: (
           $highest: $contrast;
 
           // Set this color token to be the paired contrasting color.
-          $pair: '#{$color}-#{$i}';
+          $pair: '#{$token}-#{$i}';
         }
       }
     }

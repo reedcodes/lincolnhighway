@@ -15,7 +15,8 @@
     background-color: var(--color-#{$token});
 
     // Get the accessible contrast color.
-    $contrast: a11y-color('#{$token}');
+    // The default theme color token has the same value as palette `-5`.
+    $contrast: a11y-color('#{$token}-5');
 
     // Set the color for this background to the contrasting color.
     color: var(--color-#{$contrast});
@@ -30,6 +31,12 @@
   @for $i from 1 through 9 {
     .bg-#{$token}-#{$i} {
       background-color: var(--color-#{$token}-#{$i});
+
+      // Get the accessible contrast color.
+      $contrast: a11y-color('#{$token}-#{$i}');
+
+      // Set the color for this background to the contrasting color.
+      color: var(--color-#{$contrast});
     }
 
     .color-#{$token}-#{$i} {
