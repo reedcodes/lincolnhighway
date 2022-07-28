@@ -13,8 +13,14 @@
 //
 // Color contrast lies on a scale, with 1:1 being no contrast at all (e.g. the
 // colors are exactly the same) and with 22:1 being the absolute highest
-// contrast. However! Higher contrast ratios aren't necessarily better; at 22:1,
+// contrast. However! Higher contrast ratios aren't necessarily better; at 21:1,
 // pure black text on pure white background can still be an accessibility issue.
+//
+// The two colors with the highest contrast do _not_ have to be used together.
+// The `a11y-color()` function _does_ produce the color with the most contrast
+// to the passed-in color, but other colors that have contrast greater than the
+// test ratio (even if they are not the _most_ contrasting) may be more
+// asthetically pleasing, or match the design better.
 //
 // There are no minimum text size requirements recorded in any WCAG success
 // criteria, though most guides agree that main body copy be arund 16px, which

@@ -2,8 +2,8 @@
   &-item {
     figcaption {
       display: block;
-      padding-block-start: 200px;
-      padding-block-start: 20vh;
+      padding-block: max(200px, 20vh) 0.5em;
+      padding-inline: 0.5em;
     }
   }
 }
