@@ -1,5 +1,8 @@
 @use 'sass:color';
+@use 'sass:map';
 @use 'sass:math';
+
+@use 'tokens' as *;
 
 // This file creates several functions, with the ultimate goal of returning a
 // ratio used to determine if two colors have appropriate color contrast.
@@ -21,7 +24,7 @@
 // 2. text is _at least_ 19px AND bold.
 // https://webaim.org/articles/contrast/
 
-$ratio: (
+$wcag-ratio: (
   'aa': (
     // For normal text, AA contrast is 4.5:1.
     'normal': 4.5,
@@ -99,6 +102,8 @@ $ratio: (
   // Set up the var to hold the contrast ratio. Assume both color are the same.
   $contrast: 1;
 
+  // @debug $color1, $color2;
+
   // Find the luminance of the first color.
   $color1-l: luminance($color1);
 
@@ -110,10 +115,10 @@ $ratio: (
   // In order to get the proper ratio value, the larger number must be divided
   // by the smaller number. That way the value of `$contrast` will be greater
   // than or equal to 1.
-  @if ($color1-l > $color2-l) {
-    $dividend: $color1-l;
-    $divisor: $color2-l;
-  } @else {
+  $dividend: $color1-l;
+  $divisor: $color2-l;
+
+  @if ($color1-l < $color2-l) {
     $dividend: $color2-l;
     $divisor: $color1-l;
   }
@@ -123,4 +128,55 @@ $ratio: (
 
   // Return the contrast ratio.
   @return $contrast;
+}
+
+
+
+// `a11y-color()`
+//
+// Find the most accessible color to pair with another. This function accepts a
+// color token (not the color itself), then loops through all shades in all
+// color palettes to find one with appropriate contrast. The function assumes
+// AA compliance, unless another ratio is specified as a property when called.
+
+@function a11y-color($token, $ratio: map.get($wcag-ratio, 'aa', 'normal')) {
+  // Get the value from the passed-in token.
+  $constant: map.get($tokens, $token);
+
+  // Set up the var to hold the contrast ratio. Assume both color are the same.
+  $contrast: 1;
+
+  // Set the var to hold the highest contrast ratio.
+  $highest: 1;
+
+  // Set the var for the eventual resulting contrast color.
+  $pair: '';
+
+  @each $color, $value in $tokens {
+    @for $i from 1 through 9 {
+      // Get the color value to test against the passed-in color value.
+      $test: map.get($color-map, $color, '#{$color}-#{$i}');
+
+      // Get the contrast of the passed-in color with this test color.
+      $contrast: contrast($constant, $test);
+
+      // If the contrast is greater than the ratio, the colors are compatible.
+      // However, we want the color combination with the greatest passing
+      // contrast, without have a contrast that is _too_ high.
+      @if ($contrast > $ratio) and ($contrast < 16.5) {
+        // Test the new contrast against the previously set highest contrast.
+        // If the new contrast is higher than `$highest`, then it now becomes
+        // the new highest contrast.
+        @if $contrast > $highest {
+          $highest: $contrast;
+
+          // Set this color token to be the paired contrasting color.
+          $pair: '#{$color}-#{$i}';
+        }
+      }
+    }
+  }
+
+  // Return the best accessible contrasting color!
+  @return $pair;
 }

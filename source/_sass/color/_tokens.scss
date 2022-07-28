@@ -24,7 +24,7 @@ $color-map: ();
   // Set the var to hold the temporary map (inside this function).
   $map: ();
 
-  // The scale for the color palette is 10%.
+  // The scale for the color palette.
   // To lighten, the color is multiplied by a _positive_ scale.
   // To darken, the color is multiplied by a _negative_ scale.
   $scale-light: 10%;
