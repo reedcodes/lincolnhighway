@@ -30,6 +30,12 @@ $color-map: ();
   $scale-light: 10%;
   $scale-dark: -10%;
 
+  // Since the default background is already a light color, adjust the scale.
+  @if $name == 'background' {
+    $scale-light: 5%;
+    $scale-dark: -5%;
+  }
+
   // To create the lighter colors for this theme color palette, the loop starts
   // at 4 and works backward to 1. This scales the original theme color lighter
   // and lighter through each iteration, and allows the map to add the new

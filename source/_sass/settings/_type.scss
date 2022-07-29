@@ -49,6 +49,10 @@ body {
   margin-bottom: calc( var(--spacer) / 2 );
 }
 
+a {
+  --link-weight: 600;
+}
+
 /*
  * Headings.
  */

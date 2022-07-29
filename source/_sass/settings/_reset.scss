@@ -48,7 +48,7 @@ a {
 
   background-color: var(--link-bg-color);
   color: var(--link-text-color);
-
+  font-weight: var(--link-weight, normal);
   text-decoration-skip-ink: auto;
   text-decoration-thickness: var(--link-line-size);
   text-decoration-color: var(--link-underline-color);
