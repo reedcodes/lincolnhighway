@@ -5,28 +5,26 @@
     --hero-bg-color: var(--color-primary);
     --hero-bg-blend: unset;
     --hero-bg-gradient-size: 96px;
+    --hero-bg-gradient-color-start: var(--hero-bg-color);
+    --hero-bg-gradient-color-end: var(--color-background);
 
     background-image: linear-gradient(
       to top,
-      var(--color-background) var(--hero-bg-gradient-size),
-      var(--color-primary) var(--hero-bg-gradient-size)
+      var(--hero-bg-gradient-color-end) var(--hero-bg-gradient-size),
+      var(--hero-bg-gradient-color-start) var(--hero-bg-gradient-size)
     );
 
     &-image {
-      --hero-img-aspect-ratio: inherit;
-      --hero-img-border-space: 15px;
-      --hero-img-border-radius: var(--hero-img-border-space);
-
-      aspect-ratio: var(--hero-img-aspect-ratio);
+      aspect-ratio: inherit;
       width: min( 100%, 600px );
       margin-inline: auto;
 
       img {
         --image-aspect-ratio: inherit;
 
-        background-color: var(--color-background);
-        box-shadow: 0 0 4px 0 var(--color-foreground);
-        border-radius: var(--hero-img-border-radius);
+        background-color: var(--color-background-3);
+        box-shadow: 0 0 4px 0 var(--color-primary-8);
+        border-radius: 15px;
       }
     }
   }
