@@ -1,3 +1,24 @@
 .route-map {
   --container-padding-block: 0;
+
+  &-inner {
+    overflow: auto;
+  }
+
+  &-image {
+    // The route map is _really_ wide, as it depicts the entire route of the
+    // Lincoln Highway from San Francisco to New York City. The whole image
+    // needs to be available, but if it's only "responsive", then it's capped
+    // at 100% of the available space which squishes it so much on small screens
+    // that it's indecipherable. So we unset the max-width to remove that
+    // restriction.
+    max-width: unset;
+
+    // Then, the image has a minimum size of 800px. This will allow it to scroll
+    // horizontally on small screens, but it can still expand to 100% when it
+    // can. Once the screen size it wide enough, the image is flexible between
+    // 800px and 1250px. `4vw` is subtracted from 800px to account for the
+    // inline padding of the container.
+    width: min(1250px, max(calc(800px - 4vw), 100%));
+  }
 }
