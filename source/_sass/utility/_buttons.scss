@@ -40,5 +40,12 @@
       --btn-bg-color: var(--color-#{$token});
       --btn-text-color: var(--color-#{a11y-color('#{$token}-5')});
     }
+
+    @for $i from 1 through 9 {
+      &-#{$token}-#{$i} {
+        --btn-bg-color: var(--color-#{$token}-#{$i});
+        --btn-text-color: var(--color-#{a11y-color('#{$token}-#{$i}')});
+      }
+    }
   }
 }
