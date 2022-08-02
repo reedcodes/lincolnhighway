@@ -1,0 +1,17 @@
+{%- for post in post_list -%}
+  {%- set post_feature = post.data.feature -%}
+  {%- set post_date = post.data.date -%}
+  {%- set post_url = post.url -%}
+  {%- set post_title = post.data.title -%}
+  {%- set post_teaser = post.data.teaser -%}
+  {%- set post_category = post.data.category -%}
+
+  {%- if post_max -%}
+    {%- if loop.index <= post_max -%}
+      {% include "post/teaser.njk" %}
+    {%- endif -%}
+  {%- else -%}
+    {% include "post/teaser.njk" %}
+  {%- endif -%}
+
+{%- endfor -%}

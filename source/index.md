@@ -1,4 +1,7 @@
 ---
-layout: layouts/home.njk
 title: Homepage
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
 ---

@@ -1,0 +1,9 @@
+{%- if collections.categoryList -%}
+
+  <ul>
+    {%- for category in collections.categoryList | sort -%}
+      <li><a href="/{{ category | lower }}/">{{ category }}: {{ collections.categories[category] | length }}</a></li>
+    {%- endfor -%}
+  </ul>
+
+{%- endif -%}

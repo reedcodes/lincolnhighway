@@ -1,0 +1,12 @@
+
+{%- extends "layouts/default.njk" -%}
+
+{%- set post_list = pagination.items -%}
+
+{%- block main_content -%}
+  {{ content | safe }}
+
+  {% include "post/list.njk" %}
+
+  {% include "post/pagination.njk" %}
+{%- endblock main_content -%}
