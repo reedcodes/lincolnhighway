@@ -1,8 +1,7 @@
 .header {
-  --container-padding-block: min( 1rem, 2vh );
-  --header-bg-color: var(--color-primary);
+  --container-padding-block: min(1rem, 2vh);
 
-  background-color: var(--header-bg-color);
+  background-color: var(--header-bg-color, var(--color-primary));
 
   &-inner {
     --flex-items-justify: space-between;
@@ -12,7 +11,7 @@
 .site-logo {
   display: block;
   width: auto;
-  max-width: min( 100%, 100vw );
+  max-width: min(100%, 100vw);
   height: 100px;
 }
 
@@ -22,6 +21,8 @@
   }
 
   &-link {
+    --link-text-color: var(--color-tertiary);
+    --link-text-hover-color: var(--color-secondary-1);
     --link-underline-color: transparent;
 
     &:focus,
