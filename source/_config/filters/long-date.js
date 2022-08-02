@@ -1,8 +1,8 @@
 // Import date methods.
-const { DateTime } = require( "luxon" );
+const {DateTime} = require("luxon");
 
-module.exports = function( dateObj ) {
+module.exports = function(dateObj) {
   return DateTime
-    .fromJSDate( dateObj )
-    .toFormat( "EEE d MMM yyyy t" );
+    .fromISO(dateObj)
+    .toFormat("EEEE d MMMM yyyy ' at ' t '('ZZZZ')'");
 };
