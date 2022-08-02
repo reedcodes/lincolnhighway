@@ -22,6 +22,7 @@ module.exports = function( eleventyConfig ) {
   eleventyConfig.addShortcode( "year", require("./source/_config/shortcodes/year.js") );
 
   // Add date filters.
+  eleventyConfig.addFilter( "simpleDate", require("./source/_config/filters/simple-date.js") );
   eleventyConfig.addFilter( "shortDate", require("./source/_config/filters/short-date.js") );
   eleventyConfig.addFilter( "longDate", require("./source/_config/filters/long-date.js") );
 
