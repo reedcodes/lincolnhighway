@@ -39,7 +39,7 @@ body {
 
 a,
 button {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 a {
@@ -80,8 +80,8 @@ a {
   }
 }
 
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
   margin: 0;
   padding: 0;
