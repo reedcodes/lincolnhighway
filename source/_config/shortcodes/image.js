@@ -24,7 +24,7 @@ module.exports = async function( src, alt, sizes="100vw" ) {
 
   // Set the metadata for this image, that 11ty will generate.
   let metadata = await Image(imageSrc, {
-    widths: [300, 600],
+    widths: [300, 600, 900, 1200],
     formats: ['webp', 'jpeg'],
     outputDir: outputDirectory,
     urlPath: this.page.url,
