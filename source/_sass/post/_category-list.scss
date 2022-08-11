@@ -1,0 +1,15 @@
+.category-list {
+  width: min-content;
+  font-size: 1rem;
+
+  &-item {
+    margin: 0;
+  }
+  
+  &-link {
+    display: flex;
+    justify-content: space-between;
+    border-block-end: 2px solid currentColor;
+    text-decoration: none;
+  }
+}

@@ -1,9 +1,16 @@
 {%- if collections.categoryList -%}
+<section class="category-list" aria-labelledby="category-list-heading">
+  <h2 id="category-list-heading">Categories</h2>
 
-  <ul>
+  <ul class="category-list-list" role="list">
     {%- for category in collections.categoryList | sort -%}
-      <li><a href="/{{ category | lower }}/">{{ category }}: {{ collections.categories[category] | length }}</a></li>
+      <li class="category-list-item">
+        <a class="category-list-link" href="/blog/category/{{ category | lower }}/">
+          <span class="category-list-name">{{ category }}:</span>
+          <span class="category-list-count">{{ collections.categories[category] | length }}</span>
+        </a>
+      </li>
     {%- endfor -%}
   </ul>
-
+</section>
 {%- endif -%}

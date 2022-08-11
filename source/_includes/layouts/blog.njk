@@ -6,6 +6,8 @@
 {%- block main_content -%}
   {{ content | safe }}
 
+  {% include "post/category-list.njk" %}
+
   {% include "post/list.njk" %}
 
   {% include "post/pagination.njk" %}
