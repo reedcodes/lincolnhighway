@@ -1,5 +1,6 @@
 {%- extends "layouts/default.njk" -%}
 
+{%- set post_feature = feature -%}
 {%- set post_date = date -%}
 {%- set post_url = url -%}
 {%- set post_title = title -%}
@@ -9,6 +10,10 @@
 
 {%- set post_tags_show = true -%}
 
+{%- block page_hero -%}
+  {%- include "post/feature.njk" -%}
+{%- endblock page_hero -%}
+
 {%- block title_content -%}
-  {% include "post/header.njk" %}
+  {%- include "post/header.njk" -%}
 {%- endblock title_content -%}
