@@ -6,11 +6,19 @@
   
   <{{- post_title_heading -}}>{{ post_title }}</{{- post_title_heading -}}>
 
-  {%- if post_category -%}
-    <p><a href="/blog/category/{{ post_category | slug }}/"><span class="sr-only">Category:</span> {{ post_category }}</a></p>
-  {%- endif -%}
+  {%- if post_category or post_tags -%}
+    <dl class="post-taxonomy">
+      {%- if post_category -%}
+        <dt class="sr-only">Category</dt>
+        <dd><a href="/blog/category/{{ post_category | slug }}/">{{ post_category }}</a></dd>
+      {%- endif -%}
 
-  {%- if post_tags -%}
-    {%- include "post/tag-list.njk" -%}
+      {%- if post_tags -%}
+        <dt class="sr-only">Tags</dt>
+        {% for tag in post_tags -%}
+          <dd><a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+        {%- endfor -%}
+      {%- endif -%}
+    </dl>
   {%- endif -%}
 </header>

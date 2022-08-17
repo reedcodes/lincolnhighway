@@ -1,5 +1,0 @@
-<p><span class="sr-only">Post tags:</span>
-  {% for tag in post_tags -%}
-    {%- if not loop.last -%}<a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a>, {% else -%} <a href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a>{%- endif -%}
-  {%- endfor -%}
-</p>
