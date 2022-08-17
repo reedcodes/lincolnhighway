@@ -3,14 +3,20 @@
 
 $spacer: 1em;
 
-$serif: serif;
-$sans-serif: 'Public Sans', 'Helvetica', 'Arial', sans-serif;
+// Base size ~20px, assuming 16px default browser size.
+$base-size: 1.5rem;
+
+// Typefaces available.
+$serif: 'Lora', system-ui, serif;
+$sans-serif: 'Public Sans', system-ui, sans-serif;
 
 :root {
   --spacer: #{$spacer};
 
-  --font-body: #{ $sans-serif };
-  --font-heading: #{ $sans-serif };
+  --font-size: #{$base-size};
+  --font-weight: 450;
+  --font-body: #{$serif};
+  --font-heading: #{$sans-serif};
 
   // Calculate a relative line height.
   // Jesús Ricarte
@@ -19,16 +25,6 @@ $sans-serif: 'Public Sans', 'Helvetica', 'Arial', sans-serif;
 }
 
 
-
-/*
- * Body.
- */
-
-body {
-  font-size: clamp(1rem, (1rem + 2vw), 1.5rem);
-  line-height: var(--line-height);
-  font-family: var(--font-body);
-}
 
 /*
  * Main content text.
@@ -49,10 +45,6 @@ body {
   margin-bottom: calc( var(--spacer) / 2 );
 }
 
-a {
-  --link-weight: 600;
-}
-
 /*
  * Headings.
  */
@@ -61,11 +53,9 @@ a {
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6
 ) {
-  --heading-font-weight: 900;
-
   margin-bottom: 0.65em;
   line-height: var(--line-height);
-  font-weight: var(--heading-font-weight);
+  font-weight: var(--heading-font-weight, 750);
   font-family: var(--font-heading);
   overflow-wrap: break-word;
   hyphens: auto;
@@ -79,9 +69,6 @@ a {
 // Minor third ratio.
 $type-scale: 1.2;
 
-// Base size ~20px, assuming 16px default browser size.
-$base-size: 1.5rem;
-
 // Heading levels.
 $headings: 5, 4, 3, 2, 1;
 $heading-size: $base-size;
@@ -90,23 +77,7 @@ $heading-size: $base-size;
   // Apply the heading size for this level based on ratio.
   $heading-size: $heading-size * $type-scale;
 
-  h#{ $heading }, .h#{ $heading } {
-    // Have the heading size as the default, backup.
-    font-size: $heading-size;
-
-    // First, remove the unit to get just a number.
-    $heading-unitless: math.div( $heading-size, ( $heading-size * 0 + 1 ) );
-
-    // Calculate the minimum font size allowed.
-    $heading-min: $heading-unitless - ( 0.33 * $heading-unitless );
-
-    // Calculate the responsive font size.
-    $heading-responsive: ( $heading-unitless - $heading-min ) + 4vw;
-
-    font-size: clamp(
-      #{ $heading-min }rem,
-      #{ $heading-responsive } + 1rem,
-      #{ $heading-size }
-    );
+  h#{$heading }, .h#{$heading } {
+    font-size: #{$heading-size};
   }
 }
