@@ -1,0 +1,34 @@
+.post {
+  &-date {
+    margin-block-end: 0;
+  }
+
+  &-title {
+    margin-block: 0;
+    line-height: 1;
+  }
+
+  &-taxonomy {
+    margin-block-start: 0;
+  }
+
+  &-term {
+    margin: 0;
+  }
+
+  &-taxonomy,
+  &-tags {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  &-date,
+  &-taxonomy {
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 900;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+  }
+}
