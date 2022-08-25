@@ -33,7 +33,7 @@ module.exports = async function( src, alt, sizes="100vw" ) {
   let lowsrc = metadata.jpeg[0];
   let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
 
-  return `<picture>
+  return `\n\n<picture>
     ${Object.values(metadata).map(imageFormat => {
       return `<source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(', ')}" sizes="${sizes}">`;
     }).join('\n')}
@@ -44,5 +44,5 @@ module.exports = async function( src, alt, sizes="100vw" ) {
         alt="${alt}"
         loading="lazy"
         decoding="async">
-    </picture>`;
+    </picture>\n\n`;
 };

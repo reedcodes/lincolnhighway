@@ -29,8 +29,12 @@ module.exports = function( eleventyConfig ) {
   // Add the image shortcode, from the 11ty image plugin.
   eleventyConfig.addNunjucksAsyncShortcode( "image", require("./source/_config/shortcodes/image.js") );
 
+  // Remove the console output of all generated files.
+  eleventyConfig.setQuietMode(true);
+
   // 11ty config options.
   return {
+    htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     dir: {
       input: "source",
