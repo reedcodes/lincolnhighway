@@ -1,9 +1,9 @@
-{%- set post_teaser_show = post_teaser_show | default( false ) -%}
+{%- set post_teaser_show = post_teaser_show | default(true) -%}
 
 <article class="post-teaser{{ " post-teaser-latest" if loop.first }}">
   {% include "post/header.njk" %}
 
-  {%- if post_teaser_show and post_teaser and loop.first -%}
+  {%- if post_teaser_show and post_teaser -%}
     <p>{{ post_teaser | safe }}</p>
   {%- endif -%}
 

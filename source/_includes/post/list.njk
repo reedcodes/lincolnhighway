@@ -16,8 +16,16 @@
         {%- if loop.index <= post_max -%}
           {% include "post/teaser.njk" %}
         {%- endif -%}
-      {%- elseif loop.index > 1 -%}
-        {% include "post/teaser.njk" %}
+      {%- else -%}
+
+        {%- if not post_show_latest -%}
+          {%- if loop.index > 1 -%}
+            {% include "post/teaser.njk" %}
+          {%- endif -%}
+        {%- else -%}
+          {% include "post/teaser.njk" %}
+        {%- endif -%}
+
       {%- endif -%}
     {%- endfor -%}
   </section>
