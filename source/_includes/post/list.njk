@@ -1,5 +1,6 @@
 {%- if post_list -%}
-  <div class="post-list">
+  <section class="post-list" aria-labelledby="post-list-heading">
+    <h2 id="post-list-heading" class="post-list-heading">List of blog posts</h2>
 
     {%- for post in post_list -%}
       {%- set post_feature = post.data.feature -%}
@@ -8,6 +9,7 @@
       {%- set post_title = post.data.title -%}
       {%- set post_teaser = post.data.teaser -%}
       {%- set post_category = post.data.category -%}
+      {%- set post_tags = post.data.tags -%}
 
       {%- if post_max -%}
         {%- if loop.index <= post_max -%}
@@ -19,5 +21,5 @@
 
     {%- endfor -%}
 
-  </div>
+  </section>
 {%- endif -%}

@@ -3,12 +3,18 @@
 {%- if tag -%}
   {%- set post_list = collections[tag] -%}
   {%- set title = "Tag Archive: " + tag -%}
+  {%- set post_tags_show = false -%}
 {%- endif -%}
 
 {%- if categoryName -%}
   {%- set post_list = collections.categories[categoryName] | sort -%}
   {%- set title = "Category Archive: " + categoryName -%}
+  {%- set post_category_show = false -%}
 {%- endif -%}
+
+{%- block title_content -%}
+  <h1 class="post-list-title">{{- title -}}</h1>
+{%- endblock title_content -%}
 
 {%- block main_content -%}
   {{ content | safe }}
