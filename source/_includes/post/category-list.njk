@@ -1,7 +1,5 @@
 {%- if collections.categoryList -%}
-<section class="category-list" aria-labelledby="category-list-heading">
-  <h2 id="category-list-heading" class="category-list-heading">Categories</h2>
-
+<section class="category-list" aria-label="Blog categories list">
   <ul class="category-list-list" role="list">
     {%- for category in collections.categoryList | sort -%}
       <li class="category-list-item">
