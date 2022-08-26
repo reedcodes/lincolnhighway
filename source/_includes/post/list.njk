@@ -1,7 +1,5 @@
 {%- if post_list -%}
-  <section class="post-list" aria-labelledby="post-list-heading">
-    <h2 id="post-list-heading" class="post-list-heading">List of blog posts</h2>
-
+  <section class="post-list">
     {%- for post in post_list -%}
       {%- set post_feature = post.data.feature -%}
       {%- set post_date = post.data.date -%}
@@ -18,8 +16,6 @@
       {%- elseif loop.index > 1 -%}
         {% include "post/teaser.njk" %}
       {%- endif -%}
-
     {%- endfor -%}
-
   </section>
 {%- endif -%}
