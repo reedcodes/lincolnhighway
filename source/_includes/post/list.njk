@@ -12,12 +12,29 @@
       {%- set post_category = post.data.category -%}
       {%- set post_tags = post.data.tags -%}
 
+      {# If there is a limit on the number of posts listed, only show those. #}
       {%- if post_max -%}
         {%- if loop.index <= post_max -%}
           {% include "post/teaser.njk" %}
         {%- endif -%}
-      {%- elseif loop.index > 1 -%}
-        {% include "post/teaser.njk" %}
+
+      {# If there is no limit... #}
+      {%- else -%}
+
+        {# If the latest post should not be shown... #}
+        {%- if not post_show_latest -%}
+
+          {# Only show posts from the second-latest and previous. #}
+          {%- if loop.index > 1 -%}
+            {% include "post/teaser.njk" %}
+          {%- endif -%}
+
+        {# If the latest post should be shown... #}
+        {%- else -%}
+          {# Show everything. #}
+          {% include "post/teaser.njk" %}
+        {%- endif -%}
+
       {%- endif -%}
     {%- endfor -%}
   </section>
