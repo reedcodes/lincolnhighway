@@ -1,7 +1,5 @@
 {%- extends "layouts/default.njk" -%}
 
-{%- set post_show_latest = true -%}
-
 {%- if tag -%}
   {%- set post_list = collections[tag] -%}
   {%- set title = "Tag Archive: " + tag -%}
