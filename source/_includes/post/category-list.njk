@@ -4,8 +4,8 @@
     {%- for category in collections.categoryList | sort -%}
       <li class="category-list-item">
         <a class="category-list-link" href="/blog/category/{{ category | lower }}/">
-          <span class="category-list-name">{{ category }}:</span>
-          <span class="category-list-count">{{ collections.categories[category] | length }}</span>
+          <span class="category-list-name">{{ category }}</span>
+          <span class="category-list-count">{{ collections.categories[category] | length }}</span> <span class="hide-on-screen">posts</span>
         </a>
       </li>
     {%- endfor -%}

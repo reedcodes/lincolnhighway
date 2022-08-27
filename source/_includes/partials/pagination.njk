@@ -1,11 +1,11 @@
 {%- if pagination.href.next or pagination.href.previous -%}
   <nav class="pagination flex-items" aria-label="blog pagination links">
     {%- if pagination.href.previous -%}
-      <a class="pagination-previous" href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">Previous page</a>
+      <a class="pagination-previous" href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards" aria-label="previous page">{%- include "icons/arrow-left.svg" -%}</a>
     {%- endif -%}
 
     {%- if pagination.href.next -%}
-      <a class="pagination-next" href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">Next page</a>
+      <a class="pagination-next" href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards" aria-label="next page">{%- include "icons/arrow-right.svg" -%}</a>
     {%- endif -%}
   </nav>
 {%- endif -%}

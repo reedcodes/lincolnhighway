@@ -1,3 +1,12 @@
 .pagination {
   --flex-items-justify: space-between;
+
+  &-previous,
+  &-next {
+    width: 50px;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
 }
