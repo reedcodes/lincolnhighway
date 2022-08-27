@@ -1,0 +1,11 @@
+{%- if pagination.href.next or pagination.href.previous -%}
+  <nav class="pagination flex-items" aria-label="blog pagination links">
+    {%- if pagination.href.previous -%}
+      <a class="pagination-previous" href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">Previous page</a>
+    {%- endif -%}
+
+    {%- if pagination.href.next -%}
+      <a class="pagination-next" href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">Next page</a>
+    {%- endif -%}
+  </nav>
+{%- endif -%}
