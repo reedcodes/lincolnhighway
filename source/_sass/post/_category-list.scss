@@ -1,6 +1,6 @@
 .category-list {
   width: min-content;
-  font-size: 1rem;
+  font-family: var(--font-category-list, var(--font-heading));
 
   &-item {
     margin: 0;
@@ -9,6 +9,7 @@
   &-link {
     display: flex;
     justify-content: space-between;
+    padding-block: 0.5em;
     border-block-end: 2px solid currentColor;
     text-decoration: none;
   }

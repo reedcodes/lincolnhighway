@@ -1,5 +1,6 @@
 {%- extends "layouts/default.njk" -%}
 
+{%- set sidebar = true -%}
 {%- set post_list = pagination.items -%}
 
 {%- block title_content -%}
@@ -9,7 +10,7 @@
 {%- block main_content -%}
   {{ content | safe }}
 
-  <div class="post-list-intro">
+  <div class="post-list-intro sidebar">
     {% include "post/feature-post.njk" %}
     {% include "post/category-list.njk" %}
   </div>

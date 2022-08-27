@@ -1,5 +1,5 @@
 {%- if collections.categoryList -%}
-<section class="category-list" aria-label="Blog categories list">
+<section class="category-list {{ "sidebar-aside" if sidebar }}" aria-label="Blog categories list">
   <ul class="category-list-list" role="list">
     {%- for category in collections.categoryList | sort -%}
       <li class="category-list-item">

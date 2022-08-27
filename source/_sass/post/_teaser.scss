@@ -1,0 +1,12 @@
+.post-teaser {
+  margin-block-end: 5vh;
+
+  .post-header {
+    --post-header-spacer: 0;
+  }
+
+  &-link {
+    font-size: 1.125rem;
+    font-family: var(--font-teaser-link, var(--font-heading));
+  }
+}

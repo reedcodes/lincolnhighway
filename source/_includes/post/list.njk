@@ -2,7 +2,7 @@
 {%- set post_list_label = post_list_label | default("Blog post list") -%}
 
 {%- if post_list -%}
-  <section class="post-list {{ post_list_class -}}" {% if post_list_label %} aria-label="{{ post_list_label }}" {%- endif -%}>
+  <section class="post-list {{ post_list_class }} {{ "sidebar-main" if sidebar -}}" {% if post_list_label %} aria-label="{{ post_list_label }}" {%- endif -%}>
     {%- for post in post_list -%}
       {%- set post_feature = post.data.feature -%}
       {%- set post_date = post.data.date -%}

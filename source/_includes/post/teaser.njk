@@ -4,8 +4,8 @@
   {% include "post/header.njk" %}
 
   {%- if post_teaser_show and post_teaser -%}
-    <p>{{ post_teaser | safe }}</p>
+    <p class="post-teaser-description">{{ post_teaser | safe }}</p>
   {%- endif -%}
 
-  <a href="{{ post_url }}">Continue reading <span class="hide-on-screen">{{ post_title }}</span></a>
+  <a class="post-teaser-link" href="{{ post_url }}">Continue reading <span class="hide-on-screen">{{ post_title }}</span></a>
 </article>
