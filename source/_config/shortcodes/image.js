@@ -4,7 +4,7 @@ const Image = require( "@11ty/eleventy-img" );
 // Configure the image plugin.
 // https://www.11ty.dev/docs/plugins/image/
 // https://gfscott.com/blog/eleventy-img-without-central-image-directory/
-module.exports = async function( src, alt, sizes="100vw" ) {
+module.exports = async function( src, alt, flickr=false, sizes="100vw" ) {
   if(alt === undefined) {
     throw new Error(`Missing \`alt\` on: ${src}`);
   }
@@ -18,9 +18,18 @@ module.exports = async function( src, alt, sizes="100vw" ) {
   // directory.
   let outputDirectory = this.page.outputPath.slice(0, -10);
 
-  // Create the source path of the image by joining the updated input directory
-  // with the filename of the image itself.
-  let imageSrc = `${inputDirectory}/${src}`;
+
+
+  let imageSrc;
+
+  if(flickr) {
+  }
+
+  else {
+    // Create the source path of the image by joining the updated input directory
+    // with the filename of the image itself.
+    imageSrc = `${inputDirectory}/${src}`;
+  }
 
   // Set the metadata for this image, that 11ty will generate.
   let metadata = await Image(imageSrc, {
