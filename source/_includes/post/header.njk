@@ -3,27 +3,21 @@
 {%- set post_tags_show = post_tags_show | default(true) -%}
 
 <header class="post-header">
-  <p class="post-date"><span class="hide-on-screen">Posted on</span> {{ post_date | shortDate }}</p>
+  <p class="post-date">
+    Posted on {{ post_date | shortDate }}
+    {% if post_category and post_category_show %}
+      in <a class="post-term-link" href="/blog/category/{{ post_category | slug }}/">{{ post_category }}</a>
+    {%- endif -%}
+  </p>
   
   <{{- post_title_heading }} class="post-title{{ " h1" if post_feature }}">{{ post_title }}</{{- post_title_heading -}}>
 
-  {%- if post_category or post_tags -%}
+  {%- if post_tags and post_tags_show -%}
     <dl class="post-taxonomy">
-      {%- if post_category and post_category_show -%}
-        <div class="post-category">
-          <dt class="hide-on-screen">Category</dt>
-          <dd class="post-term"><a class="post-term-link btn btn-primary" href="/blog/category/{{ post_category | slug }}/">{{ post_category }}</a></dd>
-        </div>
-      {%- endif -%}
-
-      {%- if post_tags and post_tags_show -%}
-        <div class="post-tags">
-          <dt class="hide-on-screen">Tags</dt>
-          {% for tag in post_tags -%}
-            <dd class="post-term"><a class="post-term-link btn btn-secondary" href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
-          {%- endfor -%}
-        </div>
-      {%- endif -%}
+      <dt class="hide-on-screen">Tags</dt>
+      {% for tag in post_tags -%}
+        <dd class="post-term"><a class="post-term-link btn btn-secondary" href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+      {%- endfor -%}
     </dl>
   {%- endif -%}
 </header>
