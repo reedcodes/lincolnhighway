@@ -30,10 +30,11 @@
       0 0 0 4px var(--btn-text-color);
   }
 
-  svg {
+  .icon {
     width: auto;
     max-height: 1.25em;
-    margin-inline-end: 0.25em;
+    margin-inline-start: var(--btn-margin-inline-start, 0);
+    margin-inline-end: var(--btn-margin-inline-end, 0.25em);
   }
 
   @each $token, $color in $tokens {

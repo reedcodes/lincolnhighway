@@ -15,3 +15,9 @@
 {%- block title_content -%}
   {%- include "post/header.njk" -%}
 {%- endblock title_content -%}
+
+{%- block main_content -%}
+  {{ content | safe }}
+
+  {% include "partials/pagination.njk" %}
+{%- endblock main_content -%}

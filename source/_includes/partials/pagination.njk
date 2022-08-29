@@ -1,11 +1,42 @@
-{%- if pagination.href.next or pagination.href.previous -%}
-  <nav class="pagination flex-items" aria-label="blog pagination links">
-    {%- if pagination.href.previous -%}
-      <a class="pagination-previous" href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards" aria-label="previous page">{%- include "icons/arrow-left.svg" -%}</a>
-    {%- endif -%}
+{# If pagination is on the blog list pages... #}
 
-    {%- if pagination.href.next -%}
-      <a class="pagination-next" href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards" aria-label="next page">{%- include "icons/arrow-right.svg" -%}</a>
+{%- if pagination.href.previous -%}
+  {%- set prev_page_url = pagination.href.previous -%}
+  {%- set prev_page_title = "Previous Page" -%}
+{%- endif -%}
+
+{%- if pagination.href.next -%}
+  {%- set next_page_url = pagination.href.next -%}
+  {%- set next_page_title = "Next Page" -%}
+{%- endif -%}
+
+
+
+{# If pagination is on an individual blog post... #}
+
+{%- if collections.blogPosts | getPreviousCollectionItem(page) -%}
+  {%- set prev_page = collections.blogPosts | getPreviousCollectionItem(page) -%}
+  {%- set prev_page_url = prev_page.url | url -%}
+  {%- set prev_page_title = prev_page.data.title -%}
+{%- endif -%}
+
+{%- if collections.blogPosts | getNextCollectionItem(page) -%}
+  {%- set next_page = collections.blogPosts | getNextCollectionItem(page) -%}
+  {%- set next_page_url = next_page.url | url -%}
+  {%- set next_page_title = next_page.data.title -%}
+{%- endif -%}
+
+
+
+{# Output the pagination. #}
+
+{%- if prev_page_url or next_page_url -%}
+  <nav class="pagination flex-items" aria-label="blog pagination links">
+    {%- if prev_page_url -%}
+      <a class="pagination-previous btn btn-primary" href="{{- prev_page_url -}}" data-direction="backwards">{%- include "icons/arrow-left.svg" %} {{ prev_page_title -}}</a>
+    {%- endif -%}
+    {%- if next_page_url -%}
+      <a class="pagination-next btn btn-primary" href="{{- next_page_url -}}" data-direction="forwards">{{- next_page_title }} {% include "icons/arrow-right.svg" -%}</a>
     {%- endif -%}
   </nav>
 {%- endif -%}

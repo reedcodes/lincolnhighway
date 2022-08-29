@@ -40,7 +40,11 @@ body {
 
 a,
 button {
-  transition: all 0.5s ease;
+  &,
+  img,
+  svg {
+    transition: all 0.5s ease;
+  }
 }
 
 a {
