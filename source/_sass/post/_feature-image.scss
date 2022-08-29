@@ -1,4 +1,6 @@
 .feature-image {
+  --container-padding-inline: 0;
+
   img {
     aspect-ratio: 21/9;
     object-fit: cover;
