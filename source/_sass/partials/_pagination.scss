@@ -1,8 +1,5 @@
 .pagination {
   --flex-items-justify: space-between;
 
-  &-next .icon {
-    --btn-margin-inline-start: 0.25em;
-    --btn-margin-inline-end: 0;
-  }
+  margin-block-start: 8vh;
 }

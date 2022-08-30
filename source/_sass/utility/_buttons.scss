@@ -13,6 +13,7 @@
 
   cursor: pointer;
   display: inline-flex;
+  gap: 0.25em;
   align-items: center;
   justify-content: center;
   padding: 0.5em 1em;
@@ -33,8 +34,6 @@
   .icon {
     width: auto;
     max-height: 1.25em;
-    margin-inline-start: var(--btn-margin-inline-start, 0);
-    margin-inline-end: var(--btn-margin-inline-end, 0.25em);
   }
 
   @each $token, $color in $tokens {

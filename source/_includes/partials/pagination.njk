@@ -1,4 +1,7 @@
 {# If pagination is on the blog list pages... #}
+{# Here, the previous page of posts is the page number before it. #}
+{# i.e. if we are currently on page 3, then the _previous_ page is 2 #}
+{# while the _next_ page is 4. #}
 
 {%- if pagination.href.previous -%}
   {%- set prev_page_url = pagination.href.previous -%}
@@ -13,15 +16,18 @@
 
 
 {# If pagination is on an individual blog post... #}
+{# Here, the individual posts move chronologically from "past" to "future". #}
+{# i.e. if we are on a blog post, then the _previous_ post is dated before, #}
+{# while the _next_ post is dated after. #}
 
-{%- if collections.blogPosts | getPreviousCollectionItem(page) -%}
-  {%- set prev_page = collections.blogPosts | getPreviousCollectionItem(page) -%}
+{%- if collections.blogPosts | getNextCollectionItem(page) -%}
+  {%- set prev_page = collections.blogPosts | getNextCollectionItem(page) -%}
   {%- set prev_page_url = prev_page.url | url -%}
   {%- set prev_page_title = prev_page.data.title -%}
 {%- endif -%}
 
-{%- if collections.blogPosts | getNextCollectionItem(page) -%}
-  {%- set next_page = collections.blogPosts | getNextCollectionItem(page) -%}
+{%- if collections.blogPosts | getPreviousCollectionItem(page) -%}
+  {%- set next_page = collections.blogPosts | getPreviousCollectionItem(page) -%}
   {%- set next_page_url = next_page.url | url -%}
   {%- set next_page_title = next_page.data.title -%}
 {%- endif -%}
@@ -33,10 +39,10 @@
 {%- if prev_page_url or next_page_url -%}
   <nav class="pagination flex-items" aria-label="blog pagination links">
     {%- if prev_page_url -%}
-      <a class="pagination-previous btn btn-primary" href="{{- prev_page_url -}}" data-direction="backwards">{%- include "icons/arrow-left.svg" %} {{ prev_page_title -}}</a>
+      <a class="pagination-previous btn btn-primary" href="{{- prev_page_url -}}" data-direction="backwards">{%- include "icons/arrow-left.svg" %} Previous</a>
     {%- endif -%}
     {%- if next_page_url -%}
-      <a class="pagination-next btn btn-primary" href="{{- next_page_url -}}" data-direction="forwards">{{- next_page_title }} {% include "icons/arrow-right.svg" -%}</a>
+      <a class="pagination-next btn btn-primary" href="{{- next_page_url -}}" data-direction="forwards">Next {% include "icons/arrow-right.svg" -%}</a>
     {%- endif -%}
   </nav>
 {%- endif -%}
