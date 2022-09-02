@@ -1,4 +1,22 @@
 .post-list {
-  --grid-gap: 5rem;
+  --grid-gap: 2rem;
   --grid-min: 300px;
+
+  .post-teaser {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-block-end: 0;
+    padding-block: var(--post-list-teaser-padding-block, var(--container-padding-block));
+    padding-inline: var(--post-list-teaser-padding-inline, var(--container-padding-inline));
+    background-color: var(--color-background-6);
+    border-radius: 1rem;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  .post-teaser-description {
+    font-size: 1.25rem;
+  }
 }

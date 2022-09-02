@@ -26,10 +26,6 @@
 
   &-term {
     margin: 0;
-
-    &-link {
-      letter-spacing: 0.1em;
-    }
   }
 
   &-taxonomy,
@@ -42,7 +38,6 @@
   &-date,
   &-taxonomy {
     line-height: 1;
-    font-weight: 900;
     font-family: var(--font-heading);
     text-transform: uppercase;
   }
