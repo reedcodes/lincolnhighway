@@ -20,14 +20,14 @@
 {# i.e. if we are on a blog post, then the _previous_ post is dated before, #}
 {# while the _next_ post is dated after. #}
 
-{%- if collections.blogPosts | getNextCollectionItem(page) -%}
-  {%- set prev_page = collections.blogPosts | getNextCollectionItem(page) -%}
+{%- if collections.blogPostsFirst | getPreviousCollectionItem(page) -%}
+  {%- set prev_page = collections.blogPostsFirst | getPreviousCollectionItem(page) -%}
   {%- set prev_page_url = prev_page.url | url -%}
   {%- set prev_page_title = prev_page.data.title -%}
 {%- endif -%}
 
-{%- if collections.blogPosts | getPreviousCollectionItem(page) -%}
-  {%- set next_page = collections.blogPosts | getPreviousCollectionItem(page) -%}
+{%- if collections.blogPostsFirst | getNextCollectionItem(page) -%}
+  {%- set next_page = collections.blogPostsFirst | getNextCollectionItem(page) -%}
   {%- set next_page_url = next_page.url | url -%}
   {%- set next_page_title = next_page.data.title -%}
 {%- endif -%}
