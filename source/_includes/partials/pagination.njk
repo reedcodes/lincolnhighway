@@ -37,7 +37,7 @@
 {# Output the pagination. #}
 
 {%- if prev_page_url or next_page_url -%}
-  <nav class="pagination" aria-label="blog pagination links">
+  <nav class="container pagination" aria-label="blog pagination links">
     <div class="pagination-inner flex-items">
       {%- if prev_page_url -%}
         <a class="pagination-previous btn btn-primary" href="{{- prev_page_url -}}" data-direction="backwards">{%- include "icons/arrow-left.svg" %} Previous</a>

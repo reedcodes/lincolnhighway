@@ -27,11 +27,6 @@
 }
 
 .info {
-  &-lincoln-highway,
-  &-stats {
-    --container-margin-block: min( 6rem, 12vh );
-  }
-
   &-lincoln-highway {
     text-align: center;
   }
