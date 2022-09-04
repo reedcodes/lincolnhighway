@@ -1,5 +1,7 @@
 {%- extends "layouts/default.njk" -%}
 
+{%- set main_page_class = "narrow" -%}
+
 {%- set post_feature = feature -%}
 {%- set post_date = date -%}
 {%- set post_url = url -%}
@@ -8,16 +10,14 @@
 {%- set post_category = category -%}
 {%- set post_tags = tags -%}
 
-{%- block page_hero -%}
-  {%- include "post/feature-image.njk" -%}
-{%- endblock page_hero -%}
-
 {%- block title_content -%}
   {%- include "post/header.njk" -%}
 {%- endblock title_content -%}
 
-{%- block main_content -%}
-  {{ content | safe }}
+{%- block page_hero -%}
+  {%- include "post/feature-image.njk" -%}
+{%- endblock page_hero -%}
 
+{%- block pagination -%}
   {% include "partials/pagination.njk" %}
-{%- endblock main_content -%}
+{%- endblock pagination -%}

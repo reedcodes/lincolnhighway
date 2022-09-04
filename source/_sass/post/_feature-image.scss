@@ -1,6 +1,12 @@
 .feature-image {
   --container-padding-inline: 0;
 
+  background-image: linear-gradient(var(--color-primary) 75%, transparent 75%);
+
+  &-inner {
+    --container-padding-inline: 0;
+  }
+
   img {
     aspect-ratio: 21/9;
     object-fit: cover;

@@ -1,12 +1,8 @@
 .post {
 
-  &-date,
-  &-teaser-description {
-    --spacer: 0.25em;
-  }
-
-  &-header {
-    margin-block-end: var(--post-header-spacer, 5vh);
+  // Only the post header on posts, not blogs or taxonomy pages.
+  &-header.container {
+    padding-block: 5vh;
   }
 
   &-date {
@@ -26,6 +22,12 @@
 
   &-term {
     margin: 0;
+  }
+
+  // Only the post header on posts, not blogs or taxonomy pages.
+  &-header.container &-term-category {
+    --link-text-color: var(--color-background);
+    --link-text-hover-color: var(--color-tertiary);
   }
 
   &-taxonomy,

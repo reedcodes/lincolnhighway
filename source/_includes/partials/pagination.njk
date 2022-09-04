@@ -37,12 +37,14 @@
 {# Output the pagination. #}
 
 {%- if prev_page_url or next_page_url -%}
-  <nav class="pagination flex-items" aria-label="blog pagination links">
-    {%- if prev_page_url -%}
-      <a class="pagination-previous btn btn-primary" href="{{- prev_page_url -}}" data-direction="backwards">{%- include "icons/arrow-left.svg" %} Previous</a>
-    {%- endif -%}
-    {%- if next_page_url -%}
-      <a class="pagination-next btn btn-primary" href="{{- next_page_url -}}" data-direction="forwards">Next {% include "icons/arrow-right.svg" -%}</a>
-    {%- endif -%}
+  <nav class="pagination" aria-label="blog pagination links">
+    <div class="pagination-inner flex-items">
+      {%- if prev_page_url -%}
+        <a class="pagination-previous btn btn-primary" href="{{- prev_page_url -}}" data-direction="backwards">{%- include "icons/arrow-left.svg" %} Previous</a>
+      {%- endif -%}
+      {%- if next_page_url -%}
+        <a class="pagination-next btn btn-primary" href="{{- next_page_url -}}" data-direction="forwards">Next {% include "icons/arrow-right.svg" -%}</a>
+      {%- endif -%}
+    </div>
   </nav>
 {%- endif -%}

@@ -10,13 +10,13 @@
     {% include "global/header.njk" %}
   </header>
 
+  {%- block title_content -%}
+  {%- endblock title_content -%}
+
   {%- block page_hero -%}
   {%- endblock page_hero -%}
 
   <main class="container container-{{- main_page_class if main_page_class else "default" }} main">
-    {%- block title_content -%}
-    {%- endblock title_content -%}
-
     {%- block main_content -%}
 
       <section class="container">
@@ -24,8 +24,10 @@
       </section>
 
     {%- endblock main_content -%}
-
   </main>
+
+  {%- block pagination -%}
+  {%- endblock pagination -%}
 
   <footer class="container container-full footer">
     {% include "global/footer.njk" %}

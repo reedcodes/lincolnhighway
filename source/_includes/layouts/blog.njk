@@ -4,7 +4,9 @@
 {%- set post_list = pagination.items -%}
 
 {%- block title_content -%}
-  <h1 class="post-list-title">{{- title -}}</h1>
+  <section class="container blog-header">
+    <h1 class="post-list-title">{{- title -}}</h1>
+  </section>
 {%- endblock title_content -%}
 
 {%- block main_content -%}
@@ -16,6 +18,8 @@
   </div>
 
   {% include "post/list.njk" %}
-
-  {% include "partials/pagination.njk" %}
 {%- endblock main_content -%}
+
+{%- block pagination -%}
+  {% include "partials/pagination.njk" %}
+{%- endblock pagination -%}
