@@ -33,8 +33,7 @@ body {
   scroll-margin-bottom: 2vh;
 }
 
-:focus,
-:focus-visible {
+:focus {
   scroll-margin-bottom: 10vh;
 }
 
@@ -48,35 +47,27 @@ button {
 }
 
 a {
+  --font-weight: 600;
+  --link-line-size: max(2px, 0.1em);
+  --link-underline-color: currentColor;
+  --link-underline-hover-color: currentColor;
+
   background-color: var(--link-bg-color);
   color: var(--link-text-color);
-  font-weight: var(--link-weight, 600);
+  font-weight: var(--link-weight);
   text-decoration-skip-ink: auto;
-  text-decoration-thickness: var(--link-line-size, max(2px, 0.1em));
-  text-decoration-color: var(--link-underline-color, currentcolor);
+  text-decoration-thickness: var(--link-line-size);
+  text-decoration-color: var(--link-underline-color);
   text-underline-offset: inherit;
 
   &:hover,
-  &:focus,
-  &:focus-visible {
+  &:focus {
     background-color: var(--link-bg-hover-color);
     color: var(--link-text-hover-color);
-    text-decoration-color: var(--link-underline-hover-color, currentcolor);
+    text-decoration-color: var(--link-underline-hover-color);
   }
 
   &:focus {
-    outline: var(--link-line-size) solid currentColor;
-    outline-offset: var(--link-line-size);
-    text-decoration: none;
-
-    // For devices that support :focus-visible.
-    &:not(:focus-visible) {
-      outline: none;
-    }
-  }
-
-  // For devices that support :focus-visible.
-  &:focus-visible {
     outline: var(--link-line-size) solid currentColor;
     outline-offset: var(--link-line-size);
     text-decoration: none;

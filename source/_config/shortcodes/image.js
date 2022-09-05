@@ -37,31 +37,33 @@ module.exports = async function( src, alt, flickr=false, sizes="100vw" ) {
   // posts, for easy finding. The output path always ends with `index.html` as
   // the post's filename. We can slice that off to get the proper path for the
   // generated image's directory.
-  let outputDirectory = this.page.outputPath.slice(0, -10);
+  const outputDirectory = this.page.outputPath.slice(0, -10);
 
   // Set the metadata for this image, that 11ty will generate.
-  let metadata = await Image(imageSrc, {
+  const metadata = await Image(imageSrc, {
     widths: [300, 600, 900, 1200],
     formats: ['webp', 'jpeg'],
     outputDir: outputDirectory,
     urlPath: this.page.url,
   });
 
-  let lowsrc = metadata.jpeg[0];
-  let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+  const lowsrc = metadata.jpeg[0];
+  const highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+
+  const picture = `\n\n<picture>
+  ${Object.values(metadata).map(imageFormat => {
+    return `<source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(', ')}" sizes="${sizes}">`;
+  }).join('\n')}
+    <img
+      src="${lowsrc.url}"
+      width="${highsrc.width}"
+      height="${highsrc.height}"
+      alt="${alt}"
+      loading="lazy"
+      decoding="async">
+  </picture>\n\n`;
 
   // Return the image. The output code is a `picture` with different source
   // files, depending on the browser's size and what it supports.
-  return `\n\n<picture>
-    ${Object.values(metadata).map(imageFormat => {
-      return `<source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(', ')}" sizes="${sizes}">`;
-    }).join('\n')}
-      <img
-        src="${lowsrc.url}"
-        width="${highsrc.width}"
-        height="${highsrc.height}"
-        alt="${alt}"
-        loading="lazy"
-        decoding="async">
-    </picture>\n\n`;
+  return picture;
 };
