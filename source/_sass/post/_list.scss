@@ -12,11 +12,13 @@
     border-radius: 1rem;
   }
 
-  .post-title {
-    font-size: 1.5rem;
-  }
+  &:not(.post-feature-post) {
+    .post-title {
+      font-size: 1.5rem;
+    }
 
-  .post-teaser-description {
-    font-size: 1.25rem;
+    .post-teaser-description {
+      font-size: 1.25rem;
+    }
   }
 }

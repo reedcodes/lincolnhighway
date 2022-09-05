@@ -1,10 +1,16 @@
 @use 'fonts' as *;
+@use 'include-media' as *;
 @use 'sass:math';
 
 $spacer: 1em;
 
+// Base size ~18px, assuming 16px default browser size.
+// Set for smaller viewports, like phones and tablets.
+$base-size: 1.125rem;
+
 // Base size ~20px, assuming 16px default browser size.
-$base-size: 1.5rem;
+// Set for larger viewports, like laptops and desktop monitors.
+$base-size-lg: 1.5rem;
 
 // Typefaces available.
 $serif: 'Lora', system-ui, serif;
@@ -22,6 +28,10 @@ $sans-serif: 'Public Sans', system-ui, sans-serif;
   // Jesús Ricarte
   // https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/
   --line-height: calc(2.5px + 2.5ex + 2.5px);
+
+  @include media('>desktop') {
+    --font-size: #{$base-size-lg};
+  }
 }
 
 
@@ -66,18 +76,26 @@ $sans-serif: 'Public Sans', system-ui, sans-serif;
  * Setting fluid type scale.
  */
 
-// Minor third ratio.
-$type-scale: 1.2;
+
+$type-scale-major-second: 1.125;
+$type-scale-minor-third: 1.2;
 
 // Heading levels.
 $headings: 5, 4, 3, 2, 1;
+
 $heading-size: $base-size;
+$heading-size-lg: $base-size-lg;
 
 @each $heading in $headings {
   // Apply the heading size for this level based on ratio.
-  $heading-size: $heading-size * $type-scale;
+  $heading-size: $heading-size * $type-scale-major-second;
+  $heading-size-lg: $heading-size-lg * $type-scale-minor-third;
 
   h#{$heading }, .h#{$heading } {
-    font-size: #{$heading-size};
+    font-size: var(--h#{$heading}-font-size, #{$heading-size});
+
+    @include media('>desktop') {
+      --h#{$heading}-font-size: #{$heading-size-lg};
+    }
   }
 }

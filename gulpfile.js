@@ -9,11 +9,16 @@ const cleanCSS = require( 'gulp-clean-css' ),
 const cssSource = './source/_sass/**/*.scss';
 const cssBuild = './site/dist/css';
 
+// Define CSS source paths from other locations, e.g. node modules.
+const cssIncludePaths = [
+  './node_modules/include-media/dist'
+];
+
 // Task to compile CSS files.
 gulp.task( 'sass', function() {
   return gulp.src( cssSource )
     .pipe( sourcemaps.init() )
-    .pipe( sass() )
+    .pipe( sass({ includePaths: cssIncludePaths }) )
     .pipe( cleanCSS( { level: 2 } ) )
     .pipe( sourcemaps.write() )
     .pipe( gulp.dest( cssBuild ) );

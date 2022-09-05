@@ -1,3 +1,5 @@
+@use 'include-media' as *;
+
 .feature-image {
   --container-padding-inline: 0;
 
@@ -8,9 +10,17 @@
   }
 
   img {
-    aspect-ratio: 21/9;
+    aspect-ratio: var(--feature-image-aspect, 3/2);
     object-fit: cover;
     width: 100%;
     max-height: 75vh;
+
+    @include media('>tablet') {
+      --feature-image-aspect: 16/9;
+    }
+
+    @include media('>desktop') {
+      --feature-image-aspect: 21/9;
+    }
   }
 }
