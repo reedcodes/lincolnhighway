@@ -1,0 +1,197 @@
+@use 'sass:color';
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:string';
+
+@use 'tokens' as *;
+
+// This file creates several functions, with the ultimate goal of returning a
+// ratio used to determine if two colors have appropriate color contrast.
+// WCAG Success Criteria 1.4.3 & 1.4.6 state the color used for text must have
+// sufficient contrast with the color of its background.
+// https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum
+// https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced
+//
+// Color contrast lies on a scale, with 1:1 being no contrast at all (e.g. the
+// colors are exactly the same) and with 22:1 being the absolute highest
+// contrast. However! Higher contrast ratios aren't necessarily better; at 21:1,
+// pure black text on pure white background can still be an accessibility issue.
+//
+// The two colors with the highest contrast do _not_ have to be used together.
+// The `a11y-color()` function _does_ produce the color with the most contrast
+// to the passed-in color, but other colors that have contrast greater than the
+// test ratio (even if they are not the _most_ contrasting) may be more
+// asthetically pleasing, or match the design better.
+//
+// There are no minimum text size requirements recorded in any WCAG success
+// criteria, though most guides agree that main body copy be arund 16px, which
+// is the default size defined in most browsers. A lower contrast ratio is
+// allowed if:
+// 1. text is _at least_ 24px (large), or
+// 2. text is _at least_ 19px AND bold.
+// https://webaim.org/articles/contrast/
+
+$wcag-ratio: (
+  'aa': (
+    // For normal text, AA contrast is 4.5:1.
+    'normal': 4.5,
+    // For large or bold text, AA contrast is 3:1.
+    'bold': 3
+  ),
+  'aaa': (
+    // For normal text, AAA contrast is 7:1.
+    'normal': 7,
+    // For large or bold text, AAA contrast is 4.5:1.
+    'bold': 4.5
+  )
+);
+
+
+
+// `formula()`
+//
+// The R, G, and B values in the equation for luminance are not the literal
+// red, green, and blue values from the color itself. Once the initial red,
+// green, or blue value is found, it is divided by 255. If that quotient is less
+// than or equal to 0.04045, then one value is used; if it's larger, another.
+// https://www.w3.org/WAI/WCAG21/Techniques/general/G18.html
+
+@function formula($value) {
+  // If the quotient of the red, green, or blue value divided by 255 is less
+  // than or equal to 0.04045...
+  @if ($value <= 0.04045) {
+    // Divide that number by 12.92.
+    $value: math.div($value, 12.92);
+  }
+  // If the quotient is greater than 0.04045...
+  @else {
+    // Add 0.055 to that number, then divide that sum by 1.055. Next, take that
+    // quotient and raise it to the power of 2.4.
+    $value: math.pow( math.div(($value + 0.055), 1.055), 2.4);
+  }
+
+  // Now return the value to use for R, G, or B in the luminance equation.
+  @return $value;
+}
+
+
+
+// `luminance()`
+//
+// The equation to calculate the luminance of a color is:
+//   L = 0.2126 * R + 0.7152 * G + 0.0722 * B
+// https://www.w3.org/WAI/WCAG21/Techniques/general/G18.html
+
+@function luminance($color) {
+  // Grab the different red, green, and blue values from the passed-in color.
+  // Those values are each divided by 255. However! In order to correctly
+  // calculate the luminance, pass the value to the formula function to grab
+  // the _actual_ value for the equation. 
+  $red: formula(math.div(color.red($color), 255));
+  $green: formula(math.div(color.green($color), 255));
+  $blue: formula(math.div(color.blue($color), 255));
+
+  // Now, calculate the luminance!
+  $luminance: ($red * 0.2126 + $green * 0.7152 + $blue * 0.0722);
+
+  // Then, return the luminance.
+  @return $luminance;
+}
+
+
+
+// `contrast()`
+//
+// The contrast function accepts two values, both colors, and returns a
+// contrast ratio that determines if those colors used together (one as text,
+// one as background) meet Success Criterion 1.4.6. 
+@function contrast($color1, $color2) {
+  // Set up the var to hold the contrast ratio. Assume both color are the same.
+  $contrast: 1;
+
+  // Find the luminance of the first color.
+  $color1-l: luminance($color1);
+
+  // Find the luminance of the second color.
+  $color2-l: luminance($color2);
+
+  // The equation for getting the color contrast is:
+  //   C = (L1 + 0.05) / (L2 + 0.05)
+  // In order to get the proper ratio value, the larger number must be divided
+  // by the smaller number. That way the value of `$contrast` will be greater
+  // than or equal to 1.
+  $dividend: $color1-l;
+  $divisor: $color2-l;
+
+  @if ($color1-l < $color2-l) {
+    $dividend: $color2-l;
+    $divisor: $color1-l;
+  }
+
+  // Calculate the contrast ratio.
+  $contrast: math.div(($dividend + 0.05), ($divisor + 0.05));
+
+  // Return the contrast ratio.
+  @return $contrast;
+}
+
+
+
+// `a11y-color()`
+//
+// Find the most accessible color to pair with another. This function accepts a
+// color token (not the color itself), then loops through all shades in all
+// color palettes to find one with appropriate contrast. The function assumes
+// AA compliance, unless another ratio is specified as a property when called.
+
+@function a11y-color($palette, $ratio: map.get($wcag-ratio, 'aa', 'normal')) {
+  // Get the theme color token for the passed in color palette. This can be used
+  // to loop through all the colors later. Since palette names all end in `-x`
+  // where `x` is a number between 1 and 9, we can slice off the last two (2)
+  // characters to get the token.
+  $token: string.slice($palette, 1, -3);
+
+  // Get the color value from the passed-in token.
+  $constant: map.get($color-map, $token, $palette);
+
+  // Set up the var to hold the contrast ratio. Assume both color are the same.
+  $contrast: 1;
+
+  // Set the var to hold the highest contrast ratio.
+  $highest: 1;
+
+  // Set the var for the eventual resulting contrast color.
+  $pair: '';
+
+  @each $token, $value in $tokens {
+    @for $i from 1 through 9 {
+      // Get the color value to test against the passed-in color value.
+      $test: map.get($color-map, $token, '#{$token}-#{$i}');
+
+      // Get the contrast of the passed-in color with this test color.
+      $contrast: contrast($constant, $test);
+
+      // Find the blackness of this color. Pure black is 100%.
+      $blackness: color.blackness($test);
+
+      // If the contrast is greater than the ratio, the colors are compatible.
+      // However, we want the color combination with the greatest passing
+      // contrast, without have a contrast that is _too_ high. We also do not
+      // want to pair a color with pure black.
+      @if ($contrast > $ratio) and ($contrast < 12) and ($blackness < 100%) {
+        // Test the new contrast against the previously set highest contrast.
+        // If the new contrast is higher than `$highest`, then it now becomes
+        // the new highest contrast.
+        @if $contrast > $highest {
+          $highest: $contrast;
+
+          // Set this color token to be the paired contrasting color.
+          $pair: '#{$token}-#{$i}';
+        }
+      }
+    }
+  }
+
+  // Return the best accessible contrasting color!
+  @return $pair;
+}

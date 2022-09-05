@@ -1,0 +1,9 @@
+.guide-color {
+  &-item {
+    figcaption {
+      display: block;
+      padding-block: max(200px, 20vh) 0.5em;
+      padding-inline: 0.5em;
+    }
+  }
+}

@@ -1,26 +1,46 @@
-/***
- * colors are set in _data/colors.js
- ***/
+@use 'sass:map';
 
-@use 'color-tokens' as *;
+@use 'contrast' as *;
+@use 'tokens' as *;
 
-// Functional color classes.
-@each $color in $base-color-tokens {
-  .bg-#{$color} {
-    background-color: var(--color-#{$color});
-    color: var(--color-on-#{$color});
+// This loop creates background and color utility classes for each value in a
+// theme color palette.
+
+// Loop through each token in the theme colors tokens map. Because each item in
+// that map is technically a mini-map itself, grab `$token` and `$value`, even
+// though only the token is needed here.
+@each $token, $value in $tokens {
+  .bg-#{$token} {
+    // Set the background color to the token.
+    background-color: var(--color-#{$token});
+
+    // Get the accessible contrast color.
+    // The default theme color token has the same value as palette `-5`.
+    $contrast: a11y-color('#{$token}-5');
+
+    // Set the color for this background to the contrasting color.
+    color: var(--color-#{$contrast});
   }
 
-  .bg-on-#{$color} {
-    background-color: var(--color-on-#{$color});
-    color: var(--color-#{$color});
+  .color-#{$token} {
+    color: var(--color-#{$token});
   }
 
-  .color-#{$color} {
-    color: var(--color-#{$color});
-  }
+  // For each token, create a class for each color in the theme color's scaled
+  // palette. Each color has 9 values in the palette.
+  @for $i from 1 through 9 {
+    .bg-#{$token}-#{$i} {
+      background-color: var(--color-#{$token}-#{$i});
 
-  .color-on-#{$color} {
-    color: var(--color-#{$color});
+      // Get the accessible contrast color.
+      $contrast: a11y-color('#{$token}-#{$i}');
+
+      // Set the color for this background to the contrasting color.
+      color: var(--color-#{$contrast});
+    }
+
+    .color-#{$token}-#{$i} {
+      color: var(--color-#{$token}-#{$i});
+    }
   }
 }

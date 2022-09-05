@@ -2,10 +2,6 @@
 .cache/
 .env
 node_modules/
-source/guide/
-
-# Build.
-site/guide/
 
 # Deployment.
 .push-it

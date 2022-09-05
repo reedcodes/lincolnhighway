@@ -1,0 +1,7 @@
+.pagination {
+  margin-block: 4vh;
+
+  &-inner {
+    --flex-items-justify: space-between;
+  }
+}

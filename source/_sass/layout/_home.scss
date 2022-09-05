@@ -1,44 +1,32 @@
-.home {
-  .hero {
-    --hero-display: block;
+.hero {
+  --container-padding-block: min( 1rem, 2vh );
 
-    --hero-bg-color: var(--color-highlight);
-    --hero-bg-blend: unset;
+  $hero-bg-size: 96px;
 
-    --hero-bg-gradient-size: 96px;
+  display: block;
+  background-image: linear-gradient(
+    to top,
+    var(--color-background) $hero-bg-size,
+    var(--color-primary) $hero-bg-size
+  );
+  text-align: center;
 
-    background-image: linear-gradient(
-      to top,
-      var(--color-primary) var(--hero-bg-gradient-size),
-      var(--color-highlight) var(--hero-bg-gradient-size)
-    );
+  &-image {
+    aspect-ratio: inherit;
+    width: min( 100%, 600px );
+    margin-inline: auto;
 
-    &-image {
-      --hero-img-aspect-ratio: inherit;
-      --hero-img-border-space: 15px;
-      --hero-img-border-radius: var(--hero-img-border-space);
+    img {
+      --image-aspect-ratio: inherit;
 
-      aspect-ratio: var(--hero-img-aspect-ratio);
-      width: min( 100%, 600px );
-      margin-inline: auto;
-
-      img {
-        --image-aspect-ratio: inherit;
-
-        background-color: var(--color-primary);
-        box-shadow: 0 0 4px 0 var(--color-contrast);
-        border-radius: var(--hero-img-border-radius);
-      }
+      background-color: var(--color-background-3);
+      box-shadow: 0 0 4px 0 var(--color-primary-8);
+      border-radius: 15px;
     }
   }
 }
 
 .info {
-  &-lincoln-highway,
-  &-stats {
-    --container-margin-block: min( 6rem, 12vh );
-  }
-
   &-lincoln-highway {
     text-align: center;
   }
@@ -50,12 +38,12 @@
   text-align: left;
 
   .icon {
-    --fillColor: var(--color-primary);
+    --fillColor: var(--stats-icon-fill, var(--color-background));
 
     width: 120px;
     height: auto;
     margin-block-end: 1rem;
     border-radius: 1rem;
-    background-color: var(--color-accent);
+    background-color: var(--stats-icon-bg, var(--color-secondary));
   }
 }
