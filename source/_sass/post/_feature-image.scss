@@ -9,6 +9,16 @@
     --container-padding-inline: 0;
   }
 
+  figure {
+    display: grid;
+    grid-template-areas: image;
+    place-items: end;
+  }
+
+  picture {
+    grid-area: image;
+  }
+
   img {
     aspect-ratio: var(--feature-image-aspect, 3/2);
     object-fit: cover;
@@ -22,5 +32,17 @@
     @include media('>desktop') {
       --feature-image-aspect: 21/9;
     }
+  }
+
+  figcaption {
+    grid-area: image;
+    padding-inline: 1em;
+    font-family: var(--figcaption-font, var(--font-heading));
+    font-size: 1rem;
+  }
+
+  a {
+    --link-text-color: var(--color-background);
+    --link-text-hover-color: var(--color-tertiary);
   }
 }
