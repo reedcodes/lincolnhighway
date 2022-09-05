@@ -1,6 +1,9 @@
 // Import 11ty nav plugin.
 const eleventyNavigationPlugin = require( "@11ty/eleventy-navigation" );
 
+// Import markdown-it.
+const markdownIt = require("markdown-it");
+
 module.exports = function( eleventyConfig ) {
 
   // Send assets from source to site.
@@ -11,6 +14,14 @@ module.exports = function( eleventyConfig ) {
 
   // Add the 11ty nav plugin.
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  // Configure markdown-it.
+  let markdownItOptions = {
+    typographer: true,
+    quotes: '“”‘’'
+  };
+
+  eleventyConfig.setLibrary("md", markdownIt(markdownItOptions));
 
   // Add blog glob.
   eleventyConfig.addCollection( "blogPosts", require("./source/_config/collections/blog-posts.js") );
