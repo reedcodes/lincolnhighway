@@ -1,3 +1,5 @@
 module.exports = function() {
-  return `${ new Date().getFullYear() }`;
+  const year = `${ new Date().getFullYear() }`;
+
+  return year;
 };
