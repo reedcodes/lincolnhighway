@@ -23,7 +23,11 @@
   &-link {
     --link-text-color: var(--color-tertiary);
     --link-text-hover-color: var(--color-secondary-1);
-    --link-underline-color: transparent;
+    --link-weight: 700;
+
+    font-size: var(--site-menu-size, 1rem);
+    font-family: var(--site-menu-font, var(--font-heading));
+    text-transform: uppercase;
 
     &:focus,
     &:hover {
