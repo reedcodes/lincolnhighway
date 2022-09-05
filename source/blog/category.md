@@ -9,3 +9,11 @@ pagination:
   size: 1
   alias: categoryName
 ---
+
+<!--
+  Dining
+  Driving
+  Lodging
+  Planning
+  Sightseeing
+  -->

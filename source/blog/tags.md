@@ -12,6 +12,7 @@ pagination:
     "all",
     "guide",
     "blogPosts",
+    "blogPostsFirst",
     "categories",
     "categoryList",
     "tagList"

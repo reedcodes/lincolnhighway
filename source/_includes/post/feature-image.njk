@@ -1,11 +1,17 @@
 {%- if post_feature -%}
   <section class="container container-wide feature-image" aria-label="feature image">
     <div class="container feature-image-inner">
-      {%- if post_feature.flickr -%}
-        {%- image post_feature.file, post_feature.alt, post_feature.flickr -%}
-      {%- else -%}
-        {%- image post_feature.file, post_feature.alt -%}
-      {%- endif -%}
+      <figure>
+        {%- if post_feature.flickr -%}
+          {%- image post_feature.file, post_feature.alt, post_feature.flickr -%}
+        {%- else -%}
+          {%- image post_feature.file, post_feature.alt -%}
+        {%- endif -%}
+        
+        {%- if post_feature.credit -%}
+          <figcaption class="bg-foreground">Photo credit: <a href="{{- post_feature.credit.link -}}">{{- post_feature.credit.name -}}</a>
+        {%- endif -%}
+      </figure>
     </div>
   </section>
 {%- endif -%}
