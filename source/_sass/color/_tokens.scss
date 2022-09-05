@@ -1,13 +1,116 @@
-@use 'color-tokens' as *;
+@use 'sass:color';
+@use 'sass:map';
 
-:root {
-  @include color-tokens();
+// The main site color theme.
+$color-primary: #1446A0 !default;
+$color-secondary: #DB3069 !default;
+$color-tertiary: #F5D547 !default;
+$color-background: #FCFBF3 !default;
+$color-foreground: #3C3C3B !default;
 
-  --body-bg-color: var(--color-primary);
-  --body-text-color: var(--color-contrast);
+// Add the theme colors into a map.
+$tokens: (
+  'primary': $color-primary,
+  'secondary': $color-secondary,
+  'tertiary': $color-tertiary,
+  'background': $color-background,
+  'foreground': $color-foreground,
+) !default;
 
-  --link-text-color: var(--color-highlight);
-  --link-text-hover-color: var(--color-on-secondary);
-  --link-bg-color: transparent;
-  --link-bg-hover-color: transparent;
+// Initialize the var to hold the updated color map.
+$color-map: ();
+
+@function create-color-map($name, $color) {
+  // Set the var to hold the temporary map (inside this function).
+  $map: ();
+
+  // The scale for the color palette.
+  // To lighten, the color is multiplied by a _positive_ scale.
+  // To darken, the color is multiplied by a _negative_ scale.
+  $scale-light: 10%;
+  $scale-dark: -10%;
+
+  // Since the default background is already a light color, adjust the scale.
+  @if $name == 'background' {
+    $scale-light: 5%;
+    $scale-dark: -5%;
+  }
+
+  // To create the lighter colors for this theme color palette, the loop starts
+  // at 4 and works backward to 1. This scales the original theme color lighter
+  // and lighter through each iteration, and allows the map to add the new
+  // value, in order, starting with `-1`.
+  @for $i from 4 through 1 {
+    // Multiple the scale by the iteration. This determines how much lighter
+    // this new color is, than the original theme color.
+    $scale: $i * $scale-light;
+
+    // Adjust the color by that lightness.
+    $color-light: color.adjust($color, $lightness: $scale);
+
+    // Create a token for this new palette value. Because the loop started at 4,
+    // each iteration is subtracted from 5, giving new palette names starting
+    // with `-1` and ending with `-4`.
+    $map-next: ('#{$name}-#{5-$i}': $color-light);
+
+    // Merge that new token into the temp map.
+    $map: map.merge($map, $map-next);
+  }
+
+  // The palette token `-5` is the same as the original theme color. 
+  $map: map.merge($map, ('#{$name}-5': $color));
+
+  // To create the darker colors for this theme color palette, the loop starts
+  // at 1 and works forward to 4. This scales the original theme color darker
+  // and darker through each iteration, and allows the map to add the new
+  // value, in order, starting with `-6`.
+  @for $i from 1 through 4 {
+    // Multiply the scale by the iteration. This determines how much darker
+    // this new color is, than the original theme color.
+    $scale: $i * $scale-dark;
+
+    // Adjust the color by that lightness.
+    $color-light: color.adjust($color, $lightness: $scale);
+
+    // Create a token for this new palette value. Because the loop started at 1,
+    // each iteration is added to 5, giving new palette names starting with `-6`
+    // and ending with `-9`.
+    $map-next: ('#{$name}-#{5+$i}': $color-light);
+
+    // Merge that new token into the temp map.
+    $map: map.merge($map, $map-next);
+  }
+
+  // This function returns the temp map.
+  @return $map;
+}
+
+// This loop creates the _whole_ huge theme color palette map. Each color from
+// the original `$tokens` map is now also holding its own map, with the palette
+// colors. The final output map is something like this:
+//
+// $color-map: (
+//   'primary': (
+//     'primary-1': [value],
+//     'primary-2': [value],
+//     ...
+//   ),
+//   'secondary': (
+//     'secondary-1': [value],
+//     'secondary-2': [value],
+//     ...
+//   ),
+//   ...
+// );
+
+// Loop through each name/color pair in the "tokens" theme colors map.
+@each $name, $color in $tokens {
+  // Set the var to hold the temporary map (inside this function).
+  $map: ();
+
+  // Create the theme color palette map and merge it into this temp map.
+  $map: map.merge($map, ($name: create-color-map($name, $color)));
+
+  // Take that updated temp map, and merge _that_ into `$color-map`.
+  $color-map: map.merge($color-map, $map);
 }

@@ -1,0 +1,25 @@
+{%- extends "layouts/default.njk" -%}
+
+{%- set sidebar = true -%}
+{%- set post_list = pagination.items -%}
+
+{%- block title_content -%}
+  <section class="container blog-header">
+    <h1 class="post-list-title">{{- title -}}</h1>
+  </section>
+{%- endblock title_content -%}
+
+{%- block main_content -%}
+  {{ content | safe }}
+
+  <div class="post-list-intro sidebar">
+    {% include "post/feature-post.njk" %}
+    {% include "post/category-list.njk" %}
+  </div>
+
+  {% include "post/list.njk" %}
+{%- endblock main_content -%}
+
+{%- block pagination -%}
+  {% include "partials/pagination.njk" %}
+{%- endblock pagination -%}

@@ -1,0 +1,8 @@
+{
+  "layout": "layouts/post.njk",
+  "permalink": "/blog/post/{{ date | simpleDate }}-{{ title | slugify }}/",
+  "eleventyNavigation": {
+    "parent": "Blog"
+  },
+  "post_title_heading": "h1"
+}

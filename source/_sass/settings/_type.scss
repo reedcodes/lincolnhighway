@@ -1,34 +1,40 @@
 @use 'fonts' as *;
+@use 'include-media' as *;
 @use 'sass:math';
 
 $spacer: 1em;
 
-$serif: serif;
-$sans-serif: 'Public Sans', 'Helvetica', 'Arial', sans-serif;
+// Base size ~18px, assuming 16px default browser size.
+// Set for smaller viewports, like phones and tablets.
+$base-size: 1.125rem;
+
+// Base size ~20px, assuming 16px default browser size.
+// Set for larger viewports, like laptops and desktop monitors.
+$base-size-lg: 1.5rem;
+
+// Typefaces available.
+$serif: 'Lora', system-ui, serif;
+$sans-serif: 'Public Sans', system-ui, sans-serif;
 
 :root {
   --spacer: #{$spacer};
 
-  --font-body: #{ $sans-serif };
-  --font-heading: #{ $sans-serif };
+  --font-size: #{$base-size};
+  --font-weight: 450;
+  --font-body: #{$serif};
+  --font-heading: #{$sans-serif};
 
   // Calculate a relative line height.
   // Jesús Ricarte
   // https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/
   --line-height: calc(2.5px + 2.5ex + 2.5px);
+
+  @include media('>desktop') {
+    --font-size: #{$base-size-lg};
+  }
 }
 
 
-
-/*
- * Body.
- */
-
-body {
-  font-size: clamp(1rem, (1rem + 2vw), 1.5rem);
-  line-height: var(--line-height);
-  font-family: var(--font-body);
-}
 
 /*
  * Main content text.
@@ -57,11 +63,9 @@ body {
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6
 ) {
-  --heading-font-weight: 900;
-
   margin-bottom: 0.65em;
   line-height: var(--line-height);
-  font-weight: var(--heading-font-weight);
+  font-weight: var(--heading-font-weight, 750);
   font-family: var(--font-heading);
   overflow-wrap: break-word;
   hyphens: auto;
@@ -72,37 +76,26 @@ body {
  * Setting fluid type scale.
  */
 
-// Minor third ratio.
-$type-scale: 1.2;
 
-// Base size ~20px, assuming 16px default browser size.
-$base-size: 1.5rem;
+$type-scale-major-second: 1.125;
+$type-scale-minor-third: 1.2;
 
 // Heading levels.
 $headings: 5, 4, 3, 2, 1;
+
 $heading-size: $base-size;
+$heading-size-lg: $base-size-lg;
 
 @each $heading in $headings {
   // Apply the heading size for this level based on ratio.
-  $heading-size: $heading-size * $type-scale;
+  $heading-size: $heading-size * $type-scale-major-second;
+  $heading-size-lg: $heading-size-lg * $type-scale-minor-third;
 
-  h#{ $heading }, .h#{ $heading } {
-    // Have the heading size as the default, backup.
-    font-size: $heading-size;
+  h#{$heading }, .h#{$heading } {
+    font-size: var(--h#{$heading}-font-size, #{$heading-size});
 
-    // First, remove the unit to get just a number.
-    $heading-unitless: math.div( $heading-size, ( $heading-size * 0 + 1 ) );
-
-    // Calculate the minimum font size allowed.
-    $heading-min: $heading-unitless - ( 0.33 * $heading-unitless );
-
-    // Calculate the responsive font size.
-    $heading-responsive: ( $heading-unitless - $heading-min ) + 4vw;
-
-    font-size: clamp(
-      #{ $heading-min }rem,
-      #{ $heading-responsive } + 1rem,
-      #{ $heading-size }
-    );
+    @include media('>desktop') {
+      --h#{$heading}-font-size: #{$heading-size-lg};
+    }
   }
 }

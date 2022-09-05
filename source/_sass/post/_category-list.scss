@@ -1,0 +1,21 @@
+.category-list {
+  width: min-content;
+  font-family: var(--font-category-list, var(--font-heading));
+  font-size: 1rem;
+
+  &-list {
+    width: min(20rem, 100%);
+  }
+
+  &-item {
+    margin: 0;
+  }
+  
+  &-link {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 0.5em;
+    border-block-end: 2px solid currentColor;
+    text-decoration: none;
+  }
+}

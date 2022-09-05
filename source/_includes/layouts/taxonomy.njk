@@ -1,0 +1,27 @@
+{%- extends "layouts/default.njk" -%}
+
+{%- set post_show_latest = true -%}
+
+{%- if tag -%}
+  {%- set post_list = collections[tag] -%}
+  {%- set title = "Tag Archive: " + tag -%}
+{%- endif -%}
+
+{%- if categoryName -%}
+  {%- set post_list = collections.categories[categoryName] | sort -%}
+  {%- set title = "Category Archive: " + categoryName -%}
+  {%- set post_category_show = false -%}
+{%- endif -%}
+
+{%- block title_content -%}
+  <section class="container taxonomy-header">
+    <h1 class="post-list-title">{{- title -}}</h1>
+  </section>
+{%- endblock title_content -%}
+
+{%- block main_content -%}
+  {{ content | safe }}
+
+  {% include "post/list.njk" %}
+
+{%- endblock main_content -%}

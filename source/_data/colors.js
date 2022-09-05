@@ -1,27 +1,27 @@
 module.exports = [
   {
-    // Lace white.
+    // Blue.
     name: "primary",
-    color: "hsla( 53, 60%, 97%, 1 )"
-  },
-  {
-    // Yellow.
-    name: "secondary",
-    color: "hsla( 49, 90%, 62%, 1 )"
+    color: "#1446A0"
   },
   {
     // Bold pink.
-    name: "accent",
-    color: "hsla( 340, 70%, 52%, 1 )"
+    name: "secondary",
+    color: "#DB3069"
   },
   {
-    // Blue.
-    name: "highlight",
-    color: "hsla( 219, 78%, 35%, 1 )"
+    // Yellow.
+    name: "tertiary",
+    color: "#F5D547"
+  },
+  {
+    // Lace white.
+    name: "background",
+    color: "#FCFBF3"
   },
   {
     // Smoke gray.
-    name: "contrast",
-    color: "hsla( 60, 1%, 23%, 1 )"
+    name: "foreground",
+    color: "#3C3C3B"
   }
 ];

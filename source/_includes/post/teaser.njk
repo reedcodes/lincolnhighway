@@ -1,0 +1,11 @@
+{%- set post_teaser_show = post_teaser_show | default(true) -%}
+
+<article class="post-teaser{{ " post-teaser-latest" if loop.first }}">
+  {% include "post/header.njk" %}
+
+  {%- if post_teaser_show and post_teaser -%}
+    <p class="post-teaser-description">{{ post_teaser | safe }}</p>
+  {%- endif -%}
+
+  <a class="post-teaser-link" href="{{ post_url }}">Continue reading <span class="hide-on-screen">{{ post_title }}</span></a>
+</article>

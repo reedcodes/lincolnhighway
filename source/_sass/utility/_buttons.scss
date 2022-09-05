@@ -1,24 +1,25 @@
-@use 'color/color-tokens' as *;
+@use 'color/tokens' as *;
+@use 'color/contrast' as *;
 
 .btn {
-  --btn-bg-color: var(--color-contrast);
-  --btn-bg-hover-color: var(--color-primary);
-  --btn-text-color: var(--btn-bg-hover-color);
-  --btn-text-hover-color: var(--btn-bg-color);
+  $color1: var(--color-primary);
+  $color2: var(--color-#{a11y-color('primary-5')});
 
-  --link-bg-color: var(--btn-bg-color);
-  --link-bg-hover-color: var(--btn-bg-hover-color);
-  --link-text-color: var(--btn-text-color);
-  --link-text-hover-color: var(--btn-text-hover-color);
+  --link-bg-color: var(--btn-bg-color, #{$color1});
+  --link-text-color: var(--btn-text-color, #{$color2});
+
+  --link-bg-hover-color: var(--btn-text-color);
+  --link-text-hover-color: var(--btn-bg-color);
 
   cursor: pointer;
   display: inline-flex;
+  gap: 0.25em;
   align-items: center;
   justify-content: center;
   padding: 0.5em 1em;
-  border-radius: 0.25em;
-  line-height: 1;
-  font-weight: 600;
+  border-radius: 0.5em;
+  font-family: var(--btn-font-family, var(--font-heading));
+  line-height: var(--btn-line-height, 1);
   text-align: center;
   text-decoration: none;
 
@@ -26,27 +27,26 @@
   &:hover {
     outline: 0;
     box-shadow:
-      0 0 0 2px var(--link-text-hover-color),
-      0 0 0 4px var(--link-bg-hover-color);
+      0 0 0 2px var(--btn-bg-color),
+      0 0 0 4px var(--btn-text-color);
   }
 
-  svg {
+  .icon {
     width: auto;
     max-height: 1.25em;
-    margin-inline-end: 0.25em;
   }
 
-  @each $color in $base-color-tokens {
-    &-#{$color} {
-      --btn-bg-color: var(--color-#{$color});
-      --btn-bg-hover-color: var(--color-on-#{$color});
+  @each $token, $color in $tokens {
+    &-#{$token} {
+      --btn-bg-color: var(--color-#{$token});
+      --btn-text-color: var(--color-#{a11y-color('#{$token}-5')});
     }
-  }
 
-  @each $color in $base-color-tokens {
-    &-on-#{$color} {
-      --btn-bg-color: var(--color-on-#{$color});
-      --btn-bg-hover-color: var(--color-#{$color});
+    @for $i from 1 through 9 {
+      &-#{$token}-#{$i} {
+        --btn-bg-color: var(--color-#{$token}-#{$i});
+        --btn-text-color: var(--color-#{a11y-color('#{$token}-#{$i}')});
+      }
     }
   }
 }

@@ -7,14 +7,14 @@
     display: block;
     padding: 8px;
 
-    svg {
+    .icon {
       --social-size: 32px;
 
       width: var(--social-size);
       height: var(--social-size);
     }
 
-    &:hover {
+    &:hover .icon {
       transform: scale(1.25);
     }
   }
