@@ -13,6 +13,10 @@
     margin-block-start: 0;
     margin-block-end: 0.4em;
     line-height: 1;
+
+    &-link {
+      --link-underline-color: transparent;
+    }
   }
 
   &-taxonomy {
