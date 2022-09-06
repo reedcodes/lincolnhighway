@@ -1,6 +1,9 @@
 // Import 11ty nav plugin.
 const eleventyNavigationPlugin = require( "@11ty/eleventy-navigation" );
 
+// Import 11ty RSS plugin.
+const eleventyRssPlugin = require("@11ty/eleventy-plugin-rss");
+
 module.exports = function( eleventyConfig ) {
 
   // Send assets from source to site.
@@ -11,6 +14,16 @@ module.exports = function( eleventyConfig ) {
 
   // Add the 11ty nav plugin.
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  // Add the 11ty RSS plugin.
+  eleventyConfig.addPlugin(eleventyRssPlugin, {
+    posthtmlRenderOptions: {
+      quoteStyle: 0
+    }
+  });
+
+  eleventyConfig.addFilter( "getNewestCollectionItemDate", eleventyRssPlugin.getNewestCollectionItemDate );
+  eleventyConfig.addFilter( "dateToRfc822", eleventyRssPlugin.dateToRfc822 );
 
   // Add blog glob.
   eleventyConfig.addCollection( "blogPosts", require("./source/_config/collections/blog-posts.js") );
