@@ -1,6 +1,9 @@
 // Import 11ty nav plugin.
 const eleventyNavigationPlugin = require( "@11ty/eleventy-navigation" );
 
+// Import metagen plugin.
+const metagen = require( "eleventy-plugin-metagen" );
+
 module.exports = function( eleventyConfig ) {
 
   // Send assets from source to site.
@@ -11,6 +14,9 @@ module.exports = function( eleventyConfig ) {
 
   // Add the 11ty nav plugin.
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  // Add the metagen plugin.
+  eleventyConfig.addPlugin(metagen);
 
   // Add blog glob.
   eleventyConfig.addCollection( "blogPosts", require("./source/_config/collections/blog-posts.js") );

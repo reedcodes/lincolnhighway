@@ -1,4 +1,5 @@
 // Import 11ty image plugin.
+const path = require("path");
 const Image = require( "@11ty/eleventy-img" );
 
 // Configure the image plugin.
@@ -45,6 +46,12 @@ module.exports = async function( src, alt, flickr=false, sizes="100vw" ) {
     formats: ['webp', 'jpeg'],
     outputDir: outputDirectory,
     urlPath: this.page.url,
+    filenameFormat: function (id, imageSrc, width, format, options) {
+      const extension = path.extname(imageSrc);
+      const name = path.basename(imageSrc, extension);
+  
+      return `${name}-${width}w.${format}`;
+    }
   });
 
   const lowsrc = metadata.jpeg[0];
