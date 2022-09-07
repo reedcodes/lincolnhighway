@@ -1,4 +1,37 @@
-{%- if post_feature -%}
+{%- macro featureImageFile(
+    feature_image_file,
+    site_url,
+    page_url)
+-%}
+  {%- if feature_image_file -%}
+    {#- Since feature images can be set from either the blog post directory -#}
+    {#- or from a Flickr url, some tweaking of the source needs to be done -#}
+    {#- in order for Twitter or OpenGraph to find the image for "cards". -#}
+    {#- First, the feature image file is split at `/` to get an array that -#}
+    {#- can be manipulated. -#}
+    {%- set feature_image_url = feature_image_file.split("/") -%}
+    {#- We only want the slug from that, so grab the last item in the array. -#}
+    {%- set feature_image_slug = feature_image_url[feature_image_url.length - 1] -%}
+    {#- Onec we have the slug, we can split it at the `.` for the extension. -#}
+    {%- set feature_image_no_ext = feature_image_slug.split(".") -%}
+    {#- We only want the file _name_ so grab that from the array first item. -#}
+    {%- set feature_image_name = feature_image_no_ext[0] -%}
+    {#- Now, put together a URL that Twitter can OpenGraph can find! This -#}
+    {#- includes the site URL, path of the blog post, the image file _name_, -#}
+    {#- and the size and extension of the image we want. -#}
+    {{- site_url + page_url + feature_image_name + "-300w.jpeg" -}}
+  {%- else -%}
+    {#- If there is no feature image, set the feature image file to a -#}
+    {#- default image. This will most likely be the home page, category -#}
+    {#- archive, etc, but is also handy if there _is_ a blog post with no -#}
+    {#- feature image. -#}
+    {{- site_url + "/dist/images/photos/california-section.jpeg" -}}
+  {%- endif -%}
+{%- endmacro -%}
+
+
+
+{# {%- if post_feature -%}
   <section class="container container-wide feature-image" aria-label="feature image">
     <div class="container feature-image-inner">
       <figure>
@@ -14,4 +47,4 @@
       </figure>
     </div>
   </section>
-{%- endif -%}
+{%- endif -%} #}
