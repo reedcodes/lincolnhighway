@@ -1,4 +1,4 @@
-{%- from "post/feature-image.njk" import featureImageFile -%}
+{%- from "post/feature-image.njk" import featureImageFile with context -%}
 
 {%-
   metagen
@@ -10,7 +10,7 @@
     generator = "eleventy",
     comments = false,
     css = ["/dist/css/style.css"],
-    img = featureImageFile(feature.file, site.url, page.url),
+    img = featureImageFile(feature.file),
     img_alt = feature.alt,
     twitter_card_type = "summary_large_image",
     twitter_handle = "LincHwyJournal"
