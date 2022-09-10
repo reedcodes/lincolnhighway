@@ -1,4 +1,4 @@
-{%- macro featureImageFile(feature_image_file) -%}
+{%- macro featureImageFile(feature_image_file, page_url=page.url) -%}
   {%- if feature_image_file -%}
     {#- Since feature images can be set from either the blog post directory -#}
     {#- or from a Flickr url, some tweaking of the source needs to be done -#}
@@ -15,7 +15,7 @@
     {#- Now, put together a URL that Twitter can OpenGraph can find! This -#}
     {#- includes the site URL, path of the blog post, the image file _name_, -#}
     {#- and the size and extension of the image we want. -#}
-    {{- site.url + page.url + feature_image_name + "-300w.jpeg" -}}
+    {{- site.url + page_url + feature_image_name + "-300w.jpeg" -}}
   {%- else -%}
     {#- If there is no feature image, set the feature image file to a -#}
     {#- default image. This will most likely be the home page, category -#}
