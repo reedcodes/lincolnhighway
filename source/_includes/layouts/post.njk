@@ -3,7 +3,6 @@
 {%- set main_page_class = "narrow" -%}
 {%- set post_title_link = false -%}
 
-{%- set post_feature = feature -%}
 {%- set post_date = date -%}
 {%- set post_url = url -%}
 {%- set post_title = title -%}
@@ -16,7 +15,19 @@
 {%- endblock title_content -%}
 
 {%- block page_hero -%}
-  {%- include "post/feature-image.njk" -%}
+  {%- if feature -%}
+    <section class="container container-wide feature-image" aria-label="feature image">
+      <div class="container feature-image-inner">
+        <figure>
+          {%- if feature.flickr -%}
+            {%- image feature.file, feature.alt, feature.flickr -%}
+          {%- else -%}
+            {%- image feature.file, feature.alt -%}
+          {%- endif -%}
+        </figure>
+      </div>
+    </section>
+  {%- endif -%}
 {%- endblock page_hero -%}
 
 {%- block pagination -%}
