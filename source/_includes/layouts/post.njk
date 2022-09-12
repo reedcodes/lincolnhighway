@@ -1,7 +1,5 @@
 {%- extends "layouts/default.njk" -%}
 
-{%- from "post/feature-image.njk" import featureImagePost with context -%}
-
 {%- set main_page_class = "narrow" -%}
 {%- set post_title_link = false -%}
 
@@ -18,7 +16,17 @@
 
 {%- block page_hero -%}
   {%- if feature -%}
-    {{ featureImagePost(feature) }}
+    <section class="container container-wide feature-image" aria-label="feature image">
+      <div class="container feature-image-inner">
+        <figure>
+          {%- if feature.flickr -%}
+            {%- image feature.file, feature.alt, feature.flickr -%}
+          {%- else -%}
+            {%- image feature.file, feature.alt -%}
+          {%- endif -%}
+        </figure>
+      </div>
+    </section>
   {%- endif -%}
 {%- endblock page_hero -%}
 

@@ -24,19 +24,3 @@
     {{- site.url + "/dist/images/photos/california-section.jpeg" -}}
   {%- endif -%}
 {%- endmacro -%}
-
-
-
-{%- macro featureImagePost(feature) -%}
-  <section class="container container-wide feature-image" aria-label="feature image">
-    <div class="container feature-image-inner">
-      <figure>
-        {%- if feature.flickr -%}
-          {%- imageTest feature.file, feature.alt, feature.flickr -%}
-        {%- else -%}
-          {%- imageTest feature.file, feature.alt -%}
-        {%- endif -%}
-      </figure>
-    </div>
-  </section>
-{%- endmacro -%}
