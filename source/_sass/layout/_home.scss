@@ -1,7 +1,7 @@
 .hero {
   --container-padding-block: min( 1rem, 2vh );
 
-  $hero-bg-size: 96px;
+  $hero-bg-size: 120px;
 
   display: block;
   background-image: linear-gradient(
@@ -29,6 +29,14 @@
 .info {
   &-lincoln-highway {
     text-align: center;
+  }
+}
+
+.blog-links {
+  --flex-items-justify: space-between;
+
+  li {
+    margin-block: inherit;
   }
 }
 

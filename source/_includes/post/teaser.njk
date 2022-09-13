@@ -7,5 +7,5 @@
     <p class="post-teaser-description">{{ post_teaser | safe }}</p>
   {%- endif -%}
 
-  <a class="post-teaser-link" href="{{ post_url }}">Continue reading <span class="hide-on-screen">{{ post_title }}</span></a>
+  <a class="post-teaser-link" href="{{ post_url }}" aria-label="Continue reading: {{ post_title }}">Continue reading</a>
 </article>
