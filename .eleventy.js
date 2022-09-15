@@ -15,13 +15,17 @@ module.exports = function( eleventyConfig ) {
     "./source/_webfonts/": "dist/webfonts/"
   } );
 
-  // Add the 11ty nav plugin.
+  // Add the 11ty nav plugin. This creates an 11ty navigation based on pages
+  // in a collection.
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  // Add the metagen plugin.
+  // Add the metagen plugin. This creates a "meta" shortcode with options for
+  // meta information, css and js links, and social info such as OpenGraph and
+  // Twitter.
   eleventyConfig.addPlugin(metagen);
 
-  // Add the 11ty RSS plugin.
+  // Add the 11ty RSS plugin. This creates a feed that can then be available
+  // for audience to subscribe to the blog in their favorite reader.
   eleventyConfig.addPlugin(eleventyRssPlugin, {
     posthtmlRenderOptions: {
       quoteStyle: 0
