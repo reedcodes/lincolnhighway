@@ -3,5 +3,8 @@
 .env
 node_modules/
 
+# Local testing.
+site/
+
 # Deployment.
 .push-it
