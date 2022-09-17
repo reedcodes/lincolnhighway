@@ -11,26 +11,25 @@ on:
 jobs:
   if_merged:
     if: github.event.pull_request.merged == true
-    deploy:
-      runs-on: ubuntu-latest
-      permissions:
-        contents: write
-      steps:
-        - uses: actions/checkout@master
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@master
 
-        - name: Setup node.js
-          uses: actions/setup-node@latest
-          with:
-            node-version: latest
+      - name: Setup node.js
+        uses: actions/setup-node@latest
+        with:
+          node-version: latest
 
-        - name: Install and build
-          run: |
-            npm install
-            npm run build
+      - name: Install and build
+        run: |
+          npm install
+          npm run build
 
-        - name: Deploy
-          uses: peaceiris/actions-gh-pages@latest
-          with:
-            publish_dir: site
-            publish_branch: production
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@latest
+        with:
+          publish_dir: site
+          publish_branch: production
+          github_token: ${{ secrets.GITHUB_TOKEN }}
