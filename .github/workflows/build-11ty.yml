@@ -6,7 +6,6 @@ on:
       - closed
     branches:
       - 'main'
-      - 'release-test'
 
 jobs:
   if_merged:
