@@ -24,6 +24,9 @@
           {%- else -%}
             {%- image feature.file, feature.alt -%}
           {%- endif -%}
+          {%- if feature.credit -%}
+            <figcaption class="bg-foreground">Photo credit: <a href="{{- feature.credit.link -}}">{{- feature.credit.name -}}</a></figcaption>
+          {%- endif -%}
         </figure>
       </div>
     </section>
