@@ -11,6 +11,7 @@ module.exports = function( eleventyConfig ) {
 
   // Send assets from source to site.
   eleventyConfig.addPassthroughCopy( {
+    "./.htaccess": "",
     "./source/_images/": "dist/images/",
     "./source/_webfonts/": "dist/webfonts/"
   } );
