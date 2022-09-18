@@ -1,10 +1,10 @@
 # Development.
-.cache/
+.cache
 .env
-node_modules/
+node_modules
 
 # Local testing.
-site/
+site
 
 # Deployment.
 .push-it
