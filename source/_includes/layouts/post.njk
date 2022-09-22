@@ -19,11 +19,7 @@
     <section class="container container-wide feature-image" aria-label="feature image">
       <div class="container feature-image-inner">
         <figure>
-          {%- if feature.flickr -%}
-            {%- image feature.file, feature.alt, feature.flickr -%}
-          {%- else -%}
-            {%- image feature.file, feature.alt -%}
-          {%- endif -%}
+          {%- image src=feature.file, alt=feature.alt -%}
           {%- if feature.credit -%}
             <figcaption class="bg-foreground">Photo credit: <a href="{{- feature.credit.link -}}">{{- feature.credit.name -}}</a></figcaption>
           {%- endif -%}

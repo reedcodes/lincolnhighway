@@ -1,0 +1,21 @@
+@use 'include-media' as *;
+
+.image {
+  width: var(--image-width, min(400px, 100%));
+
+  @include media('>=tablet') {
+    &[class*=align] {
+      --image-width: min(40%,400px);
+
+      // Assume that `left` align is the default.
+      float: var(--image-align, left);
+      margin-inline: var(--image-align-space, 0 2rem);
+      margin-block-end: 2rem;
+    }
+    
+    &.align-right {
+      --image-align: right;
+      --image-align-space: 2rem 0;
+    }
+  }
+}

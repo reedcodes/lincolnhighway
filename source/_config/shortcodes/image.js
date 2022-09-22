@@ -6,19 +6,19 @@ const Image = require( "@11ty/eleventy-img" );
 // https://www.11ty.dev/docs/plugins/image/
 // https://gfscott.com/blog/eleventy-img-without-central-image-directory/
 
-module.exports = async function( src, alt, flickr=false, sizes="100vw" ) {
-  if(alt === undefined) {
-    throw new Error(`Missing \`alt\` on: ${src}`);
+module.exports = async function( image ) {
+  if(image.alt === undefined) {
+    throw new Error(`Missing \`alt\` on: ${image.src}`);
   }
 
   // Define the image source. This will depend on where the image is from:
   // a local file within the blog post, or an external flickr image.
   let imageSrc;
 
-  // The default for flickr (set in parameters) is false. This is only set if
-  // the source of the image comes from flickr.
-  if(flickr) {
-    imageSrc = src;
+  // The default for flickr (set in parameters) is false. This is only set to
+  // true when the source of the image comes from flickr.
+  if( image.src.includes('staticflickr') ) {
+    imageSrc = image.src;
   }
 
   // The default for the image source is a local file within the blog post.
@@ -30,7 +30,7 @@ module.exports = async function( src, alt, flickr=false, sizes="100vw" ) {
     
     // Create the source path of the image by joining the updated input
     // directory with the filename of the image itself.
-    imageSrc = `${inputDirectory}/${src}`;
+    imageSrc = `${inputDirectory}/${image.src}`;
   }
 
   // Images have an output directory based on which blog post they are
@@ -57,15 +57,18 @@ module.exports = async function( src, alt, flickr=false, sizes="100vw" ) {
   const lowsrc = metadata.jpeg[0];
   const highsrc = metadata.jpeg[metadata.jpeg.length - 1];
 
+  const image_alignment = image.align ? `align-${image.align}` : "";
+
   const picture = `\n\n<picture>
   ${Object.values(metadata).map(imageFormat => {
-    return `<source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(', ')}" sizes="${sizes}">`;
+    return `<source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(', ')}" sizes="100vw">`;
   }).join('\n')}
     <img
       src="${lowsrc.url}"
+      class="image ${image_alignment}"
       width="${highsrc.width}"
       height="${highsrc.height}"
-      alt="${alt}"
+      alt="${image.alt}"
       loading="lazy"
       decoding="async">
   </picture>\n\n`;
