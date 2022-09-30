@@ -2,7 +2,8 @@
 
 {%- macro postList(
     post_list,
-    post_max
+    post_max,
+    post_show_from = 1
 ) -%}
 
   {%- for post in post_list -%}
@@ -10,14 +11,16 @@
     {# If there is a limit on the number of posts listed, only show those. #}
     {%- if post_max -%}
       {%- if loop.index <= post_max -%}
-        {{ postTeaser(post) }}
+        {{ postTeaser(post, loop.index) }}
       {%- endif -%}
     
     {# If there is no limit... #}
     {%- else -%}
 
-      {# Show everything. #}
-      {{ postTeaser(post) }}
+      {%- if loop.index >= post_show_from -%}
+        {{ postTeaser(post, loop.index) }}
+      {%- endif -%}
+
     {%- endif -%}
   {%- endfor -%}
 

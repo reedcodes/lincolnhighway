@@ -2,8 +2,6 @@
 
 {%- from "post/list.njk" import postList with context -%}
 
-{%- set post_show_latest = true -%}
-
 {%- if tag -%}
   {%- set title = "Tag Archive: " + tag -%}
 {%- endif -%}
@@ -23,7 +21,7 @@
 
   {%- if tag -%}
     {{- postList(
-        post_list = collections[tag]
+        post_list = collections[tag] | sort
     ) -}}
   {%- endif -%}
 
