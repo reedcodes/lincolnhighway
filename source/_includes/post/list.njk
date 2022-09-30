@@ -1,41 +1,16 @@
-{%- set post_list_class = post_list_class | default("") -%}
-{%- set post_list_label = post_list_label | default("Blog post list") -%}
+{%- macro postList(
+    post_list,
+    post_max
+) -%}
+  <p>Here go a post list.</p>
 
-{%- if post_list -%}
-  <section class="post-list {{ post_list_class }} {{ "sidebar-main" if sidebar }} grid" {% if post_list_label %} aria-label="{{ post_list_label }}" {%- endif -%}>
-    {%- for post in post_list -%}
-      {%- set post_feature = post.data.feature -%}
-      {%- set post_date = post.data.date -%}
-      {%- set post_url = post.url -%}
-      {%- set post_title = post.data.title -%}
-      {%- set post_teaser = post.data.teaser -%}
-      {%- set post_category = post.data.category -%}
-      {%- set post_tags = post.data.tags -%}
-
-      {# If there is a limit on the number of posts listed, only show those. #}
-      {%- if post_max -%}
-        {%- if loop.index <= post_max -%}
-          {% include "post/teaser.njk" %}
-        {%- endif -%}
-
-      {# If there is no limit... #}
-      {%- else -%}
-
-        {# If the latest post should not be shown... #}
-        {%- if not post_show_latest -%}
-
-          {# Only show posts from the second-latest and previous. #}
-          {%- if loop.index > 1 -%}
-            {% include "post/teaser.njk" %}
-          {%- endif -%}
-
-        {# If the latest post should be shown... #}
-        {%- else -%}
-          {# Show everything. #}
-          {% include "post/teaser.njk" %}
-        {%- endif -%}
-
+  {%- for post in post_list -%}
+    {%- if post_max -%}
+      {%- if loop.index <= post_max -%}
+        <p>this list has a post max</p>
       {%- endif -%}
-    {%- endfor -%}
-  </section>
-{%- endif -%}
+    {%- else -%}
+      <p>Just show it all.</p>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endmacro -%}

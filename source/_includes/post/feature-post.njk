@@ -1,6 +1,10 @@
-{%- set post_max = 1 -%}
+{%- from "post/list.njk" import postList with context -%}
+
 {%- set post_list_class = "post-feature-post" -%}
 {%- set post_list_label = "Feature post" -%}
 {%- set post_feature_post = true -%}
 
-{%- include "post/list.njk" -%}
+{{- postList(
+    post_list = pagination.items,
+    post_max = 1
+) -}}

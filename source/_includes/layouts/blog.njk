@@ -1,7 +1,8 @@
 {%- extends "layouts/default.njk" -%}
 
+{%- from "post/list.njk" import postList with context -%}
+
 {%- set sidebar = true -%}
-{%- set post_list = pagination.items -%}
 
 {%- block title_content -%}
   <section class="container blog-header">
@@ -17,7 +18,9 @@
     {% include "post/category-list.njk" %}
   </div>
 
-  {% include "post/list.njk" %}
+  {{- postList(
+      post_list = pagination.items
+  ) -}}
 {%- endblock main_content -%}
 
 {%- block pagination -%}
