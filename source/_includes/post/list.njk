@@ -11,14 +11,14 @@
     {# If there is a limit on the number of posts listed, only show those. #}
     {%- if post_max -%}
       {%- if loop.index <= post_max -%}
-        {{ postTeaser(post, loop.index) }}
+        {{ postTeaser(post) }}
       {%- endif -%}
     
     {# If there is no limit... #}
     {%- else -%}
 
       {%- if loop.index >= post_show_from -%}
-        {{ postTeaser(post, loop.index) }}
+        {{ postTeaser(post) }}
       {%- endif -%}
 
     {%- endif -%}

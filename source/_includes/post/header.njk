@@ -1,30 +1,14 @@
-{%- set post_title_heading = post_title_heading | default("h2") -%}
-{%- set post_title_link = post_title_link | default(true) -%}
-{%- set post_category_show = post_category_show | default(true) -%}
-{%- set post_tags_show = post_tags_show | default(true) -%}
+{%- macro postHeader(
+    post_page = false,
+    post_title
+) -%}
 
-<section class="{{- "container container-full bg-primary" if not post_list }} post-header">
-  <div class="{{- "container container-narrow" if not post_list }} post-header-inner">
-    <p class="post-date">
-      {{ post_date | shortDate }}
-      {% if post_category and post_category_show %}
-        in <a class="post-term-category" href="/blog/category/{{ post_category | slug }}/">{{ post_category }}</a>
-      {%- endif -%}
-    </p>
+  <section class="{{- "container container-full bg-primary" if post_page }} post-header">
+    <div class="{{- "container container-narrow" if post_page }} post-header-inner">
     
-    <{{- post_title_heading }} class="post-title">
-      {%- if post_title_link -%}<a class="post-title-link" href="{{- post_url -}}">{%- endif -%}
-      {{ post_title }}
-      {%- if post_title_link -%}</a>{%- endif -%}
-    </{{- post_title_heading -}}>
+      <h2 class="post-title">{{- post_title -}}</h2>
+    
+    </div>
+  </section>
 
-    {%- if post_tags and post_tags_show -%}
-      <dl class="post-taxonomy">
-        <dt class="hide-on-screen">Tags</dt>
-        {% for tag in post_tags -%}
-          <dd class="post-term"><a class="post-term-tag btn btn-tertiary" href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
-        {%- endfor -%}
-      </dl>
-    {%- endif -%}
-  </div>
-</section>
+{%- endmacro -%}

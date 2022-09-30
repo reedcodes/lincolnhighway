@@ -1,17 +1,22 @@
 {%- extends "layouts/default.njk" -%}
 
+{%- from "post/header.njk" import postHeader with context -%}
+
 {%- set main_page_class = "narrow" -%}
 {%- set post_title_link = false -%}
 
 {%- set post_date = date -%}
 {%- set post_url = url -%}
-{%- set post_title = title -%}
+
 {%- set post_teaser = teaser -%}
 {%- set post_category = category -%}
 {%- set post_tags = tags -%}
 
 {%- block title_content -%}
-  {%- include "post/header.njk" -%}
+  {{- postHeader(
+      post_page = true,
+      post_title = title
+  ) -}}
 {%- endblock title_content -%}
 
 {%- block page_hero -%}

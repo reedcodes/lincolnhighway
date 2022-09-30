@@ -1,15 +1,21 @@
+{%- from "post/header.njk" import postHeader with context -%}
+
 {%- macro postTeaser(
   post,
-  loop_index,
   post_title = post.data.title,
   post_teaser = post.data.teaser,
   post_url = post.url
 ) -%}
 
   <article class="post-teaser{{ " post-teaser-latest" if loop.first -}}">
-    <h2>{{- post_title -}}</h2>
-    <p>Loop index: {{ loop_index }}</p>
-    <p class="post-teaser-description">{{- post_teaser | safe -}}</p>
+    {{- postHeader(
+        post_title
+    ) -}}
+
+    {%- if post_teaser -%}
+      <p class="post-teaser-description">{{- post_teaser | safe -}}</p>
+    {%- endif -%}
+    
     <a class="post-teaser-link" href="{{- post_url -}}" aria-label="Continue reading: {{ post_title -}}">Continue reading</a>
   </article>
 
