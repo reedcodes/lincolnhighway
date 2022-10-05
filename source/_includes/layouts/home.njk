@@ -32,9 +32,10 @@
 
   <div class="container container-full">
     {{- postList(
-        post_max = 3,
+        post_max = 2 if reviews.length else 3,
         post_list = collections.blogPosts,
-        post_list_class = "container container-wide"
+        post_list_class = "container container-wide",
+        post_review = true
     ) -}}
   </div>
 

@@ -5,10 +5,19 @@
     post_max,
     post_show_from = 1,
     post_list_class,
-    post_list_label = "Latest Blog Posts"
+    post_list_label = "Latest Blog Posts",
+    post_review = false
 ) -%}
 
   <section class="post-list {{ post_list_class }} {{ "sidebar-main" if sidebar }} grid" {% if post_list_label %} aria-label="{{ post_list_label }}" {%- endif -%}>
+
+    {%- if post_review and reviews.length -%}
+      {%- for review in reviews -%}
+        {%- if loop.first -%}
+          {{- review.title -}}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
 
     {%- for post in post_list -%}
 
