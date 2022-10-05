@@ -2,15 +2,14 @@
 
 {%- macro postTeaser(
     post,
+    post_date = post.data.date,
     post_title = post.data.title,
     post_teaser = post.data.teaser,
     post_url = post.url
 ) -%}
 
   <article class="post-teaser{{ " post-teaser-latest" if loop.first -}}">
-    {{- postHeader(
-        post_title = post.data.title
-    ) -}}
+    {{- postHeader(post) -}}
 
     {%- if post_teaser -%}
       <p class="post-teaser-description">{{- post_teaser | safe -}}</p>

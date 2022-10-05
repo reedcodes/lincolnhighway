@@ -1,21 +1,38 @@
 {%- macro postHeader(
+    post,
     post_page = false,
-    post_date,
-    post_title,
+    post_date = post.data.date,
+    post_title = post.data.title,
     post_title_heading = "h2",
     post_title_link = true,
-    post_category,
-    post_tags
+    post_category = post.data.category,
+    post_tags = post.data.tags
 ) -%}
 
   <section class="{{- "container container-full bg-primary" if post_page }} post-header">
     <div class="{{- "container container-narrow" if post_page }} post-header-inner">
+
+      <p class="post-date">
+        {{ post_date | shortDate }}
+        {% if post_category %}
+          in <a class="post-term-category" href="/blog/category/{{ post_category | slug }}/">{{ post_category }}</a>
+        {%- endif -%}
+      </p>
     
       <{{- post_title_heading }} class="post-title">
         {%- if post_title_link -%}<a class="post-title-link" href="{{- post_url -}}">{%- endif -%}
           {{- post_title -}}
         {%- if post_title_link -%}</a>{%- endif -%}
       </{{- post_title_heading -}}>
+
+      {%- if post_tags -%}
+        <dl class="post-taxonomy">
+          <dt class="hide-on-screen">Tags</dt>
+          {% for tag in post_tags -%}
+            <dd class="post-term"><a class="post-term-tag btn btn-tertiary" href="/blog/tag/{{ tag | slug }}/">{{ tag }}</a></dd>
+          {%- endfor -%}
+        </dl>
+      {%- endif -%}
     
     </div>
   </section>
