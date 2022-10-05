@@ -1,12 +1,21 @@
 {%- macro postHeader(
     post_page = false,
-    post_title
+    post_date,
+    post_title,
+    post_title_heading = "h2",
+    post_title_link = true,
+    post_category,
+    post_tags
 ) -%}
 
   <section class="{{- "container container-full bg-primary" if post_page }} post-header">
     <div class="{{- "container container-narrow" if post_page }} post-header-inner">
     
-      <h2 class="post-title">{{- post_title -}}</h2>
+      <{{- post_title_heading }} class="post-title">
+        {%- if post_title_link -%}<a class="post-title-link" href="{{- post_url -}}">{%- endif -%}
+          {{- post_title -}}
+        {%- if post_title_link -%}</a>{%- endif -%}
+      </{{- post_title_heading -}}>
     
     </div>
   </section>

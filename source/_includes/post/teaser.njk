@@ -9,7 +9,7 @@
 
   <article class="post-teaser{{ " post-teaser-latest" if loop.first -}}">
     {{- postHeader(
-        post_title
+        post_title = post.data.title
     ) -}}
 
     {%- if post_teaser -%}
