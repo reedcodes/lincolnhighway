@@ -3,25 +3,31 @@
 {%- macro postList(
     post_list,
     post_max,
-    post_show_from = 1
+    post_show_from = 1,
+    post_list_class,
+    post_list_label = "Latest Blog Posts"
 ) -%}
 
-  {%- for post in post_list -%}
+  <section class="post-list {{ post_list_class }} {{ "sidebar-main" if sidebar }} grid" {% if post_list_label %} aria-label="{{ post_list_label }}" {%- endif -%}>
 
-    {# If there is a limit on the number of posts listed, only show those. #}
-    {%- if post_max -%}
-      {%- if loop.index <= post_max -%}
-        {{ postTeaser(post) }}
+    {%- for post in post_list -%}
+
+      {# If there is a limit on the number of posts listed, only show those. #}
+      {%- if post_max -%}
+        {%- if loop.index <= post_max -%}
+          {{ postTeaser(post) }}
+        {%- endif -%}
+      
+      {# If there is no limit... #}
+      {%- else -%}
+
+        {%- if loop.index >= post_show_from -%}
+          {{ postTeaser(post) }}
+        {%- endif -%}
+
       {%- endif -%}
-    
-    {# If there is no limit... #}
-    {%- else -%}
-
-      {%- if loop.index >= post_show_from -%}
-        {{ postTeaser(post) }}
-      {%- endif -%}
-
-    {%- endif -%}
-  {%- endfor -%}
+    {%- endfor -%}
+  
+  </section>
 
 {%- endmacro -%}

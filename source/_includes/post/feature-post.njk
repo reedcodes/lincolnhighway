@@ -1,10 +1,8 @@
 {%- from "post/list.njk" import postList with context -%}
 
-{%- set post_list_class = "post-feature-post" -%}
-{%- set post_list_label = "Feature post" -%}
-{%- set post_feature_post = true -%}
-
 {{- postList(
     post_list = pagination.items,
-    post_max = 1
+    post_max = 1,
+    post_list_class = "post-feature-post",
+    post_list_label = "Feature post"
 ) -}}

@@ -1,10 +1,10 @@
 {%- from "post/header.njk" import postHeader with context -%}
 
 {%- macro postTeaser(
-  post,
-  post_title = post.data.title,
-  post_teaser = post.data.teaser,
-  post_url = post.url
+    post,
+    post_title = post.data.title,
+    post_teaser = post.data.teaser,
+    post_url = post.url
 ) -%}
 
   <article class="post-teaser{{ " post-teaser-latest" if loop.first -}}">
