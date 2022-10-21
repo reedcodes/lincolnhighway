@@ -1,7 +1,7 @@
 @use 'include-media' as *;
 
 .image {
-  width: var(--image-width, min(400px, 100%));
+  width: var(--image-width, 100%);
 
   @include media('>=tablet') {
     &[class*=align] {
