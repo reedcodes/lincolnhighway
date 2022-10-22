@@ -12,6 +12,19 @@
     <description>a road trip along the Main Street Across America</description>
     <language>en</language>
       <item>
+        <title>Uploading photos</title>
+        <link>https://lincolnhighwayjournal.com/blog/post/2022-10-21-uploading-photos/</link>
+        <description>Pics or it didn&#39;t happen.</description>
+        <content:encoded>&lt;p&gt;I&#39;m slowly uploading photos from the trip so far. It&#39;s easiest to get shots from my phone backed up or into flickr, since it can connect to wifi and upload when it can. The actual &lt;em&gt;camera&lt;/em&gt; is taking amazing photos, but transferring them to anything involves taking out the SD card, putting the card into a card-to-USB converter, &lt;em&gt;then&lt;/em&gt; sticking that into a USB-to-USB-C converter.&lt;/p&gt;
+&lt;p&gt;I&#39;m also slowly updating the photos on flickr so they have not only proper location tags but good descriptions as well. flickr doesn&#39;t have &lt;code&gt;alt&lt;/code&gt; text on photos, and using the description field to be as detailed as possible is at least a bit more accessible.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/lincolnhighwayjournal/albums&quot;&gt;Photos from the trip are grouped into albums on my flickr account.&lt;/a&gt; Updates with reviews for dining and lodging are slow-going too, but when they are done, I hope they will be helpful for someone!&lt;/p&gt;
+</content:encoded>
+        <media:content url="https://lincolnhighwayjournal.com/blog/post/2022-10-21-uploading-photos/52443311500_17ed9b8ade_k-300w.jpeg" type="image/jpeg" medium="image" />
+        <pubDate>Fri, 21 Oct 2022 22:00:00 +0000</pubDate>
+        <dc:creator>Reed Piernock</dc:creator>
+        <guid>https://lincolnhighwayjournal.com/blog/post/2022-10-21-uploading-photos/</guid>
+      </item>
+      <item>
         <title>Don&#39;t talk to cops</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-10-20-don-t-talk-to-cops/</link>
         <description>That&#39;s it. That&#39;s the blog. (j/k keep reading)</description>
