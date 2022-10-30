@@ -36,18 +36,26 @@
     {%- include "post/list.njk" -%}
   </div>
 
-  <div class="container info-stats">
-    <h2>The Road Ahead</h2>
+  <div class="container container-full info-stats bg-primary">
+    <div class="container">
+      <div class="stats cards">
+        <div class="stat card">
+          <h3>{%- include "icons/bathtub.svg" -%} Collected so far</h3>
+          <ul role="list">
+            <li>23 shampoo</li>
+            <li>23 conditioner</li>
+            <li>32 soap</li>
+          </ul>
+        </div>
 
-    <div class="stats cards">
-      <div class="stat card">
-        <h3>{%- include "icons/calendar.svg" %} 21 days</h3>
-        <p>The official journey from San Francisco begins on 19 October 2022, and I'm expected to reach New York City by 8 November 2022 &#8212; my birthday!</p>
-      </div>
-
-      <div class="stat card">
-        <h3>{%- include "icons/map-trifold.svg" %} 12 states</h3>
-        <p>The Lincoln Highway runs through California, Nevada, Utah, Wyoming, Nebraska, Iowa, Illinois, Indiana, Ohio, Pennsylvania, New Jersey, and New York.</p>
+        <div class="stat card">
+          <h3>{%- include "icons/bathtub.svg" -%} Visited so far</h3>
+          <ul role="list">
+            <li>23 hotel</li>
+            <li>23 restaurant</li>
+            <li>32 neat stuff</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
