@@ -58,6 +58,7 @@ module.exports = async function( image ) {
   const highsrc = metadata.jpeg[metadata.jpeg.length - 1];
 
   const image_alignment = image.align ? `align-${image.align}` : "";
+  const image_aspect = image.aspect ? `image-${image.aspect}` : "";
 
   const picture = `\n\n<picture>
   ${Object.values(metadata).map(imageFormat => {
@@ -65,7 +66,7 @@ module.exports = async function( image ) {
   }).join('\n')}
     <img
       src="${lowsrc.url}"
-      class="image ${image_alignment}"
+      class="image ${image_alignment} ${image_aspect}"
       width="${highsrc.width}"
       height="${highsrc.height}"
       alt="${image.alt}"

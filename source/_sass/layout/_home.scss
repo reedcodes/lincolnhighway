@@ -26,12 +26,6 @@
   }
 }
 
-.info {
-  &-lincoln-highway {
-    text-align: center;
-  }
-}
-
 .blog-links {
   --flex-items-justify: space-between;
 
@@ -40,15 +34,23 @@
   }
 }
 
-.info-stats {
-  .icon {
-    --fillColor: var(--stats-icon-fill, transparent);
-    --strokeColor: var(--stats-icon-stroke, var(--color-secondary-9));
+.info {
+  &-lincoln-highway,
+  &-stats {
+    text-align: center;
+  }
 
-    width: 120px;
-    height: auto;
-    margin-block-end: 1rem;
-    border-radius: 1rem;
-    background-color: var(--stats-icon-bg, var(--color-tertiary));
+  &-stats {
+    .icon {
+      --fillColor: var(--stats-icon-fill, transparent);
+      --strokeColor: var(--stats-icon-stroke, var(--color-secondary-9));
+  
+      width: 120px;
+      height: auto;
+      margin-inline: auto;
+      margin-block-end: 1rem;
+      border-radius: 1rem;
+      background-color: var(--stats-icon-bg, var(--color-tertiary));
+    }
   }
 }

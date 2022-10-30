@@ -38,9 +38,10 @@
 
   <div class="container container-full info-stats bg-primary">
     <div class="container">
+      <h2>The Road So Far</h2>
       <div class="stats cards">
         <div class="stat card">
-          <h3>{%- include "icons/bathtub.svg" -%} Collected so far</h3>
+          {%- include "icons/bathtub.svg" -%}
           <ul role="list">
             <li>23 shampoo</li>
             <li>23 conditioner</li>
@@ -49,7 +50,7 @@
         </div>
 
         <div class="stat card">
-          <h3>{%- include "icons/bathtub.svg" -%} Visited so far</h3>
+          {%- include "icons/bathtub.svg" -%}
           <ul role="list">
             <li>23 hotel</li>
             <li>23 restaurant</li>
@@ -58,6 +59,12 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="container container-narrow">
+    {%- image src="https://live.staticflickr.com/65535/52460145983_ab06b10495_k.jpg", alt="Reed standing next to the Lincoln Highway marker for the western terminus, with their hand on their hip and a huge smile on their face", aspect="16-9" -%}
+
+    <p><a href="https://www.flickr.com/photos/lincolnhighwayjournal/albums">View photos of the road trip on flickr</a></p>
   </div>
 
 {%- endblock main_content -%}
