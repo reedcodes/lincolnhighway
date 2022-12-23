@@ -1,11 +1,11 @@
 [
   {
-    "site": "Twitter",
-    "url": "https://twitter.com/LincHwyJournal",
+    "site": "LHJ's Tweets",
+    "url": "https://tweets.lincolnhighwayjournal.com/",
     "icon": "twitter"
   },
   {
-    "site": "flickr",
+    "site": "flickr photos",
     "url": "https://flickr.com/photos/lincolnhighwayjournal/",
     "icon": "flickr"
   }
