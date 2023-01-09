@@ -4,6 +4,9 @@ const eleventyNavigationPlugin = require( "@11ty/eleventy-navigation" );
 // Import metagen plugin.
 const metagen = require( "eleventy-plugin-metagen" );
 
+// Import the favicon plugin.
+const eleventyFaviconsPlugin = require("eleventy-plugin-gen-favicons");
+
 // Import 11ty RSS plugin.
 const eleventyRssPlugin = require("@11ty/eleventy-plugin-rss");
 
@@ -24,6 +27,11 @@ module.exports = function( eleventyConfig ) {
   // meta information, css and js links, and social info such as OpenGraph and
   // Twitter.
   eleventyConfig.addPlugin(metagen);
+
+  // Add the favicon plugin.
+  eleventyConfig.addPlugin(eleventyFaviconsPlugin, {
+    "outputDir": "./site"
+  });
 
   // Add the 11ty RSS plugin. This creates a feed that can then be available
   // for audience to subscribe to the blog in their favorite reader.

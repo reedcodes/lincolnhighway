@@ -1,5 +1,7 @@
 {%- from "post/feature-image.njk" import featureImageFile with context -%}
 
+<link rel="alternate" type="application/rss+xml" title="RSS feed for Lincoln Highway Journal blog posts" href="feed.xml" />
+
 {%-
   metagen
     name = site.name,
@@ -16,4 +18,4 @@
     twitter_handle = "LincHwyJournal"
 -%}
 
-<link rel="icon" href="/dist/images/favicon.gif">
+{% favicons "./source/_images/favicon.png" %}
