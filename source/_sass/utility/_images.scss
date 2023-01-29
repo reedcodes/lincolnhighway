@@ -1,4 +1,5 @@
 @use 'include-media' as *;
+@use 'cards' as *;
 
 .image {
   width: var(--image-width, 100%);
@@ -18,4 +19,20 @@
       --image-align-space: 2rem 0;
     }
   }
+}
+
+// Images displayed in a card-type view.
+
+.image-cards {
+  @extend .cards;
+
+  --cards-gap: 2rem;
+
+  font-size: 1rem;
+}
+
+.image-card {
+  @extend .card;
+
+  --cards-width: 750px;
 }
