@@ -6,7 +6,7 @@
     {%- for post in post_list -%}
       {%- set post_feature = post.data.feature -%}
       {%- set post_date = post.data.date -%}
-      {%- set post_url = post.url -%}
+      {%- set post_url = (post.data.external if post.data.external else post.url) -%}
       {%- set post_title = post.data.title -%}
       {%- set post_teaser = post.data.teaser -%}
       {%- set post_category = post.data.category -%}
