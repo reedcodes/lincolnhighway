@@ -5,5 +5,5 @@ category: Reviews
 tags: [ "cool stuff", "attractions", "virginia", "roanoke", "giant things" ]
 teaser: If a stoned Gen Z-er exclaims “Dude, it’s so fucking beautiful up here,” believe him.
 permalink: false
-external: https://www.tripadvisor.com/Attraction_Review-g58134-d279566-Reviews-Mill_Mountain_Star_Park-Roanoke_Virginia.html
+external: https://www.tripadvisor.com/ShowUserReviews-g58134-d279566-r881794132-Mill_Mountain_Star_Park-Roanoke_Virginia.html
 ---
