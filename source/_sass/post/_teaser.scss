@@ -8,5 +8,15 @@
   &-link {
     font-size: 1.125rem;
     font-family: var(--font-teaser-link, var(--font-heading));
+
+    .icon {
+      --fillColor: currentColor;
+
+      display: inline-block;
+      max-block-size: 1.25em;
+      inline-size: auto;
+      margin-inline-start: 0.25em;
+      vertical-align: text-bottom;
+    }
   }
 }
