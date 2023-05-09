@@ -17,7 +17,13 @@
       {{ post_title }}
 
       {%- if post.data.external -%}
-        {%- include "icons/external.svg" -%}
+        {%- if "yelp" in post.data.external -%}
+          {%- include "icons/coffee.svg" -%}
+        {%- endif -%}
+
+        {%- if "tripadvisor" in post.data.external -%}
+          {%- include "icons/suitcase.svg" -%}
+        {%- endif -%}
       {%- endif -%}
 
       {%- if post_title_link -%}</a>{%- endif -%}
