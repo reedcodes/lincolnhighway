@@ -23,26 +23,33 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:media="http://search.yahoo.com/mrss/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xml:base="{{ metadata.url }}"
+  xml:base="{{- metadata.url -}}"
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ metadata.title }}</title>
-    <link>{{ metadata.url }}</link>
-    <atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
-    <description>{{ metadata.subtitle }}</description>
-    <language>{{ metadata.language }}</language>
+    <title>{{- metadata.title -}}</title>
+    <link>{{- metadata.url -}}</link>
+    <atom:link href="{{- permalink | absoluteUrl(metadata.url) -}}" rel="self" type="application/rss+xml" />
+    <description>{{- metadata.subtitle -}}</description>
+    <language>{{- metadata.language -}}</language>
     {%- for post in collections.blogPosts %}
-      {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+
+      {%- if post.data.external.length -%}
+        {%- set blogUrl = post.data.external -%}
+      {%- else -%}
+        {%- set blogUrl = post.url | absoluteUrl(metadata.url) -%}
+      {%- endif -%}
+
       <item>
-        <title>{{ post.data.title }}</title>
-        <link>{{ absolutePostUrl }}</link>
-        <description>{{ post.data.teaser }}</description>
-        <content:encoded>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content:encoded>
-        <media:content url="{{ featureImageFile(post.data.feature.file, post.url) }}" type="image/jpeg" medium="image" />
-        <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
-        <dc:creator>{{ metadata.author.name }}</dc:creator>
-        <guid>{{ absolutePostUrl }}</guid>
+        <title>{{- post.data.title -}}</title>
+        <link>{{- blogUrl -}}</link>
+        <description>{{- post.data.teaser -}}</description>
+        <content:encoded>{{- post.templateContent | htmlToAbsoluteUrls(blogUrl) -}}</content:encoded>
+        <media:content url="{{- featureImageFile(post.data.feature.file, post.url) -}}" type="image/jpeg" medium="image" />
+        <pubDate>{{- post.date | dateToRfc822 -}}</pubDate>
+        <dc:creator>{{- metadata.author.name -}}</dc:creator>
+        <guid>{{- blogUrl -}}</guid>
       </item>
+
     {%- endfor %}
   </channel>
 </rss>
