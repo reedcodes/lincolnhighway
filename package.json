@@ -13,8 +13,8 @@
     "url": "https://github.com/reedcodes/lincolnhighway/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-img": "^3.0.0",
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-navigation": "^0.3.3",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "a11y-color-tokens": "^0.6.0",
@@ -26,7 +26,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "include-media": "^2.0.0",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.59.2"
+    "sass": "^1.62.1"
   },
   "scripts": {
     "tokens": "npx a11y-color-tokens --colorTokensPath='source/_data/colors.js' --outputDirPath='source/_sass/color' --compatibilityDocsPath='source/guide'",
@@ -35,5 +35,8 @@
     "build": "npm-run-all tokens build:sass build:11ty",
     "clean": "rm -rf ./site/ && npm run build",
     "serve": "npx @11ty/eleventy --serve"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }
