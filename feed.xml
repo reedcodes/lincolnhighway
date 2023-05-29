@@ -10,28 +10,25 @@
     <link>https://lincolnhighwayjournal.com</link>
     <atom:link href="https://lincolnhighwayjournal.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>a road trip along the Main Street Across America</description>
-    <language>en</language>
-      <item>
+    <language>en</language><item>
         <title>7 Oct 2022: the Grind</title>
-        <link>https://lincolnhighwayjournal.com/false</link>
+        <link>https://www.yelp.com/biz/the-grind-wytheville?hrid=nO-U3GTdATeX8mg_Vu8ceA</link>
         <description>Disappointed finding no giant pencil. Delighted finding delicious lattes.</description>
         <content:encoded></content:encoded>
         <media:content url="https://lincolnhighwayjournal.com/dist/images/photos/california-section.jpeg" type="image/jpeg" medium="image" />
         <pubDate>Tue, 09 May 2023 18:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
-        <guid>https://lincolnhighwayjournal.com/false</guid>
-      </item>
-      <item>
+        <guid>https://www.yelp.com/biz/the-grind-wytheville?hrid=nO-U3GTdATeX8mg_Vu8ceA</guid>
+      </item><item>
         <title>6 Oct 2022: EconoLodge Christiansburg-Blacksburg</title>
-        <link>https://lincolnhighwayjournal.com/false</link>
+        <link>https://www.tripadvisor.com/ShowUserReviews-g57605-d110673-r889584449-Econo_Lodge_Christiansburg_Blacksburg_I_81-Christiansburg_Virginia.html</link>
         <description>I was so tired by the time I got here, and the staff were oh so nice to me.</description>
         <content:encoded></content:encoded>
         <media:content url="https://lincolnhighwayjournal.com/dist/images/photos/california-section.jpeg" type="image/jpeg" medium="image" />
         <pubDate>Mon, 08 May 2023 18:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
-        <guid>https://lincolnhighwayjournal.com/false</guid>
-      </item>
-      <item>
+        <guid>https://www.tripadvisor.com/ShowUserReviews-g57605-d110673-r889584449-Econo_Lodge_Christiansburg_Blacksburg_I_81-Christiansburg_Virginia.html</guid>
+      </item><item>
         <title>omg I took so many photos</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2023-05-05-omg-i-took-so-many-photos/</link>
         <description>Why did I do this to myself.</description>
@@ -39,22 +36,20 @@
 &lt;p&gt;In addition to organizing and uploading photos, I’m writing up reviews on Tripadvisor that will show up in the blog’s feed.&lt;/p&gt;
 &lt;p&gt;I also really don’t know what ever possessed me to think that I could have done all of this &lt;em&gt;while&lt;/em&gt; on my trip.&lt;/p&gt;
 </content:encoded>
-        <media:content url="https://lincolnhighwayjournal.com/blog/post/2023-05-05-omg-i-took-so-many-photos/52443385948_65ccc4e13c_k-300w.jpeg" type="image/jpeg" medium="image" />
+        <media:content url="https://lincolnhighwayjournal.com/blog/post/2023-05-05-omg-i-took-so-many-photos/52443385948_948b0848fe_k-300w.jpeg" type="image/jpeg" medium="image" />
         <pubDate>Fri, 05 May 2023 20:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2023-05-05-omg-i-took-so-many-photos/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>6 Oct 2022: Roanoke Star</title>
-        <link>https://lincolnhighwayjournal.com/false</link>
+        <link>https://www.tripadvisor.com/ShowUserReviews-g58134-d279566-r881794132-Mill_Mountain_Star_Park-Roanoke_Virginia.html</link>
         <description>If a stoned Gen Z-er exclaims “Dude, it’s so fucking beautiful up here,” believe him.</description>
         <content:encoded></content:encoded>
         <media:content url="https://lincolnhighwayjournal.com/dist/images/photos/california-section.jpeg" type="image/jpeg" medium="image" />
         <pubDate>Mon, 01 May 2023 18:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
-        <guid>https://lincolnhighwayjournal.com/false</guid>
-      </item>
-      <item>
+        <guid>https://www.tripadvisor.com/ShowUserReviews-g58134-d279566-r881794132-Mill_Mountain_Star_Park-Roanoke_Virginia.html</guid>
+      </item><item>
         <title>Vacation yarn</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2023-03-10-vacation-yarn/</link>
         <description>So maybe I have 87 boxes of yarn at home. I don&#39;t have this yarn.</description>
@@ -201,8 +196,7 @@ Entropy DK in Flash Point
         <pubDate>Fri, 10 Mar 2023 16:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2023-03-10-vacation-yarn/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>Tiny bubbles</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2023-01-10-tiny-bubbles/</link>
         <description>If you don’t use them, you can always bring them home.</description>
@@ -226,17 +220,16 @@ Entropy DK in Flash Point
         <pubDate>Tue, 10 Jan 2023 20:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2023-01-10-tiny-bubbles/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>16-19 October in San Francisco</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/</link>
         <description>I had a chill couple days to tourist before the big drive began.</description>
         <content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/lincolnhighwayjournal/albums/72177720302994579&quot;&gt;(All photos for these days are available on flickr.)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I got into San Francisco late-ish on Sunday night and immediately went to the hotel. The roads from Santa Cruz were more hill-y and wind-y than I’d realized, and while I was white-knuckled driving the speed limit, there were cars vrooming past me so fast I felt the car shake. I just wanted a bed.&lt;/p&gt;
 &lt;picture&gt;
-  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_73b15e59e2_k-300w.jpeg&quot; class=&quot;image &quot; width=&quot;1200&quot; height=&quot;540&quot; alt=&quot;a table in the dining room of the hotel, with my iPad and notebook stacked on the right, and a coffee mug on the left. The coffee mug is branded with Hotel Mayflower and its information: 975 Bush Street, San Francisco, 415 673 7010, sfmayflowerhotel.com&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52436717992_1fbec70d9d_k-300w.jpeg&quot; class=&quot;image &quot; width=&quot;1200&quot; height=&quot;540&quot; alt=&quot;a table in the dining room of the hotel, with my iPad and notebook stacked on the right, and a coffee mug on the left. The coffee mug is branded with Hotel Mayflower and its information: 975 Bush Street, San Francisco, 415 673 7010, sfmayflowerhotel.com&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
   &lt;/picture&gt;
 &lt;p&gt;The hotel was gorgeous. It had an antique-style decor, complete with gated elevator. The room was about the size of my last studio apartment, with closets that could be small bedrooms if buildings could zone them without windows. I loved it.&lt;/p&gt;
 &lt;p&gt;I will &lt;em&gt;always&lt;/em&gt; take public transit over anything else, if I can, and was disappointed that San Francisco, like most cities, is moving to app-based fares, and I couldn’t easily find a place to buy a Clipper card to add to my collection of vacation transit cards. I then had a late start in the morning because I had trouble locating the correct bus stop. The one just down the block from the hotel said it was closed and to board the bus at another stop. I walked around for at least half hour looking for one that was the route in the direction I needed. Eventually the bus came, and for fucks sake, it dropped off and picked up passengers at the very stop I originally went to.&lt;/p&gt;
@@ -245,9 +238,9 @@ Entropy DK in Flash Point
 &lt;p&gt;I took the next bus over to Golden Gate Park, but I should have looked up some information sooner, because the carousel is closed on Mondays. I grabbed a coffee and walked around the park anyway because it was lovely. I didn’t explore the whole park because I wanted to go to Good Vibrations before they closed, to visit the &lt;a href=&quot;http://antiquevibratormuseum.com/&quot;&gt;Antique Vibrator Museum&lt;/a&gt;. What an amazing experience! Seeing the devices paired with their advertising was really something, since those older models weren’t explicitly marketed toward sexual activities.&lt;/p&gt;
 &lt;p&gt;I had a quick dinner at Rad Radish and went back to the hotel. The next day, I had absolutely &lt;em&gt;no&lt;/em&gt; pepper. I hoped a shower would wake me up, but it only made me sleepier. I’d wanted to do more sightseeing, but a three-hour nap took over instead. I checked out Nourish Cafe for dinner, and the &amp;quot;tuna&amp;quot; sandwich definitely hit the spot. Still didn’t give me any pepper though.&lt;/p&gt;
 &lt;picture&gt;
-  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_dc2741f6e3_k-300w.jpeg&quot; class=&quot;image &quot; width=&quot;1200&quot; height=&quot;540&quot; alt=&quot;an open-faced vegan-tuna sandwich, with two scoops of tuna top a bed of lettuce and tomato on slices of thick, hearty bread&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/52438930856_172528b15c_k-300w.jpeg&quot; class=&quot;image &quot; width=&quot;1200&quot; height=&quot;540&quot; alt=&quot;an open-faced vegan-tuna sandwich, with two scoops of tuna top a bed of lettuce and tomato on slices of thick, hearty bread&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
   &lt;/picture&gt;
 &lt;p&gt;I packed up most of my things so I wouldn’t have to do too much the next morning, and went to sleep earlier than I usually do, even taking the time difference into consideration. Luckily it was pretty decent sleep, and when I woke up on Wednesday, checked out of the hotel as soon as I could, and booked it over to the Legion of Honor museum to start the official Lincoln Highway portion of the trip!&lt;/p&gt;
 </content:encoded>
@@ -255,24 +248,23 @@ Entropy DK in Flash Point
         <pubDate>Tue, 25 Oct 2022 21:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-10-25-16-19-october-in-san-francisco/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>Pre-highway road trip highlights</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/</link>
         <description>Before the adventures, there were adventures.</description>
         <content:encoded>&lt;p&gt;I’d like take the time while I’ve got wifi to write a bit about the trip between Little Rock and San Francisco. Before the adventures, there were adventures. I got the chance to revisit a couple sights and to check out new ones.&lt;/p&gt;
 &lt;picture&gt;
-  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_01444d413c_k-300w.jpeg&quot; class=&quot;image align-right&quot; width=&quot;1200&quot; height=&quot;1600&quot; alt=&quot;me sitting at a table in a restaurant, with a cocktail in front of me&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437485814_44181eeae0_k-300w.jpeg&quot; class=&quot;image align-right&quot; width=&quot;1200&quot; height=&quot;1600&quot; alt=&quot;me sitting at a table in a restaurant, with a cocktail in front of me&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
   &lt;/picture&gt;
 &lt;p&gt;Most of the photos I took in Little Rock were of food! I spent most of my time at the &lt;a href=&quot;https://events.highedweb.org/heweb22&quot;&gt;HighEdWeb annual conference&lt;/a&gt;. This was my first time speaking at an in-person conference! My talk went over pattern libraries and style guides, and how we set one up at Georgetown for our websites. I was absolutely terrified but once I got going and saw that people were not just paying attention but also taking notes, I felt much better! I know I have room to grow and getting those feedback notes will be so helpful for the future.&lt;/p&gt;
 &lt;p&gt;All the other sessions I attended were pretty great, and I’ve got pages and pages in my notebook with all &lt;em&gt;kinds&lt;/em&gt; of interesting things! Eventually I’ll type up all those notes and set up some time at work to share new knowledge, and also play around with some of the front-end-y things I learned.&lt;/p&gt;
 &lt;p&gt;Breakfast and lunch were slim pickings. Since dinner was on our own every night, I put a call out to other vegans at the conference, and that Monday night we went to Camp Taco where we shared guacamole, hot potatoes, and vegan queso. That Tuesday I attended a pizza party hosted by HigherEd.pizza where I had a delightful cocktail called Smoking Kills, made of lapsang souchong tea syrup, apple cider, and lemon.&lt;/p&gt;
 &lt;picture&gt;
-  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_4055b71e14_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_4055b71e14_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_4055b71e14_k-900w.webp 900w&quot; sizes=&quot;100vw&quot; /&gt;
-&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_4055b71e14_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_4055b71e14_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_4055b71e14_k-900w.jpeg 900w&quot; sizes=&quot;100vw&quot; /&gt;
-    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_4055b71e14_k-300w.jpeg&quot; class=&quot;image align-right&quot; width=&quot;900&quot; height=&quot;2003&quot; alt=&quot;a very tall large soda bottle lit up against the dark sky; there are rainbow-colored rings starting at the bottom and leading all the way to the top, where there is a giant straw&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_f3dfd27259_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_f3dfd27259_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_f3dfd27259_k-900w.webp 900w&quot; sizes=&quot;100vw&quot; /&gt;
+&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_f3dfd27259_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_f3dfd27259_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_f3dfd27259_k-900w.jpeg 900w&quot; sizes=&quot;100vw&quot; /&gt;
+    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437664545_f3dfd27259_k-300w.jpeg&quot; class=&quot;image align-right&quot; width=&quot;900&quot; height=&quot;2003&quot; alt=&quot;a very tall large soda bottle lit up against the dark sky; there are rainbow-colored rings starting at the bottom and leading all the way to the top, where there is a giant straw&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
   &lt;/picture&gt;
 &lt;p&gt;I didn’t see much of Little Rock aside from the conference center, although I did meet some nice puppers!&lt;/p&gt;
 &lt;p&gt;Each day’s drive from Little Rock to San Francisco took way longer than expected. First night after the conference was Elk City OK, a bit west of Oklahoma City. Until I got to OKC, I’d only stopped at the welcome center. But I was able to grab dinner at Pop’s! I had a veggie burger (of course, that’s the only vegan option) with a peach root beer, then I selected some bottles for a make-your-own six-pack — one for each color of the rainbow.&lt;/p&gt;
@@ -280,9 +272,9 @@ Entropy DK in Flash Point
 &lt;p&gt;I passed through the Texas panhandle after leaving Oklahoma, and very excitedly visited the historic Conoco Tower in Shamrock. I’d been there once before on a road trip to Las Vegas just over ten years ago. This time, I had a much better phone camera, and an actual &lt;em&gt;camera&lt;/em&gt; that my wife lent me.&lt;/p&gt;
 &lt;p&gt;Also in Texas, in the south when leaving Amarillo, is &lt;a href=&quot;https://www.atlasobscura.com/places/ozymandias-plains&quot;&gt;Ozymandias&lt;/a&gt;, an art installation by the awesomely named Lightnin’ McDuff. I used the camera’s zoom to get closer to the sculpture, since the area is fenced off and I didn’t want to be caught tresspassing.&lt;/p&gt;
 &lt;picture&gt;
-  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_c2931b61d4_k-300w.jpeg&quot; class=&quot;image &quot; width=&quot;1200&quot; height=&quot;540&quot; alt=&quot;a sculpture of a pair of legs, the right leg shorter than the other, both only from the knee down, brightly painted with graffiti&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490074_95c06a8cf2_k-300w.jpeg&quot; class=&quot;image &quot; width=&quot;1200&quot; height=&quot;540&quot; alt=&quot;a sculpture of a pair of legs, the right leg shorter than the other, both only from the knee down, brightly painted with graffiti&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
   &lt;/picture&gt;
 &lt;p&gt;I didn’t stay very long since I wanted to make it to Albuquerque and have dinner with friends! They moved away from the DMV earlier this year, and I hadn’t seen them since before the pandemic. It was &lt;em&gt;really&lt;/em&gt; good to have dinner with friends. There was a yarn shop practically around the corner from my motel, and it so happened to be while my knitting group at work always meets, so I zoom-ed into the meeting and showed them around the place and told tales of the road so far.&lt;/p&gt;
 &lt;p&gt;I had coffee in Gallup NM and a soda in Winslow AZ — yes, I did &lt;a href=&quot;https://www.visitwinslow.com/standing-on-the-corner-park/&quot;&gt;stand on the corner&lt;/a&gt;.&lt;/p&gt;
@@ -290,12 +282,11 @@ Entropy DK in Flash Point
 &lt;blockquote class=&quot;twitter-tweet&quot; data-theme=&quot;dark&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I spent several hours on the boardwalk earlier and I saw neither vampire nor Tethered. &lt;a href=&quot;https://t.co/qezfvIVrd4&quot;&gt;pic.twitter.com/qezfvIVrd4&lt;/a&gt;&lt;/p&gt;&amp;mdash; Reed (@LincHwyJournal) &lt;a href=&quot;https://twitter.com/LincHwyJournal/status/1581874111378096128?ref_src=twsrc%5Etfw&quot;&gt;October 17, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 &lt;p&gt;I’d originally planned to hit the Winchester Mystery House on my way to San Francisco, but I was fairly confident I would miss the last ticket time, so I detoured instead to Santa Cruz and spent a few hours on the boardwalk. It was the perfect way to end the first leg of the journey.&lt;/p&gt;
 </content:encoded>
-        <media:content url="https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490834_0e65f3acb3_k-300w.jpeg" type="image/jpeg" medium="image" />
+        <media:content url="https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/52437490834_975cbc3421_k-300w.jpeg" type="image/jpeg" medium="image" />
         <pubDate>Mon, 24 Oct 2022 22:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-10-24-pre-highway-road-trip-highlights/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>Uploading photos</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-10-21-uploading-photos/</link>
         <description>Pics or it didn’t happen.</description>
@@ -303,12 +294,11 @@ Entropy DK in Flash Point
 &lt;p&gt;I’m also slowly updating the photos on flickr so they have not only proper location tags but good descriptions as well. flickr doesn’t have &lt;code&gt;alt&lt;/code&gt; text on photos, and using the description field to be as detailed as possible is at least a bit more accessible.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/lincolnhighwayjournal/albums&quot;&gt;Photos from the trip are grouped into albums on my flickr account.&lt;/a&gt; Updates with reviews for dining and lodging are slow-going too, but when they are done, I hope they will be helpful for someone!&lt;/p&gt;
 </content:encoded>
-        <media:content url="https://lincolnhighwayjournal.com/blog/post/2022-10-21-uploading-photos/52443311500_17ed9b8ade_k-300w.jpeg" type="image/jpeg" medium="image" />
+        <media:content url="https://lincolnhighwayjournal.com/blog/post/2022-10-21-uploading-photos/52443311500_e0bdeb34f9_k-300w.jpeg" type="image/jpeg" medium="image" />
         <pubDate>Fri, 21 Oct 2022 22:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-10-21-uploading-photos/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>Don’t talk to cops</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-10-20-don-t-talk-to-cops/</link>
         <description>That’s it. That’s the blog. (j/k keep reading)</description>
@@ -324,8 +314,7 @@ Entropy DK in Flash Point
         <pubDate>Thu, 20 Oct 2022 23:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-10-20-don-t-talk-to-cops/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>The beginning of the journey</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-10-17-the-beginning-of-the-journey/</link>
         <description>I made it to the west coast for adventure in San Francisco.</description>
@@ -338,8 +327,7 @@ Entropy DK in Flash Point
         <pubDate>Mon, 17 Oct 2022 04:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-10-17-the-beginning-of-the-journey/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>First stop, Little Rock</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-10-09-first-stop-little-rock/</link>
         <description>It may have been overly ambitious to think I could blog every day of the trip.</description>
@@ -370,8 +358,7 @@ Entropy DK in Flash Point
         <pubDate>Sun, 09 Oct 2022 22:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-10-09-first-stop-little-rock/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>Tasty trail mix recipe</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-09-21-tasty-trail-mix-recipe/</link>
         <description>I made my own super-tasty trail mix recipe, to accommodate my food allergies.</description>
@@ -397,8 +384,7 @@ Entropy DK in Flash Point
         <pubDate>Wed, 21 Sep 2022 19:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-09-21-tasty-trail-mix-recipe/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>Do I have enough food?</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/</link>
         <description>When you’re a vegan with food allergies, gotta make sure there’s plenty to eat.</description>
@@ -421,20 +407,19 @@ Entropy DK in Flash Point
 &lt;/ul&gt;
 &lt;p&gt;But... this is only the food from the cooler! I’ve also got a huge bag full of veggie straws, cheeze pretzels, orange chips, toasted corn, rice cakes, garlic pretzels, Majool dates, and dried apricots.&lt;/p&gt;
 &lt;picture&gt;
-  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
-    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_18dd82faab_o-300w.jpeg&quot; class=&quot;image &quot; width=&quot;1200&quot; height=&quot;898&quot; alt=&quot;Laird’s Aloha Oatmac and Kenko smoothies&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+  &lt;source type=&quot;image/webp&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-300w.webp 300w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-600w.webp 600w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-900w.webp 900w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-1200w.webp 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-300w.jpeg 300w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-600w.jpeg 600w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-900w.jpeg 900w, https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-1200w.jpeg 1200w&quot; sizes=&quot;100vw&quot; /&gt;
+    &lt;img src=&quot;https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367542259_479cfa69ee_k-300w.jpeg&quot; class=&quot;image &quot; width=&quot;1200&quot; height=&quot;898&quot; alt=&quot;Laird’s Aloha Oatmac and Kenko smoothies&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
   &lt;/picture&gt;
 &lt;p&gt;Earlier this year, I wasn’t feeling well one day, and as I lay on the couch I scrolled through Instagram. As usual, there were 87 million ads, but the one for kencko stuck out to me, and before I knew it I was hitting &amp;quot;pay now&amp;quot;. kencko makes powdered smoothie packs, with each individual flavor jammed with fruits and vegetables. Mix with water or milk, and there’s a beverage! I figured they’d work for road trip quick breakfast and that trying them out wouldn’t hurt. Whelp, now I’ve got a subscription and the boxes keep coming every month.&lt;/p&gt;
 &lt;p&gt;I also did a lot of hunting for a vegan powdered milk to bring, and I tasted a few before settling on Laird’s Aloho Oatmac. I’d had their coffee creamer before (which I also bought, but coffee is another post!) and I loved this one so much, I started a scubscription for this one too! But sadly they announced only a few weeks ago they were discontinuing the oatmac. Luckily, I have &lt;em&gt;plenty&lt;/em&gt; in the beverage box. Besides the smoothies, I also plan to use the milk to make overnight oats, when I have a fridge available wherever I end up for the night.&lt;/p&gt;
 &lt;p&gt;This isn’t to say I &lt;em&gt;won’t&lt;/em&gt; ever stop for food along the way. Just the opposite! I am so much looking forward to hitting diners and restaurants all over the drive; that’s part of the adventure. It’s just the anxiety in me that keeps reminding me of my restrictions.&lt;/p&gt;
 </content:encoded>
-        <media:content url="https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367651140_19c290b35b_o-300w.jpeg" type="image/jpeg" medium="image" />
+        <media:content url="https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/52367651140_a47c114bdf_k-300w.jpeg" type="image/jpeg" medium="image" />
         <pubDate>Sun, 18 Sep 2022 18:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-09-18-do-i-have-enough-food/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>Documenting the journey</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-09-05-documenting-the-journey/</link>
         <description>It’s only 30 days until I hit the road, and the packing is in full swing.</description>
@@ -449,8 +434,7 @@ Entropy DK in Flash Point
         <pubDate>Mon, 05 Sep 2022 18:00:00 +0000</pubDate>
         <dc:creator>Reed Piernock</dc:creator>
         <guid>https://lincolnhighwayjournal.com/blog/post/2022-09-05-documenting-the-journey/</guid>
-      </item>
-      <item>
+      </item><item>
         <title>I’m headed for adventure!</title>
         <link>https://lincolnhighwayjournal.com/blog/post/2022-09-05-i-m-headed-for-adventure/</link>
         <description>I’ve been planning this trip for over three years, and now it’s nearly here.</description>
