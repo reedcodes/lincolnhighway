@@ -11,6 +11,15 @@
     <atom:link href="https://lincolnhighwayjournal.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>a road trip along the Main Street Across America</description>
     <language>en</language><item>
+        <title>7 Oct 2022: Cinnaholic Knoxville</title>
+        <link>https://www.tripadvisor.com/ShowUserReviews-g55138-d15512490-r913086494-Cinnaholic-Knoxville_Tennessee.html</link>
+        <description>The choices were overwhelming, but oh my goodness those cinnamon rolls.</description>
+        <content:encoded></content:encoded>
+        <media:content url="https://lincolnhighwayjournal.com/dist/images/photos/california-section.jpeg" type="image/jpeg" medium="image" />
+        <pubDate>Sat, 26 Aug 2023 15:00:00 +0000</pubDate>
+        <dc:creator>Reed Piernock</dc:creator>
+        <guid>https://www.tripadvisor.com/ShowUserReviews-g55138-d15512490-r913086494-Cinnaholic-Knoxville_Tennessee.html</guid>
+      </item><item>
         <title>7 Oct 2022: the Grind</title>
         <link>https://www.yelp.com/biz/the-grind-wytheville?hrid=nO-U3GTdATeX8mg_Vu8ceA</link>
         <description>Disappointed finding no giant pencil. Delighted finding delicious lattes.</description>
