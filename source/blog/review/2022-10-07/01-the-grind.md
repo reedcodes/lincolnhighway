@@ -5,5 +5,5 @@ category: Reviews
 tags: [ "coffee shop", "local business", "virginia", "wytheville" ]
 teaser: Disappointed finding no giant pencil. Delighted finding delicious lattes.
 permalink: false
-external: https://www.yelp.com/biz/the-grind-wytheville?hrid=nO-U3GTdATeX8mg_Vu8ceA
+external: https://www.tripadvisor.com/ShowUserReviews-g58337-d26583279-r913076897-The_Grind-Wytheville_Virginia.html
 ---
