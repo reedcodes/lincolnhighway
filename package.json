@@ -19,7 +19,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "a11y-color-tokens": "^0.6.0",
     "eleventy-plugin-gen-favicons": "^1.1.2",
-    "eleventy-plugin-metagen": "^1.7.11",
+    "eleventy-plugin-metagen": "^1.8.3",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",
