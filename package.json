@@ -20,7 +20,7 @@
     "a11y-color-tokens": "^0.6.0",
     "eleventy-plugin-gen-favicons": "^1.1.2",
     "eleventy-plugin-metagen": "^1.8.3",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
